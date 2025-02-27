@@ -51,6 +51,10 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         SoundBeep 800, 200   ; 取消置顶时的提示音（较低音）
 }
 
+; 鼠标前进后退键映射
+XButton2::Send "{Enter}"  ; 鼠标前进键 -> Enter
+XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
+
 ; ========== Chrome 快捷键 ==========
 #HotIf WinActive("ahk_exe chrome.exe")
 +a::Send "^+a"  ; Shift+B：打开最近关闭的标签页
