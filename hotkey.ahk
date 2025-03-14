@@ -76,6 +76,11 @@ XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 !6::Send "^6"
 #HotIf
 
+; ========== Word 快捷键 ==========
+#HotIf WinActive("ahk_exe WINWORD.exe")
++s::Send "^!+s"  ; Shift+S -> Ctrl+Alt+Shift+S
+#HotIf
+
 ; ========== 连点器 ==========
 
 ; 设置坐标模式为屏幕绝对坐标
