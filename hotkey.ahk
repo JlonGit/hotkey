@@ -51,6 +51,12 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         SoundBeep 800, 200   ; 取消置顶时的提示音（较低音）
 }
 
+; 连续退格
+$+d::Send "{Backspace}"  ; Shift+D -> Backspace：连续退格
+
+; 连续回车
+$+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
+
 ; 鼠标前进后退键映射
 XButton2::Send "{Enter}"  ; 鼠标前进键 -> Enter
 XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
@@ -78,7 +84,9 @@ XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 
 ; ========== Word 快捷键 ==========
 #HotIf WinActive("ahk_exe WINWORD.exe")
-+s::Send "^!+s"  ; Shift+S -> Ctrl+Alt+Shift+S
++s::Send "^!+s"  ; Shift+S -> Ctrl+Alt+Shift+S：打开样式面板
++c::Send "^!c"   ; Shift+C -> Ctrl+Alt+C：复制格式
++v::Send "^!v"   ; Shift+V -> Ctrl+Alt+V：粘贴格式
 #HotIf
 
 ; ========== 连点器 ==========
