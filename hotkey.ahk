@@ -89,6 +89,11 @@ XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 +v::Send "^!v"   ; Shift+V -> Ctrl+Alt+V：粘贴格式
 #HotIf
 
+; ========== PyCharm 快捷键 ==========
+#HotIf WinActive("ahk_exe pycharm64.exe")
+!r::Send "^+{F10}"  ; Alt+R -> Ctrl+Shift+F10：运行当前配置
+#HotIf
+
 ; ========== 连点器 ==========
 
 ; 设置坐标模式为屏幕绝对坐标
@@ -118,12 +123,12 @@ global isActive := false  ; 连点器激活状态
 ~!LButton:: {  ; 组合Alt+左键点击
     global isRecording, clickPositions, maxPositions
     if (isRecording && clickPositions.Length < maxPositions + 1) {
-        MouseGetPos(&x, &y, &windowID)
+        MouseGetPos(&x, &y, &windowID) 
         ; 计算相对于窗口的位置
         WinGetPos(&winX, &winY,,, windowID)
         relativeX := x - winX
         relativeY := y - winY
-        clickPositions.Push(["click", relativeX, relativeY, windowID])
+        clickPositions.Push(["click", relativeX, relativeY, windowID]) 
         SoundBeep 1000, 100  ; 记录点位提示音
     }
 }
@@ -140,7 +145,7 @@ global isActive := false  ; 连点器激活状态
             SetTimer ClickLoop, 50
         } else {
             SoundBeep 500, 200  ; 未记录任何点提示音
-            clickPositions := []
+            clickPositions := [] 
         }
     }
 }
