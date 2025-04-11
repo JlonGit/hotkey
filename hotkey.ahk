@@ -13,7 +13,7 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 !d::Send "^k"    ; Alt+D -> Ctrl+K
 
 ; 截图翻译
-+t::Send "^+t"   ; Shift+T -> Ctrl+Shift+T：截图翻译
++r::Send "^+r"   ; Shift+R -> Ctrl+Shift+R：截图翻译
 
 ; 新建文件
 +f::Send "^n"    ; Shift+F -> Ctrl+N：新建文件
@@ -41,6 +41,28 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         Run "C:\Program Files\Joplin\Joplin.exe"  ; 如果 Joplin 未运行，则启动
 }
 
++t:: {  ; Shift+T：Telegram 窗口切换
+    if WinExist("ahk_exe Telegram.exe") {
+        if WinActive("ahk_exe Telegram.exe")
+            WinMinimize  ; 如果当前窗口是 Telegram，则最小化
+        else
+            WinActivate  ; 如果 Telegram 已运行但不是当前窗口，则激活
+    }
+    else
+        Run "D:\Telegram Desktop\Telegram.exe"  ; 如果 Telegram 未运行，则启动
+}
+
++n:: {  ; Shift+N：Notion 窗口切换
+    if WinExist("ahk_exe Notion.exe") {
+        if WinActive("ahk_exe Notion.exe")
+            WinMinimize  ; 如果当前窗口是 Notion，则最小化
+        else
+            WinActivate  ; 如果 Notion 已运行但不是当前窗口，则激活
+    }
+    else
+        Run "C:\Users\JJJ\AppData\Local\Programs\Notion\Notion.exe"  ; 如果 Notion 未运行，则启动
+}
+
 ; 窗口置顶
 !`:: {  ; Alt+`：切换当前窗口置顶状态
     WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
@@ -66,6 +88,7 @@ XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 +a::Send "^+a"  ; Shift+B：打开最近关闭的标签页
 !q::Send "^t"   ; Alt+Q：新建标签页
 !a::Send "^+b"  ; Alt+A：打开标签栏
+!w::Send "^w"  ; Alt+W：关闭标签页
 #HotIf
 
 ; ========== Typora 快捷键 ==========
