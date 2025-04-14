@@ -18,6 +18,12 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; 新建文件
 +f::Send "^n"    ; Shift+F -> Ctrl+N：新建文件
 
+; 虚拟桌面快捷键、
+!1::Send "^#{Left}"       ; Alt+1 -> Win+Ctrl+Left (切换到左侧桌面)
+!3::Send "^#{Right}"      ; Alt+3 -> Win+Ctrl+Right (切换到右侧桌面)
+!2::Send "^#d"           ; Alt+2 -> Win+Ctrl+D (新建桌面)
+!4::Send "^#{F4}"         ; Alt+4 -> Win+Ctrl+F4 (关闭当前桌面)
+
 ; 应用程序切换
 +g:: {  ; Shift+G：Chrome 窗口切换
     if WinExist("ahk_exe chrome.exe") {
@@ -240,3 +246,52 @@ ClickLoop() {
     BlockInput false
     Sleep(10)  ; 缩短等待时间
 }
+
+; ======================= CapsLock + 字母 = 大写  =======================
+; 按住 CapsLock 再按字母键，输入对应的大写字母，但不影响 Shift+字母 热键
+; 并且，单独按 CapsLock 键仍然切换大小写锁定状态
+
+CapsLock & a::Send "{Text}A"
+CapsLock & b::Send "{Text}B"
+CapsLock & c::Send "{Text}C"
+CapsLock & d::Send "{Text}D"
+CapsLock & e::Send "{Text}E"
+CapsLock & f::Send "{Text}F"
+CapsLock & g::Send "{Text}G"
+CapsLock & h::Send "{Text}H"
+CapsLock & i::Send "{Text}I"
+CapsLock & j::Send "{Text}J"
+CapsLock & k::Send "{Text}K"
+CapsLock & l::Send "{Text}L"
+CapsLock & m::Send "{Text}M"
+CapsLock & n::Send "{Text}N"
+CapsLock & o::Send "{Text}O"
+CapsLock & p::Send "{Text}P"
+CapsLock & q::Send "{Text}Q"
+CapsLock & r::Send "{Text}R"
+CapsLock & s::Send "{Text}S"
+CapsLock & t::Send "{Text}T"
+CapsLock & u::Send "{Text}U"
+CapsLock & v::Send "{Text}V"
+CapsLock & w::Send "{Text}W"
+CapsLock & x::Send "{Text}X"
+CapsLock & y::Send "{Text}Y"
+CapsLock & z::Send "{Text}Z"
+
+; 可选: 如果需要，可以添加数字或其他符号
+; CapsLock & 1::Send "{Text}!"
+; CapsLock & 2::Send "{Text}@"
+
+; 处理单独按下 CapsLock 的情况
+CapsLock:: {
+    KeyWait "CapsLock" ; 等待 CapsLock 键被释放
+    ; 检查在 CapsLock 按下期间是否有其他按键被按下 (A_PriorKey 会记录最后按下的键)
+    ; 如果 A_PriorKey 仍然是 CapsLock，说明没有其他键被按下
+    if (A_PriorKey == "CapsLock") {
+        SetCapsLockState !GetKeyState("CapsLock", "T") ; 切换大小写状态
+    }
+    ; 如果期间按了其他键 (比如 'a')，则 CapsLock & a 热键已经处理了，这里什么都不做
+}
+
+; Keep script running
+Return
