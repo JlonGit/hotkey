@@ -36,17 +36,6 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         Run "chrome.exe"
 }
 
-+b:: {  ; Shift+B：Joplin 窗口切换
-    if WinExist("ahk_exe Joplin.exe") {
-        if WinActive("ahk_exe Joplin.exe")
-            WinMinimize  ; 如果当前窗口是 Joplin，则最小化
-        else
-            WinActivate  ; 如果 Joplin 已运行但不是当前窗口，则激活
-    }
-    else
-        Run "C:\Program Files\Joplin\Joplin.exe"  ; 如果 Joplin 未运行，则启动
-}
-
 +t:: {  ; Shift+T：Telegram 窗口切换
     if WinExist("ahk_exe Telegram.exe") {
         if WinActive("ahk_exe Telegram.exe")
@@ -291,6 +280,20 @@ CapsLock:: {
         SetCapsLockState !GetKeyState("CapsLock", "T") ; 切换大小写状态
     }
     ; 如果期间按了其他键 (比如 'a')，则 CapsLock & a 热键已经处理了，这里什么都不做
+}
+
+; 定义一个热键，例如 Ctrl+Alt+V
+^!v::
+{
+    ; 获取剪贴板内容
+    clipboardContent := A_Clipboard
+    
+    ; 如果剪贴板为空，则不执行任何操作
+    if (clipboardContent == "")
+        return
+
+    ; 使用 SendText 模拟键盘输入
+    SendText clipboardContent
 }
 
 ; Keep script running
