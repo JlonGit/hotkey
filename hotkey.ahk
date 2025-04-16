@@ -12,6 +12,7 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; Alt+D 映射为 Ctrl+K
 !d::Send "^k"    ; Alt+D -> Ctrl+K
 
+
 ; 截图翻译
 +r::Send "^+r"   ; Shift+R -> Ctrl+Shift+R：截图翻译
 
@@ -24,7 +25,7 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 !2::Send "^#d"           ; Alt+2 -> Win+Ctrl+D (新建桌面)
 !4::Send "^#{F4}"         ; Alt+4 -> Win+Ctrl+F4 (关闭当前桌面)
 
-; 应用程序切换
+; ========== 应用程序切换 ==========
 +g:: {  ; Shift+G：Chrome 窗口切换
     if WinExist("ahk_exe chrome.exe") {
         if WinActive("ahk_exe chrome.exe")
@@ -58,6 +59,17 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         Run "C:\Users\JJJ\AppData\Local\Programs\Notion\Notion.exe"  ; 如果 Notion 未运行，则启动
 }
 
++z:: {  ; Shift+Z：Zen 浏览器窗口切换
+    if WinExist("ahk_exe zen.exe") {
+        if WinActive("ahk_exe zen.exe")
+            WinMinimize  ; 如果当前窗口是 Zen，则最小化
+        else
+            WinActivate  ; 如果 Zen 已运行但不是当前窗口，则激活
+    }
+    else
+        Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk"  ; 如果 Zen 未运行，则启动
+}
+
 ; 窗口置顶
 !`:: {  ; Alt+`：切换当前窗口置顶状态
     WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
@@ -74,9 +86,9 @@ $+d::Send "{Backspace}"  ; Shift+D -> Backspace：连续退格
 ; 连续回车
 $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 
-; 鼠标前进后退键映射
-XButton2::Send "{Enter}"  ; 鼠标前进键 -> Enter
-XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
+; ; 鼠标前进后退键映射
+; XButton2::Send "{Enter}"  ; 鼠标前进键 -> Enter
+; XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 
 ; ========== Chrome 快捷键 ==========
 #HotIf WinActive("ahk_exe chrome.exe")
@@ -110,6 +122,16 @@ XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 ; ========== PyCharm 快捷键 ==========
 #HotIf WinActive("ahk_exe pycharm64.exe")
 !r::Send "^+{F10}"  ; Alt+R -> Ctrl+Shift+F10：运行当前配置
+#HotIf
+
+; ========== Zen 浏览器快捷键 ==========
+; 注意：请确认 Zen 浏览器的进程名是否为 zen.exe，如果不是请修改下面的 ahk_exe zen.exe
+#HotIf WinActive("ahk_exe zen.exe")
++b::Send "^!b"   ; Shift+B -> Ctrl+Alt+B
+!a::Send "^!a"   ; Alt+A -> Ctrl+Alt+A
+!q::Send "^!q"   ; Alt+Q -> Ctrl+Alt+Q
+!w::Send "^!w"   ; Alt+W -> Ctrl+Alt+W
+!d::Send "^!d"   ; Alt+D -> Ctrl+Alt+D
 #HotIf
 
 ; ========== 连点器 ==========
@@ -236,65 +258,38 @@ ClickLoop() {
     Sleep(10)  ; 缩短等待时间
 }
 
-; ======================= CapsLock + 字母 = 大写  =======================
-; 按住 CapsLock 再按字母键，输入对应的大写字母，但不影响 Shift+字母 热键
-; 并且，单独按 CapsLock 键仍然切换大小写锁定状态
+; ========== 任务栏控制 ==========
+; 声明全局变量保存原始鼠标位置
+global originalTaskbarX := 0
+global originalTaskbarY := 0
+global isTaskbarKeyDown := false
 
-CapsLock & a::Send "{Text}A"
-CapsLock & b::Send "{Text}B"
-CapsLock & c::Send "{Text}C"
-CapsLock & d::Send "{Text}D"
-CapsLock & e::Send "{Text}E"
-CapsLock & f::Send "{Text}F"
-CapsLock & g::Send "{Text}G"
-CapsLock & h::Send "{Text}H"
-CapsLock & i::Send "{Text}I"
-CapsLock & j::Send "{Text}J"
-CapsLock & k::Send "{Text}K"
-CapsLock & l::Send "{Text}L"
-CapsLock & m::Send "{Text}M"
-CapsLock & n::Send "{Text}N"
-CapsLock & o::Send "{Text}O"
-CapsLock & p::Send "{Text}P"
-CapsLock & q::Send "{Text}Q"
-CapsLock & r::Send "{Text}R"
-CapsLock & s::Send "{Text}S"
-CapsLock & t::Send "{Text}T"
-CapsLock & u::Send "{Text}U"
-CapsLock & v::Send "{Text}V"
-CapsLock & w::Send "{Text}W"
-CapsLock & x::Send "{Text}X"
-CapsLock & y::Send "{Text}Y"
-CapsLock & z::Send "{Text}Z"
-
-; 可选: 如果需要，可以添加数字或其他符号
-; CapsLock & 1::Send "{Text}!"
-; CapsLock & 2::Send "{Text}@"
-
-; 处理单独按下 CapsLock 的情况
-CapsLock:: {
-    KeyWait "CapsLock" ; 等待 CapsLock 键被释放
-    ; 检查在 CapsLock 按下期间是否有其他按键被按下 (A_PriorKey 会记录最后按下的键)
-    ; 如果 A_PriorKey 仍然是 CapsLock，说明没有其他键被按下
-    if (A_PriorKey == "CapsLock") {
-        SetCapsLockState !GetKeyState("CapsLock", "T") ; 切换大小写状态
-    }
-    ; 如果期间按了其他键 (比如 'a')，则 CapsLock & a 热键已经处理了，这里什么都不做
-}
-
-; 定义一个热键，例如 Ctrl+Alt+V
-^!v::
-{
-    ; 获取剪贴板内容
-    clipboardContent := A_Clipboard
+; !r 按下时触发任务栏显示并保持 (Alt+R)
+!r:: {
+    global originalTaskbarX, originalTaskbarY, isTaskbarKeyDown
     
-    ; 如果剪贴板为空，则不执行任何操作
-    if (clipboardContent == "")
-        return
-
-    ; 使用 SendText 模拟键盘输入
-    SendText clipboardContent
+    ; 只在首次按下时保存位置
+    if (!isTaskbarKeyDown) {
+        ; 保存当前鼠标位置
+        MouseGetPos(&originalTaskbarX, &originalTaskbarY)
+        isTaskbarKeyDown := true
+        
+        ; 获取主屏幕尺寸
+        screenHeight := A_ScreenHeight
+        
+        ; 移动到屏幕底部触发任务栏显示
+        MouseMove(originalTaskbarX, screenHeight - 2, 0)
+    }
+    return  ; 阻止继续处理此按键
 }
 
-; Keep script running
-Return
+; !r 释放时恢复鼠标位置
+!r Up:: {
+    global originalTaskbarX, originalTaskbarY, isTaskbarKeyDown
+    
+    if (isTaskbarKeyDown) {
+        ; 恢复到原始位置
+        MouseMove(originalTaskbarX, originalTaskbarY, 0)
+        isTaskbarKeyDown := false
+    }
+}
