@@ -12,6 +12,8 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; Alt+D 映射为 Ctrl+K
 !d::Send "^k"    ; Alt+D -> Ctrl+K
 
+; 显示桌面
+!Escape::Send "#d"    ; Alt+Esc -> Win+D：显示桌面
 
 ; 截图翻译
 +r::Send "^+r"   ; Shift+R -> Ctrl+Shift+R：截图翻译
