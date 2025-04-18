@@ -72,14 +72,53 @@ if !A_IsAdmin {           ; 如果不是管理员权限
         Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk"  ; 如果 Zen 未运行，则启动
 }
 
+; ========== API声明 ==========
+; 用于创建圆角窗口的API
+CreateRoundRectRgn(x1, y1, x2, y2, w, h) {
+    return DllCall("CreateRoundRectRgn", "Int", x1, "Int", y1, "Int", x2, "Int", y2, "Int", w, "Int", h, "Ptr")
+}
+
+SetWindowRgn(hwnd, hRgn, bRedraw := True) {
+    return DllCall("SetWindowRgn", "Ptr", hwnd, "Ptr", hRgn, "Int", bRedraw, "Int")
+}
+
 ; 窗口置顶
 !`:: {  ; Alt+`：切换当前窗口置顶状态
     WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
-    ; 获取置顶状态并播放对应音效
-    if WinGetExStyle("A") & 0x8  ; 0x8 是 WS_EX_TOPMOST 标志
-        SoundBeep 1000, 200  ; 置顶时的提示音（较高音）
-    else
-        SoundBeep 800, 200   ; 取消置顶时的提示音（较低音）
+    
+    ; 获取置顶状态
+    isTopmost := WinGetExStyle("A") & 0x8  ; 0x8 是 WS_EX_TOPMOST 标志
+    
+    ; 获取当前鼠标位置
+    MouseGetPos(&mouseX, &mouseY)
+    
+    ; 创建提示窗口（无标题栏和无边框）
+    osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
+    osd.MarginX := 1  ; 增加水平边距
+    osd.MarginY := 3   ; 增加垂直边距
+    osd.BackColor := "Silver"  ; 浅灰色背景
+    
+    ; 设置提示文本和样式
+    if (isTopmost) {
+        osd.AddText("c000000 w50 Center", "置顶")  ; 使用黑色文字
+    } else {
+        osd.AddText("c000000 w50 Center", "取消")  ; 使用黑色文字
+    }
+    
+    ; 显示在鼠标位置旁边
+    osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
+    
+    ; 设置圆角
+    hwnd := osd.Hwnd
+    WinGetPos(,, &width, &height, "ahk_id " hwnd)
+    hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
+    SetWindowRgn(hwnd, hRgn)
+    
+    ; 设置透明度 (0-255, 255为完全不透明)
+    WinSetTransparent(225, osd)
+    
+    ; 设置自动消失
+    SetTimer () => osd.Destroy(), -300
 }
 
 ; 连续退格
@@ -293,5 +332,42 @@ global isTaskbarKeyDown := false
         ; 恢复到原始位置
         MouseMove(originalTaskbarX, originalTaskbarY, 0)
         isTaskbarKeyDown := false
+    }
+}
+
+; ========== 模拟键盘输入剪贴板内容 ==========
+; 使用 Alt+v 触发模拟键盘输入剪贴板内容
+!v:: {
+    ; 获取剪贴板内容
+    clipText := A_Clipboard
+    
+    if (clipText != "") {
+        ; 短暂延迟，以便用户可以准备好
+        Sleep 500
+        
+        ; 逐字符输入剪贴板内容
+        Loop Parse, clipText {
+            Send "{Text}" A_LoopField
+            ; 添加少量延迟使输入更自然，避免过快触发防护措施
+            Sleep 10
+        }
+    }
+}
+
+; 使用 Ctrl+Alt+v 触发慢速模拟键盘输入剪贴板内容（更加安全但速度较慢）
+^!v:: {
+    ; 获取剪贴板内容
+    clipText := A_Clipboard
+    
+    if (clipText != "") {
+        ; 短暂延迟，以便用户可以准备好
+        Sleep 500
+        
+        ; 逐字符输入剪贴板内容（较慢模式）
+        Loop Parse, clipText {
+            Send "{Text}" A_LoopField
+            ; 使用较长延迟，更好地模拟人工输入
+            Sleep 50
+        }
     }
 }
