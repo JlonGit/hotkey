@@ -9,6 +9,14 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
 
+; 全局 Ctrl+W 映射为 Ctrl+Shift+W
+^w::Send "^+w"  ; Ctrl+W -> Ctrl+Shift+W
+
+; 全局 Alt+W 关闭窗口（仅排除Zen和Chrome浏览器）
+#HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")
+!w::Send "!{F4}"  ; Alt+W -> Alt+F4：关闭窗口
+#HotIf
+
 ; Alt+D 映射为 Ctrl+K
 !d::Send "^k"    ; Alt+D -> Ctrl+K
 
@@ -118,7 +126,7 @@ SetWindowRgn(hwnd, hRgn, bRedraw := True) {
     WinSetTransparent(225, osd)
     
     ; 设置自动消失
-    SetTimer () => osd.Destroy(), -300
+    SetTimer () => osd.Destroy(), -500
 }
 
 ; 连续退格
@@ -166,7 +174,6 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 #HotIf
 
 ; ========== Zen 浏览器快捷键 ==========
-; 注意：请确认 Zen 浏览器的进程名是否为 zen.exe，如果不是请修改下面的 ahk_exe zen.exe
 #HotIf WinActive("ahk_exe zen.exe")
 +b::Send "^!b"   ; Shift+B -> Ctrl+Alt+B
 !a::Send "^!a"   ; Alt+A -> Ctrl+Alt+A
