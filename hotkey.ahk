@@ -90,6 +90,20 @@ SetWindowRgn(hwnd, hRgn, bRedraw := True) {
     return DllCall("SetWindowRgn", "Ptr", hwnd, "Ptr", hRgn, "Int", bRedraw, "Int")
 }
 
+; 用于设置窗口样式的API
+GetWindowLong(hwnd, nIndex) {
+    return DllCall("GetWindowLong" (A_PtrSize=8?"Ptr":""), "Ptr", hwnd, "Int", nIndex, "Ptr")
+}
+
+SetWindowLong(hwnd, nIndex, dwNewLong) {
+    return DllCall("SetWindowLong" (A_PtrSize=8?"Ptr":""), "Ptr", hwnd, "Int", nIndex, "Ptr", dwNewLong, "Ptr")
+}
+
+; 窗口样式常量
+GWL_EXSTYLE := -20  ; 获取/设置窗口扩展样式
+WS_EX_LAYERED := 0x00080000  ; 分层窗口
+WS_EX_TRANSPARENT := 0x00000020  ; 鼠标点击穿透
+
 ; 窗口置顶
 !`:: {  ; Alt+`：切换当前窗口置顶状态
     WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
@@ -127,6 +141,118 @@ SetWindowRgn(hwnd, hRgn, bRedraw := True) {
     
     ; 设置自动消失
     SetTimer () => osd.Destroy(), -500
+}
+
+; 全局变量用于记录当前半透明穿透窗口的状态
+global transparentWinHwnd := 0  ; 当前半透明穿透窗口的句柄
+global transparentWinTransValue := 180  ; 半透明窗口的透明度值
+
+!t:: {  ; Alt+T：切换当前窗口半透明穿透状态
+    global transparentWinHwnd, transparentWinTransValue
+    static isTransparentMode := false
+    
+    ; 获取当前活动窗口句柄
+    hwnd := WinExist("A")
+    
+    ; 如果已经有一个窗口处于半透明穿透状态
+    if (transparentWinHwnd) {
+        ; 恢复原窗口样式
+        exStyle := GetWindowLong(transparentWinHwnd, GWL_EXSTYLE)
+        exStyle := exStyle & ~WS_EX_LAYERED & ~WS_EX_TRANSPARENT
+        SetWindowLong(transparentWinHwnd, GWL_EXSTYLE, exStyle)
+        
+        ; 重绘窗口
+        DllCall("RedrawWindow", "Ptr", transparentWinHwnd, "Ptr", 0, "Ptr", 0, "UInt", 0x0001|0x0004)
+        
+        ; 取消窗口置顶
+        WinSetAlwaysOnTop(0, "ahk_id " transparentWinHwnd)
+        
+        ; 重置半透明窗口状态
+        transparentWinHwnd := 0
+        isTransparentMode := false
+        
+        ; 显示提示
+        ShowOSD("恢复正常")
+        return  ; 直接返回，不对当前窗口做任何操作
+    }
+    
+    ; 设置新窗口为半透明穿透状态
+    exStyle := GetWindowLong(hwnd, GWL_EXSTYLE)
+    exStyle := exStyle | WS_EX_LAYERED | WS_EX_TRANSPARENT
+    SetWindowLong(hwnd, GWL_EXSTYLE, exStyle)
+    
+    ; 设置窗口透明度
+    WinSetTransparent(transparentWinTransValue, "ahk_id " hwnd)
+    
+    ; 置顶窗口
+    WinSetAlwaysOnTop(1, "ahk_id " hwnd)
+    
+    ; 记录当前半透明穿透窗口句柄
+    transparentWinHwnd := hwnd
+    isTransparentMode := true
+    
+    ; 显示提示
+    ShowOSD("半透明穿透")
+}
+
+; 增加透明窗口的透明度（使窗口更不透明）
+!+Up:: {  ; Alt+Shift+Up：增加透明度
+    global transparentWinHwnd, transparentWinTransValue
+    if (transparentWinHwnd) {
+        ; 增加透明度值（使窗口更不透明）
+        transparentWinTransValue := Min(transparentWinTransValue + 15, 255)
+        
+        ; 应用新的透明度
+        WinSetTransparent(transparentWinTransValue, "ahk_id " transparentWinHwnd)
+        
+        ; 显示当前透明度
+        ShowOSD("透明度: " transparentWinTransValue)
+    }
+}
+
+; 减少透明窗口的透明度（使窗口更透明）
+!+Down:: {  ; Alt+Shift+Down：减少透明度
+    global transparentWinHwnd, transparentWinTransValue
+    if (transparentWinHwnd) {
+        ; 减少透明度值（使窗口更透明）
+        transparentWinTransValue := Max(transparentWinTransValue - 15, 50)
+        
+        ; 应用新的透明度
+        WinSetTransparent(transparentWinTransValue, "ahk_id " transparentWinHwnd)
+        
+        ; 显示当前透明度
+        ShowOSD("透明度: " transparentWinTransValue)
+    }
+}
+
+; 显示操作提示OSD
+ShowOSD(text) {
+    ; 获取当前鼠标位置
+    MouseGetPos(&mouseX, &mouseY)
+    
+    ; 创建提示窗口（无标题栏和无边框）
+    osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
+    osd.MarginX := 1  ; 增加水平边距
+    osd.MarginY := 3   ; 增加垂直边距
+    osd.BackColor := "Silver"  ; 浅灰色背景
+    
+    ; 设置提示文本和样式
+    osd.AddText("c000000 w80 Center", text)  ; 使用黑色文字
+    
+    ; 显示在鼠标位置旁边
+    osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
+    
+    ; 设置圆角
+    hwnd := osd.Hwnd
+    WinGetPos(,, &width, &height, "ahk_id " hwnd)
+    hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
+    SetWindowRgn(hwnd, hRgn)
+    
+    ; 设置透明度 (0-255, 255为完全不透明)
+    WinSetTransparent(225, osd)
+    
+    ; 设置自动消失
+    SetTimer () => osd.Destroy(), -800
 }
 
 ; 连续退格
