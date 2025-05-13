@@ -4,7 +4,6 @@ if !A_IsAdmin {           ; 如果不是管理员权限
     Run '*RunAs "' A_ScriptFullPath '"'  ; 以管理员权限重启脚本
     ExitApp
 }
-
 ; ========== 全局快捷键 ==========
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
@@ -503,4 +502,37 @@ global isTaskbarKeyDown := false
             Sleep 50
         }
     }
+}
+
+
+; ==========Spotify 全局快捷键==========
+
+; 播放/暂停
+^!Space:: { ; Ctrl + Alt + Space
+    Send "{Media_Play_Pause}"
+}
+
+; 下一首
+^!Right:: { ; Ctrl + Alt + 右箭头
+    Send "{Media_Next}"
+}
+
+; 上一首
+^!Left:: { ; Ctrl + Alt + 左箭头
+    Send "{Media_Prev}"
+}
+
+; 音量增加
+^!Up:: { ; Ctrl + Alt + 上箭头
+    Send "{Volume_Up}"
+}
+
+; 音量减小
+^!Down:: { ; Ctrl + Alt + 下箭头
+    Send "{Volume_Down}"
+}
+
+; 静音/取消静音
+^!M:: { ; Ctrl + Alt + M
+    Send "{Volume_Mute}"
 }
