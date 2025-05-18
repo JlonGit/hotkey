@@ -277,6 +277,8 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 !q::Send "^t"   ; Alt+Q：新建标签页
 !a::Send "^+b"  ; Alt+A：打开标签栏
 !w::Send "^w"  ; Alt+W：关闭标签页
+![::Send "!{Left}"  ; Alt+[：后退
+!]::Send "!{Right}"  ; Alt+]：前进
 #HotIf
 
 ; ========== Typora 快捷键 ==========
