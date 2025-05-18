@@ -8,8 +8,8 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
 
-; 全局 Ctrl+W 映射为 Ctrl+Shift+W
-^w::Send "^+w"  ; Ctrl+W -> Ctrl+Shift+W
+; ; 全局 Ctrl+W 映射为 Ctrl+Shift+W
+; ^w::Send "^+w"  ; Ctrl+W -> Ctrl+Shift+W
 
 ; 全局 Alt+W 关闭窗口（仅排除Zen和Chrome浏览器）
 #HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")
@@ -21,6 +21,9 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 
 ; 显示桌面
 !Escape::Send "#d"    ; Alt+Esc -> Win+D：显示桌面
+
+; 全屏
+!f::Send "{F11}"    ; Alt+F -> F11：全屏/退出全屏
 
 ; 截图翻译
 +r::Send "^+r"   ; Shift+R -> Ctrl+Shift+R：截图翻译
@@ -266,7 +269,7 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 
 ; ========== Chrome 快捷键 ==========
 #HotIf WinActive("ahk_exe chrome.exe")
-+a::Send "^+a"  ; Shift+B：打开最近关闭的标签页
++a::Send "^+a"  ; Shift+A：打开最近关闭的标签页
 !q::Send "^t"   ; Alt+Q：新建标签页
 !a::Send "^+b"  ; Alt+A：打开标签栏
 !w::Send "^w"  ; Alt+W：关闭标签页
@@ -431,41 +434,7 @@ ClickLoop() {
     Sleep(10)  ; 缩短等待时间
 }
 
-; ========== 任务栏控制 ==========
-; 声明全局变量保存原始鼠标位置
-global originalTaskbarX := 0
-global originalTaskbarY := 0
-global isTaskbarKeyDown := false
-
-; !r 按下时触发任务栏显示并保持 (Alt+R)
-!r:: {
-    global originalTaskbarX, originalTaskbarY, isTaskbarKeyDown
-    
-    ; 只在首次按下时保存位置
-    if (!isTaskbarKeyDown) {
-        ; 保存当前鼠标位置
-        MouseGetPos(&originalTaskbarX, &originalTaskbarY)
-        isTaskbarKeyDown := true
-        
-        ; 获取主屏幕尺寸
-        screenHeight := A_ScreenHeight
-        
-        ; 移动到屏幕底部触发任务栏显示
-        MouseMove(originalTaskbarX, screenHeight - 2, 0)
-    }
-    return  ; 阻止继续处理此按键
-}
-
-; !r 释放时恢复鼠标位置
-!r Up:: {
-    global originalTaskbarX, originalTaskbarY, isTaskbarKeyDown
-    
-    if (isTaskbarKeyDown) {
-        ; 恢复到原始位置
-        MouseMove(originalTaskbarX, originalTaskbarY, 0)
-        isTaskbarKeyDown := false
-    }
-}
+; ========== 模拟键盘输入剪贴板内容 ==========
 
 ; ========== 模拟键盘输入剪贴板内容 ==========
 ; 使用 Alt+v 触发模拟键盘输入剪贴板内容
