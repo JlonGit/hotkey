@@ -1,5 +1,9 @@
 #Requires AutoHotkey v2.0  ; 确保使用 AHK v2
 #SingleInstance Force      ; 确保脚本只运行一个实例
+
+; 设置热键限制
+A_MaxHotkeysPerInterval := 200  ; 设置最大热键数量
+A_HotkeyInterval := 2000        ; 设置时间间隔（毫秒）
 if !A_IsAdmin {           ; 如果不是管理员权限
     Run '*RunAs "' A_ScriptFullPath '"'  ; 以管理员权限重启脚本
     ExitApp
@@ -505,3 +509,141 @@ ClickLoop() {
 ^!M:: { ; Ctrl + Alt + M
     Send "{Volume_Mute}"
 }
+
+; ========== 键盘锁定功能 ==========
+
+; 全局变量用于跟踪键盘锁定状态
+global isKeyboardLocked := false
+global lastClickTime := 0  ; 用于记录上次点击时间
+
+; Ctrl+Alt+L：锁定键盘
+^!l:: {
+    global isKeyboardLocked
+    isKeyboardLocked := true
+    ShowOSD("键盘已锁定")
+}
+
+; 添加鼠标双击解锁功能
+#HotIf isKeyboardLocked
+LButton:: {
+    global lastClickTime, isKeyboardLocked
+    currentTime := A_TickCount
+    
+    ; 检查是否是双击（两次点击间隔小于500毫秒）
+    if (currentTime - lastClickTime < 500) {
+        isKeyboardLocked := false
+        ShowOSD("键盘已解锁")
+        lastClickTime := 0  ; 重置点击时间
+    } else {
+        lastClickTime := currentTime
+    }
+}
+#HotIf
+
+; 当键盘锁定时，拦截所有按键（除了解锁组合键）
+#HotIf isKeyboardLocked
+*a::Return
+*b::Return
+*c::Return
+*d::Return
+*e::Return
+*f::Return
+*g::Return
+*h::Return
+*i::Return
+*j::Return
+*k::Return
+*l::Return
+*m::Return
+*n::Return
+*o::Return
+*p::Return
+*q::Return
+*r::Return
+*s::Return
+*t::Return
+*u::Return
+*v::Return
+*w::Return
+*x::Return
+*y::Return
+*z::Return
+*1::Return
+*2::Return
+*3::Return
+*4::Return
+*5::Return
+*6::Return
+*7::Return
+*8::Return
+*9::Return
+*0::Return
+*-::Return
+*=::Return
+*[::Return
+*]::Return
+*\::Return
+*;::Return
+*'::Return
+*,::Return
+*.::Return
+*/::Return
+*`::Return
+*Tab::Return
+*CapsLock::Return
+*Space::Return
+*Enter::Return
+*Backspace::Return
+*Delete::Return
+*Insert::Return
+*Home::Return
+*End::Return
+*PgUp::Return
+*PgDn::Return
+*Up::Return
+*Down::Return
+*Left::Return
+*Right::Return
+*F1::Return
+*F2::Return
+*F3::Return
+*F4::Return
+*F5::Return
+*F6::Return
+*F7::Return
+*F8::Return
+*F9::Return
+*F10::Return
+*F11::Return
+*F12::Return
+*NumLock::Return
+*NumpadDiv::Return
+*NumpadMult::Return
+*NumpadAdd::Return
+*NumpadSub::Return
+*NumpadEnter::Return
+*NumpadDot::Return
+*Numpad0::Return
+*Numpad1::Return
+*Numpad2::Return
+*Numpad3::Return
+*Numpad4::Return
+*Numpad5::Return
+*Numpad6::Return
+*Numpad7::Return
+*Numpad8::Return
+*Numpad9::Return
+*PrintScreen::Return
+*ScrollLock::Return
+*Pause::Return
+*LWin::Return
+*RWin::Return
+*LShift::Return
+*RShift::Return
+
+; 拦截所有修饰键
+*LAlt::Return
+*RAlt::Return
+*LControl::Return
+*RControl::Return
+#HotIf
