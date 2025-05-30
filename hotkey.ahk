@@ -91,6 +91,47 @@ class Logger {
         }
     }
 }
+
+; ========== 主题控制类 ==========
+class ThemeControl {
+    static REGISTRY_PATH := "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+    
+    static GetCurrentTheme() {
+        try {
+            appsTheme := RegRead(ThemeControl.REGISTRY_PATH, "AppsUseLightTheme")
+            try {
+                systemTheme := RegRead(ThemeControl.REGISTRY_PATH, "SystemUsesLightTheme")
+            } catch {
+                systemTheme := appsTheme
+            }
+            return (appsTheme = 1 && systemTheme = 1)
+        } catch {
+            return true
+        }
+    }
+    
+    static SetTheme(isLight) {
+        themeValue := isLight ? 1 : 0
+        
+        RegWrite(themeValue, "REG_DWORD", ThemeControl.REGISTRY_PATH, "AppsUseLightTheme")
+        try RegWrite(themeValue, "REG_DWORD", ThemeControl.REGISTRY_PATH, "SystemUsesLightTheme")
+        try {
+            RegWrite(themeValue, "REG_DWORD", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent", "AccentColorMenu")
+            RegWrite(themeValue, "REG_DWORD", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent", "StartColorMenu")
+        }
+        
+        DllCall("user32.dll\PostMessage", "Ptr", 0xFFFF, "UInt", 0x001A, "Ptr", 0, "AStr", "ImmersiveColorSet")
+        DllCall("user32.dll\PostMessage", "Ptr", 0xFFFF, "UInt", 0x031A, "Ptr", 0, "Ptr", 0)
+    }
+    
+    static ToggleTheme() {
+        currentTheme := ThemeControl.GetCurrentTheme()
+        newTheme := !currentTheme
+        
+        ThemeControl.SetTheme(newTheme)
+        ShowOSD("主题: " (newTheme ? "亮色" : "暗色"))
+    }
+}
 ; ========== 全局快捷键 ==========
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
@@ -117,6 +158,9 @@ class Logger {
 
 ; 新建文件
 +f::Send "^n"    ; Shift+F -> Ctrl+N：新建文件
+
+; 主题切换
+#+t::ThemeControl.ToggleTheme()  ; Win+Shift+T：切换亮色/暗色主题
 
 ; 虚拟桌面快捷键、
 !1::Send "^#{Left}"       ; Alt+1 -> Win+Ctrl+Left (切换到左侧桌面)

@@ -661,3 +661,213 @@
 20250530224858 [INFO] ClickRecorder: 停止播放，完成12次循环
 20250530224858 [INFO] ShowOSD: 显示提示: 退出连点器模式
 20250530224858 [INFO] ClickRecorder: 退出连点器模式
+20250530225115 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250530225117 [INFO] ShowOSD: 显示提示: 恢复正常
+20250530225802 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250530234534 [INFO] ShowOSD: 显示提示: 置顶
+20250530234534 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250530234534 [INFO] ShowOSD: 显示提示: 取消
+20250530234534 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250530234536 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530234536 [INFO] ClickRecorder: 激活连点器模式
+20250530234538 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530234538 [INFO] ClickRecorder: 重置记录并开始记录
+20250530234539 [INFO] ShowOSD: 显示提示: 记录位置 1: (1970, 295)
+20250530234539 [INFO] ClickRecorder: 记录位置1: (1970, 295)
+20250530234541 [INFO] ShowOSD: 显示提示: 记录位置 2: (1387, 361)
+20250530234541 [INFO] ClickRecorder: 记录位置2: (1387, 361)
+20250530234541 [INFO] ShowOSD: 显示提示: 记录位置 3: (1754, 670)
+20250530234541 [INFO] ClickRecorder: 记录位置3: (1754, 670)
+20250530234541 [INFO] ShowOSD: 显示提示: 记录位置 4: (1276, 767)
+20250530234541 [INFO] ClickRecorder: 记录位置4: (1276, 767)
+20250530234542 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530234542 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530234545 [INFO] ShowOSD: 显示提示: 停止播放
+20250530234545 [INFO] ClickRecorder: 停止播放，完成4次循环
+20250530234545 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530234545 [INFO] ClickRecorder: 退出连点器模式
+20250530235001 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250530235004 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235006 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235006 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235013 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250530235014 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250530235016 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250530235016 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235018 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235018 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235018 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235022 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235023 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235023 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235024 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235024 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235024 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235024 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235024 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235025 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235026 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235026 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235026 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235026 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235027 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235027 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235028 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235028 [INFO] ToggleApp: 激活应用: chrome.exe
+20250530235028 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250530235029 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235030 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250530235034 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250530235207 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235207 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235207 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235221 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235221 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235221 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235222 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235222 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235222 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235223 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235223 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235223 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235224 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235224 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235224 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235224 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235224 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235224 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235225 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235225 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235225 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235225 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235225 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235225 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235226 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235226 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235226 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235226 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235226 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235226 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235229 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235229 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235229 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235245 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235245 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235245 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235247 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235247 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235247 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235248 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235248 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235248 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235458 [INFO] ThemeControl.ForceRefreshUI: 开始强制刷新UI
+20250530235501 [INFO] ThemeControl.ForceRefreshUI: UI刷新完成
+20250530235501 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235501 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235501 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235507 [INFO] ThemeControl.ForceRefreshUI: 开始强制刷新UI
+20250530235510 [INFO] ThemeControl.ForceRefreshUI: UI刷新完成
+20250530235510 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235510 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235510 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235649 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235650 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235650 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235650 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235650 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235653 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235653 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235653 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235653 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235653 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235724 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235724 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235724 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235725 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235725 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235726 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235726 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235726 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235726 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235726 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235727 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235727 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235727 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235728 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235728 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235732 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235732 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235732 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235732 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235732 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235734 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235735 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235735 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235735 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235735 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235736 [INFO] ThemeControl.ForceRefreshUI: 开始温和刷新UI
+20250530235736 [INFO] ThemeControl.ForceRefreshUI: 温和UI刷新完成
+20250530235736 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235736 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235736 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235900 [INFO] ThemeControl.ForceRefreshUI: 快速UI刷新完成
+20250530235900 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235900 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235900 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235903 [INFO] ThemeControl.ForceRefreshUI: 快速UI刷新完成
+20250530235903 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235903 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235903 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250530235907 [INFO] ThemeControl.ForceRefreshUI: 快速UI刷新完成
+20250530235907 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250530235907 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250530235907 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250530235909 [INFO] ThemeControl.ForceRefreshUI: 快速UI刷新完成
+20250530235909 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250530235909 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250530235909 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531000000 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000005 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000006 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000007 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250531000013 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000036 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250531000036 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000037 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000037 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000038 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531000039 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250531000227 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250531000227 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531000227 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250531000229 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250531000229 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531000229 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531000230 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250531000230 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531000230 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250531000231 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250531000232 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531000232 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531000234 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250531000235 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531000235 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250531000237 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250531000237 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531000237 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531000239 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250531000239 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531000239 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250531000243 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250531000244 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531000244 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531000245 [INFO] ThemeControl.SetTheme: 主题已切换到: 亮色
+20250531000245 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531000245 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 亮色
+20250531000656 [INFO] ThemeControl.SetTheme: 主题已切换到: 暗色
+20250531000656 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531000656 [INFO] ThemeControl.ToggleTheme: 主题切换成功: 暗色
+20250531001251 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531001254 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531001255 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531001255 [INFO] ShowOSD: 显示提示: 主题: 暗色
