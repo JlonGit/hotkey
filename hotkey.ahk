@@ -8,6 +8,89 @@ if !A_IsAdmin {           ; 如果不是管理员权限
     Run '*RunAs "' A_ScriptFullPath '"'  ; 以管理员权限重启脚本
     ExitApp
 }
+
+; ========== 配置管理类 ==========
+class Config {
+    static TRANSPARENCY_STEP := 15         ; 透明度调整步长
+    static DEFAULT_TRANSPARENCY := 180     ; 默认透明度
+    static OSD_DISPLAY_TIME := 800         ; OSD显示时间
+    static DOUBLE_CLICK_THRESHOLD := 500   ; 双击检测阈值
+    static TYPING_DELAY_FAST := 10         ; 快速输入延迟
+    static TYPING_DELAY_SLOW := 50         ; 慢速输入延迟
+    static OSD_FADE_TIME := 500            ; OSD淡出时间
+}
+
+; ========== 媒体控制类 ==========
+class MediaControl {
+    static PlayPause() {
+        try {
+            Send "{Media_Play_Pause}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.PlayPause", e.message)
+        }
+    }   ; 播放/暂停
+    
+    static Next() {
+        try {
+            Send "{Media_Next}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.Next", e.message)
+        }
+    }        ; 下一首
+    
+    static Previous() {
+        try {
+            Send "{Media_Prev}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.Previous", e.message)
+        }
+    }    ; 上一首
+    
+    static VolumeUp() {
+        try {
+            Send "{Volume_Up}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.VolumeUp", e.message)
+        }
+    }    ; 音量增加
+    
+    static VolumeDown() {
+        try {
+            Send "{Volume_Down}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.VolumeDown", e.message)
+        }
+    }  ; 音量减小
+    
+    static Mute() {
+        try {
+            Send "{Volume_Mute}"
+        } catch Error as e {
+            Logger.LogError("MediaControl.Mute", e.message)
+        }
+    }
+}        ; 静音切换
+
+; ========== 日志管理类 ==========
+class Logger {
+    static LogError(funcName, errorMsg) {
+        try {
+            logFile := A_ScriptDir "\hotkey_errors.log"
+            FileAppend(A_Now " [ERROR] " funcName ": " errorMsg "`n", logFile)
+        } catch {
+            ; 如果日志写入失败，静默处理
+        }
+    }
+    
+    static LogInfo(funcName, infoMsg) {
+        try {
+            logFile := A_ScriptDir "\hotkey_info.log"
+            FileAppend(A_Now " [INFO] " funcName ": " infoMsg "`n", logFile)
+        } catch {
+            ; 如果日志写入失败，静默处理
+        }
+    }
+}
 ; ========== 全局快捷键 ==========
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
@@ -42,49 +125,36 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 !4::Send "^#{F4}"         ; Alt+4 -> Win+Ctrl+F4 (关闭当前桌面)
 
 ; ========== 应用程序切换 ==========
-+g:: {  ; Shift+G：Chrome 窗口切换
-    if WinExist("ahk_exe chrome.exe") {
-        if WinActive("ahk_exe chrome.exe")
-            WinMinimize
-        else
-            WinActivate
+; 通用应用切换函数（带错误处理）
+ToggleApp(exeName, appPath := "") {
+    try {
+        if WinExist("ahk_exe " exeName) {
+            if WinActive("ahk_exe " exeName) {
+                WinMinimize  ; 如果当前窗口是目标应用，则最小化
+                Logger.LogInfo("ToggleApp", "最小化应用: " exeName)
+            } else {
+                WinActivate  ; 如果目标应用已运行但不是当前窗口，则激活
+                Logger.LogInfo("ToggleApp", "激活应用: " exeName)
+            }
+        }
+        else if (appPath != "") {
+            Run appPath  ; 如果目标应用未运行且提供了路径，则启动
+            Logger.LogInfo("ToggleApp", "启动应用: " exeName " 路径: " appPath)
+        } else {
+            ShowOSD("未找到应用: " exeName)
+            Logger.LogError("ToggleApp", "应用未找到且无启动路径: " exeName)
+        }
+    } catch Error as e {
+        Logger.LogError("ToggleApp", "操作失败 - 应用: " exeName " 错误: " e.message)
+        ShowOSD("操作失败: " exeName)
     }
-    else
-        Run "chrome.exe"
 }
-
-+t:: {  ; Shift+T：Telegram 窗口切换
-    if WinExist("ahk_exe Telegram.exe") {
-        if WinActive("ahk_exe Telegram.exe")
-            WinMinimize  ; 如果当前窗口是 Telegram，则最小化
-        else
-            WinActivate  ; 如果 Telegram 已运行但不是当前窗口，则激活
-    }
-    else
-        Run "D:\Telegram Desktop\Telegram.exe"  ; 如果 Telegram 未运行，则启动
-}
-
-+n:: {  ; Shift+N：Notion 窗口切换
-    if WinExist("ahk_exe Notion.exe") {
-        if WinActive("ahk_exe Notion.exe")
-            WinMinimize  ; 如果当前窗口是 Notion，则最小化
-        else
-            WinActivate  ; 如果 Notion 已运行但不是当前窗口，则激活
-    }
-    else
-        Run "C:\Users\JJJ\AppData\Local\Programs\Notion\Notion.exe"  ; 如果 Notion 未运行，则启动
-}
-
-+z:: {  ; Shift+Z：Zen 浏览器窗口切换
-    if WinExist("ahk_exe zen.exe") {
-        if WinActive("ahk_exe zen.exe")
-            WinMinimize  ; 如果当前窗口是 Zen，则最小化
-        else
-            WinActivate  ; 如果 Zen 已运行但不是当前窗口，则激活
-    }
-    else
-        Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk"  ; 如果 Zen 未运行，则启动
-}
+; ========== 应用程序切换（使用通用函数） ==========
++g::ToggleApp("chrome.exe", "chrome.exe")  ; Shift+G：Chrome 窗口切换
++t::ToggleApp("Telegram.exe", "D:\Telegram Desktop\Telegram.exe")  ; Shift+T：Telegram 窗口切换
++n::ToggleApp("Notion.exe", "notion:")  ; Shift+N：Notion 窗口切换
++z::ToggleApp("zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk")  ; Shift+Z：Zen 浏览器窗口切换
++s::ToggleApp("Spotify.exe", "spotify:")  ; Shift+S：Spotify 窗口切换
 
 ; ========== API声明 ==========
 ; 用于创建圆角窗口的API
@@ -112,46 +182,30 @@ WS_EX_TRANSPARENT := 0x00000020  ; 鼠标点击穿透
 
 ; 窗口置顶
 !`:: {  ; Alt+`：切换当前窗口置顶状态
-    WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
-    
-    ; 获取置顶状态
-    isTopmost := WinGetExStyle("A") & 0x8  ; 0x8 是 WS_EX_TOPMOST 标志
-    
-    ; 获取当前鼠标位置
-    MouseGetPos(&mouseX, &mouseY)
-    
-    ; 创建提示窗口（无标题栏和无边框）
-    osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
-    osd.MarginX := 1  ; 增加水平边距
-    osd.MarginY := 3   ; 增加垂直边距
-    osd.BackColor := "Silver"  ; 浅灰色背景
-    
-    ; 设置提示文本和样式
-    if (isTopmost) {
-        osd.AddText("c000000 w50 Center", "置顶")  ; 使用黑色文字
-    } else {
-        osd.AddText("c000000 w50 Center", "取消")  ; 使用黑色文字
+    try {
+        WinSetAlwaysOnTop -1, "A"  ; -1 表示切换状态
+        
+        ; 获取置顶状态
+        isTopmost := WinGetExStyle("A") & 0x8  ; 0x8 是 WS_EX_TOPMOST 标志
+        
+        ; 显示OSD提示
+        if (isTopmost) {
+            ShowOSD("置顶")
+        } else {
+            ShowOSD("取消")
+        }
+        
+        Logger.LogInfo("WindowTopmost", "窗口置顶状态切换: " (isTopmost ? "已置顶" : "已取消"))
+        
+    } catch Error as e {
+        Logger.LogError("WindowTopmost", "置顶操作失败: " e.message)
+        ShowOSD("置顶失败")
     }
-    
-    ; 显示在鼠标位置旁边
-    osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
-    
-    ; 设置圆角
-    hwnd := osd.Hwnd
-    WinGetPos(,, &width, &height, "ahk_id " hwnd)
-    hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
-    SetWindowRgn(hwnd, hRgn)
-    
-    ; 设置透明度 (0-255, 255为完全不透明)
-    WinSetTransparent(225, osd)
-    
-    ; 设置自动消失
-    SetTimer () => osd.Destroy(), -500
 }
 
 ; 全局变量用于记录当前半透明穿透窗口的状态
 global transparentWinHwnd := 0  ; 当前半透明穿透窗口的句柄
-global transparentWinTransValue := 180  ; 半透明窗口的透明度值
+global transparentWinTransValue := Config.DEFAULT_TRANSPARENCY  ; 半透明窗口的透明度值
 
 !t:: {  ; Alt+T：切换当前窗口半透明穿透状态
     global transparentWinHwnd, transparentWinTransValue
@@ -206,7 +260,7 @@ global transparentWinTransValue := 180  ; 半透明窗口的透明度值
     global transparentWinHwnd, transparentWinTransValue
     if (transparentWinHwnd) {
         ; 增加透明度值（使窗口更不透明）
-        transparentWinTransValue := Min(transparentWinTransValue + 15, 255)
+        transparentWinTransValue := Min(transparentWinTransValue + Config.TRANSPARENCY_STEP, 255)
         
         ; 应用新的透明度
         WinSetTransparent(transparentWinTransValue, "ahk_id " transparentWinHwnd)
@@ -221,7 +275,7 @@ global transparentWinTransValue := 180  ; 半透明窗口的透明度值
     global transparentWinHwnd, transparentWinTransValue
     if (transparentWinHwnd) {
         ; 减少透明度值（使窗口更透明）
-        transparentWinTransValue := Max(transparentWinTransValue - 15, 50)
+        transparentWinTransValue := Max(transparentWinTransValue - Config.TRANSPARENCY_STEP, 50)
         
         ; 应用新的透明度
         WinSetTransparent(transparentWinTransValue, "ahk_id " transparentWinHwnd)
@@ -231,34 +285,106 @@ global transparentWinTransValue := 180  ; 半透明窗口的透明度值
     }
 }
 
-; 显示操作提示OSD
+; 显示操作提示OSD（使用Config配置，带淡出效果）
 ShowOSD(text) {
-    ; 获取当前鼠标位置
-    MouseGetPos(&mouseX, &mouseY)
-    
-    ; 创建提示窗口（无标题栏和无边框）
-    osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
-    osd.MarginX := 1  ; 增加水平边距
-    osd.MarginY := 3   ; 增加垂直边距
-    osd.BackColor := "Silver"  ; 浅灰色背景
-    
-    ; 设置提示文本和样式
-    osd.AddText("c000000 w80 Center", text)  ; 使用黑色文字
-    
-    ; 显示在鼠标位置旁边
-    osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
-    
-    ; 设置圆角
-    hwnd := osd.Hwnd
-    WinGetPos(,, &width, &height, "ahk_id " hwnd)
-    hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
-    SetWindowRgn(hwnd, hRgn)
-    
-    ; 设置透明度 (0-255, 255为完全不透明)
-    WinSetTransparent(225, osd)
-    
-    ; 设置自动消失
-    SetTimer () => osd.Destroy(), -800
+    try {
+        ; 获取当前鼠标位置
+        MouseGetPos(&mouseX, &mouseY)
+        
+        ; 创建提示窗口（无标题栏和无边框）
+        osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
+        osd.MarginX := 1  ; 增加水平边距
+        osd.MarginY := 3   ; 增加垂直边距
+        osd.BackColor := "Silver"  ; 浅灰色背景
+        
+        ; 设置提示文本和样式
+        osd.AddText("c000000 w80 Center", text)  ; 使用黑色文字
+        
+        ; 显示在鼠标位置旁边
+        osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
+        
+        ; 设置圆角
+        hwnd := osd.Hwnd
+        WinGetPos(,, &width, &height, "ahk_id " hwnd)
+        hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
+        SetWindowRgn(hwnd, hRgn)
+        
+        ; 设置初始透明度 (0-255, 255为完全不透明)
+        WinSetTransparent(225, osd)
+        
+        ; 为每个OSD实例创建独立的淡出状态
+        fadeSteps := 10
+        stepDelay := Config.OSD_FADE_TIME // fadeSteps
+        fadeState := {step: 0, maxSteps: fadeSteps, osdRef: osd, delay: stepDelay}
+        
+        ; 设置显示时间后开始淡出，使用闭包避免全局变量冲突
+        SetTimer(() => StartFadeOut(fadeState), -(Config.OSD_DISPLAY_TIME - Config.OSD_FADE_TIME))
+        
+        Logger.LogInfo("ShowOSD", "显示提示: " text)
+    } catch Error as e {
+        Logger.LogError("ShowOSD", "显示OSD失败: " e.message)
+    }
+}
+
+; 开始淡出动画（每个实例独立）
+StartFadeOut(fadeState) {
+    try {
+        if (!WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
+            return  ; 窗口已不存在，直接返回
+        }
+        
+        ; 开始淡出动画
+        SetTimer(() => DoFadeStep(fadeState), -fadeState.delay)
+        
+    } catch Error as e {
+        Logger.LogError("StartFadeOut", "开始淡出失败: " e.message)
+        ; 如果淡出失败，直接销毁窗口
+        try {
+            if (WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
+                fadeState.osdRef.Destroy()
+            }
+        } catch {
+            ; 静默处理销毁失败
+        }
+    }
+}
+
+; 淡出步骤执行函数（每个实例独立）
+DoFadeStep(fadeState) {
+    try {
+        if (!IsObject(fadeState)) {
+            return  ; 如果状态对象不存在，直接返回
+        }
+        
+        fadeState.step++
+        if (fadeState.step <= fadeState.maxSteps && WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
+            ; 计算当前透明度 (从225逐渐减少到0)
+            alpha := Round(225 * (fadeState.maxSteps - fadeState.step) / fadeState.maxSteps)
+            WinSetTransparent(alpha, fadeState.osdRef)
+            
+            ; 继续下一步淡出
+            SetTimer(() => DoFadeStep(fadeState), -fadeState.delay)
+        } else {
+            ; 淡出完成或窗口已不存在，销毁窗口
+            try {
+                if (WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
+                    fadeState.osdRef.Destroy()
+                }
+            } catch {
+                ; 静默处理销毁失败
+            }
+        }
+    } catch Error as e {
+        Logger.LogError("DoFadeStep", "淡出步骤失败: " e.message)
+        ; 出错时直接销毁窗口
+        try {
+            if (IsObject(fadeState) && WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
+                fadeState.osdRef.Destroy()
+            }
+        } catch {
+            ; 静默处理销毁失败
+        }
+    }
 }
 
 ; 连续退格
@@ -266,10 +392,6 @@ $+d::Send "{Backspace}"  ; Shift+D -> Backspace：连续退格
 
 ; 连续回车
 $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
-
-; ; 鼠标前进后退键映射
-; XButton2::Send "{Enter}"  ; 鼠标前进键 -> Enter
-; XButton1::Send "{Backspace}"  ; 鼠标后退键 -> Backspace
 
 ; ========== Chrome 快捷键 ==========
 #HotIf WinActive("ahk_exe chrome.exe")
@@ -331,7 +453,7 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
         Loop Parse, clipText {
             Send "{Text}" A_LoopField
             ; 添加少量延迟使输入更自然，避免过快触发防护措施
-            Sleep 10
+            Sleep Config.TYPING_DELAY_FAST
         }
     }
 }
@@ -349,43 +471,31 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
         Loop Parse, clipText {
             Send "{Text}" A_LoopField
             ; 使用较长延迟，更好地模拟人工输入
-            Sleep 50
+            Sleep Config.TYPING_DELAY_SLOW
         }
     }
 }
 
 
-; ==========Spotify 全局快捷键==========
+; ========== 媒体控制快捷键（使用MediaControl类） ==========
 
 ; 播放/暂停
-^!Space:: { ; Ctrl + Alt + Space
-    Send "{Media_Play_Pause}"
-}
+^!Space::MediaControl.PlayPause()  ; Ctrl + Alt + Space
 
 ; 下一首
-^!Right:: { ; Ctrl + Alt + 右箭头
-    Send "{Media_Next}"
-}
+^!Right::MediaControl.Next()  ; Ctrl + Alt + 右箭头
 
 ; 上一首
-^!Left:: { ; Ctrl + Alt + 左箭头
-    Send "{Media_Prev}"
-}
+^!Left::MediaControl.Previous()  ; Ctrl + Alt + 左箭头
 
 ; 音量增加
-^!Up:: { ; Ctrl + Alt + 上箭头
-    Send "{Volume_Up}"
-}
+^!Up::MediaControl.VolumeUp()  ; Ctrl + Alt + 上箭头
 
 ; 音量减小
-^!Down:: { ; Ctrl + Alt + 下箭头
-    Send "{Volume_Down}"
-}
+^!Down::MediaControl.VolumeDown()  ; Ctrl + Alt + 下箭头
 
 ; 静音/取消静音
-^!M:: { ; Ctrl + Alt + M
-    Send "{Volume_Mute}"
-}
+^!M::MediaControl.Mute()  ; Ctrl + Alt + M
 
 ; ========== 键盘锁定功能 ==========
 
@@ -406,8 +516,8 @@ LButton:: {
     global lastClickTime, isKeyboardLocked
     currentTime := A_TickCount
     
-    ; 检查是否是双击（两次点击间隔小于500毫秒）
-    if (currentTime - lastClickTime < 500) {
+    ; 检查是否是双击（两次点击间隔小于配置的阈值）
+    if (currentTime - lastClickTime < Config.DOUBLE_CLICK_THRESHOLD) {
         isKeyboardLocked := false
         ShowOSD("键盘已解锁")
         lastClickTime := 0  ; 重置点击时间
