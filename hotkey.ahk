@@ -497,6 +497,250 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 ; 静音/取消静音
 ^!M::MediaControl.Mute()  ; Ctrl + Alt + M
 
+; ========== 连点器功能 ==========
+
+; 连点器全局变量
+global g_clickRecorder := {
+    isActive: false,    ; 连点器模式是否激活
+    isRecording: false,
+    isPlaying: false,
+    positions: [],
+    currentIndex: 0,
+    playTimer: 0,
+    playInterval: 100,  ; 播放间隔（毫秒）
+    loopCount: 0,       ; 当前循环次数
+    maxLoops: -1        ; 最大循环次数，-1表示无限循环
+}
+
+; 连点器类
+class ClickRecorder {
+    ; 激活连点器模式
+    static ActivateMode() {
+        global g_clickRecorder
+        if (!g_clickRecorder.isPlaying) {
+            g_clickRecorder.isActive := true
+            g_clickRecorder.isRecording := false  ; 仅进入模式，不自动开始记录
+            ShowOSD("进入连点器模式")
+            Logger.LogInfo("ClickRecorder", "激活连点器模式")
+        }
+    }
+    
+    ; 重置记录并开始记录（按住Ctrl+左键时）
+    static ResetAndStartRecording() {
+        global g_clickRecorder
+        if (g_clickRecorder.isActive && !g_clickRecorder.isPlaying) {
+            g_clickRecorder.isRecording := true
+            g_clickRecorder.positions := []  ; 清空之前的记录
+            ShowOSD("重置记录，开始重新录入位置")
+            Logger.LogInfo("ClickRecorder", "重置记录并开始记录")
+        }
+    }
+    
+    ; 停止记录
+    static StopRecording() {
+        global g_clickRecorder
+        if (g_clickRecorder.isRecording) {
+            g_clickRecorder.isRecording := false
+            posCount := g_clickRecorder.positions.Length
+            ShowOSD("记录完成: " posCount " 个位置")
+            Logger.LogInfo("ClickRecorder", "记录完成，共" posCount "个位置")
+        }
+    }
+    
+    ; 退出连点器模式
+    static ExitMode() {
+        global g_clickRecorder
+        if (g_clickRecorder.isActive) {
+            g_clickRecorder.isActive := false
+            g_clickRecorder.isRecording := false
+            if (g_clickRecorder.isPlaying) {
+                this.StopPlaying()
+            }
+            ShowOSD("退出连点器模式")
+            Logger.LogInfo("ClickRecorder", "退出连点器模式")
+        }
+    }
+    
+    ; 记录当前鼠标位置
+    static RecordPosition() {
+        global g_clickRecorder
+        if (g_clickRecorder.isRecording) {
+            MouseGetPos(&x, &y)
+            g_clickRecorder.positions.Push({x: x, y: y})
+            posCount := g_clickRecorder.positions.Length
+            ShowOSD("记录位置 " posCount ": (" x ", " y ")")
+            Logger.LogInfo("ClickRecorder", "记录位置" posCount ": (" x ", " y ")")
+        }
+    }
+    
+    ; 开始播放记录的点击
+    static StartPlaying(loops := -1) {
+        global g_clickRecorder
+        if (g_clickRecorder.isActive && !g_clickRecorder.isPlaying && g_clickRecorder.positions.Length > 0) {
+            g_clickRecorder.isRecording := false  ; 停止记录
+            g_clickRecorder.isPlaying := true
+            g_clickRecorder.currentIndex := 0
+            g_clickRecorder.loopCount := 0
+            g_clickRecorder.maxLoops := loops
+            
+            ; 开始播放定时器
+            g_clickRecorder.playTimer := () => this.PlayNextClick()
+            SetTimer(g_clickRecorder.playTimer, g_clickRecorder.playInterval)
+            
+            loopText := (loops == -1) ? "无限" : String(loops)
+            ShowOSD("开始播放 (" loopText " 循环)")
+            Logger.LogInfo("ClickRecorder", "开始播放，循环次数: " loopText)
+        }
+    }
+    
+    ; 播放下一个点击
+    static PlayNextClick() {
+        global g_clickRecorder
+        if (!g_clickRecorder.isPlaying || g_clickRecorder.positions.Length == 0) {
+            return
+        }
+        
+        ; 获取当前位置
+        pos := g_clickRecorder.positions[g_clickRecorder.currentIndex + 1]
+        
+        ; 移动鼠标并点击
+        MouseMove(pos.x, pos.y, 0)
+        Click
+        
+        ; 更新索引
+        g_clickRecorder.currentIndex++
+        
+        ; 检查是否完成一轮
+        if (g_clickRecorder.currentIndex >= g_clickRecorder.positions.Length) {
+            g_clickRecorder.currentIndex := 0
+            g_clickRecorder.loopCount++
+            
+            ; 检查是否达到最大循环次数
+            if (g_clickRecorder.maxLoops != -1 && g_clickRecorder.loopCount >= g_clickRecorder.maxLoops) {
+                this.StopPlaying()
+                return
+            }
+        }
+    }
+    
+    ; 停止播放
+    static StopPlaying() {
+        global g_clickRecorder
+        if (g_clickRecorder.isPlaying) {
+            g_clickRecorder.isPlaying := false
+            if (g_clickRecorder.playTimer) {
+                SetTimer(g_clickRecorder.playTimer, 0)
+                g_clickRecorder.playTimer := 0
+            }
+            ShowOSD("停止播放")
+            Logger.LogInfo("ClickRecorder", "停止播放，完成" g_clickRecorder.loopCount "次循环")
+        }
+    }
+    
+    ; 调整播放速度
+    static AdjustSpeed(delta) {
+        global g_clickRecorder
+        g_clickRecorder.playInterval := Max(Min(g_clickRecorder.playInterval + delta, 2000), 10)
+        
+        ; 如果正在播放，更新定时器
+        if (g_clickRecorder.isPlaying && g_clickRecorder.playTimer) {
+            SetTimer(g_clickRecorder.playTimer, g_clickRecorder.playInterval)
+        }
+        
+        ShowOSD("播放间隔: " g_clickRecorder.playInterval "ms")
+    }
+    
+    ; 清空记录
+    static ClearRecords() {
+        global g_clickRecorder
+        if (!g_clickRecorder.isRecording && !g_clickRecorder.isPlaying) {
+            g_clickRecorder.positions := []
+            ShowOSD("清空记录")
+            Logger.LogInfo("ClickRecorder", "清空所有记录")
+        }
+    }
+    
+    ; 获取状态信息
+    static GetStatus() {
+        global g_clickRecorder
+        posCount := g_clickRecorder.positions.Length
+        if (g_clickRecorder.isRecording) {
+            return "记录中 (" posCount " 个位置)"
+        } else if (g_clickRecorder.isPlaying) {
+            return "播放中 (" (g_clickRecorder.currentIndex + 1) "/" posCount ")"
+        } else if (posCount > 0) {
+            return "已记录 " posCount " 个位置"
+        } else {
+            return "无记录"
+        }
+    }
+}
+
+; 连点器热键
+^+d:: {  ; Ctrl+Shift+D：仅进入连点器模式
+    ClickRecorder.ActivateMode()
+}
+
+; 辅助函数用于#HotIf条件检查
+IsClickRecorderActive() {
+    global g_clickRecorder
+    return g_clickRecorder.isActive
+}
+
+IsRecording() {
+    global g_clickRecorder
+    return g_clickRecorder.isRecording
+}
+
+IsPlaying() {
+    global g_clickRecorder
+    return g_clickRecorder.isPlaying
+}
+
+; 连点器模式下的快捷键（只有在连点器模式激活时才生效）
+#HotIf IsClickRecorderActive()
+
+; 空格键：开始/停止无限循环播放
+Space:: {
+    global g_clickRecorder
+    if (g_clickRecorder.isPlaying) {
+        ClickRecorder.StopPlaying()
+    } else {
+        ClickRecorder.StartPlaying(-1)  ; 无限循环
+    }
+}
+
+; ESC键：退出连点器模式
+Escape:: {
+    ClickRecorder.ExitMode()
+}
+
+; 按住Ctrl+点击：重置记录，重新记录点击位置
+^LButton:: {
+    ClickRecorder.ResetAndStartRecording()
+    ; 不执行原始点击，避免干扰
+}
+
+; 播放速度调节（在连点器模式下）
+^+NumpadAdd:: {  ; Ctrl+Shift+数字键盘+：加速
+    ClickRecorder.AdjustSpeed(-20)
+}
+
+^+NumpadSub:: {  ; Ctrl+Shift+数字键盘-：减速
+    ClickRecorder.AdjustSpeed(20)
+}
+
+#HotIf
+
+; 记录点击位置（在记录模式下）
+#HotIf IsRecording()
+LButton:: {
+    ClickRecorder.RecordPosition()
+    ; 继续执行原始点击
+    Click
+}
+#HotIf
+
 ; ========== 键盘锁定功能 ==========
 
 ; 全局变量用于跟踪键盘锁定状态

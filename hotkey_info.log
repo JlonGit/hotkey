@@ -262,3 +262,402 @@
 20250530212730 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
 20250530212731 [INFO] ShowOSD: 显示提示: 取消
 20250530212731 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250530213339 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250530222648 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250530222649 [INFO] ShowOSD: 显示提示: 恢复正常
+20250530222701 [INFO] ShowOSD: 显示提示: 开始记录点击位置
+20250530222701 [INFO] ClickRecorder: 开始记录点击位置
+20250530222707 [INFO] ShowOSD: 显示提示: 记录位置 1: (2117, 279)
+20250530222707 [INFO] ClickRecorder: 记录位置1: (2117, 279)
+20250530222707 [INFO] ShowOSD: 显示提示: 记录位置 2: (2156, 572)
+20250530222707 [INFO] ClickRecorder: 记录位置2: (2156, 572)
+20250530222708 [INFO] ShowOSD: 显示提示: 记录位置 3: (2181, 836)
+20250530222708 [INFO] ClickRecorder: 记录位置3: (2181, 836)
+20250530222711 [INFO] ShowOSD: 显示提示: 记录完成: 3 个位置
+20250530222711 [INFO] ClickRecorder: 记录完成，共3个位置
+20250530222715 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222715 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222732 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222732 [INFO] ClickRecorder: 停止播放，完成50次循环
+20250530222848 [INFO] ShowOSD: 显示提示: 已记录 3 个位置
+20250530222849 [INFO] ShowOSD: 显示提示: 已记录 3 个位置
+20250530222855 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222855 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222858 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222858 [INFO] ClickRecorder: 停止播放，完成9次循环
+20250530222900 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222900 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222900 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222900 [INFO] ClickRecorder: 停止播放，完成2次循环
+20250530222901 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222901 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222901 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222902 [INFO] ClickRecorder: 停止播放，完成1次循环
+20250530222904 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222904 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222904 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222904 [INFO] ClickRecorder: 停止播放，完成2次循环
+20250530222905 [INFO] ShowOSD: 显示提示: 已记录 3 个位置
+20250530222906 [INFO] ShowOSD: 显示提示: 已记录 3 个位置
+20250530222914 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222914 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222914 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222914 [INFO] ClickRecorder: 停止播放，完成2次循环
+20250530222917 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530222917 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530222918 [INFO] ShowOSD: 显示提示: 停止播放
+20250530222918 [INFO] ClickRecorder: 停止播放，完成2次循环
+20250530222925 [INFO] ShowOSD: 显示提示: 清空记录
+20250530222925 [INFO] ClickRecorder: 清空所有记录
+20250530222951 [INFO] ShowOSD: 显示提示: 播放间隔: 80ms
+20250530222952 [INFO] ShowOSD: 显示提示: 播放间隔: 60ms
+20250530222953 [INFO] ShowOSD: 显示提示: 播放间隔: 80ms
+20250530222953 [INFO] ShowOSD: 显示提示: 播放间隔: 100ms
+20250530223509 [INFO] ShowOSD: 显示提示: 无记录
+20250530223511 [INFO] ShowOSD: 显示提示: 无记录
+20250530223513 [INFO] ShowOSD: 显示提示: 无记录
+20250530223945 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250530224020 [INFO] ShowOSD: 显示提示: 进入连点器模式，开始记录点击位置
+20250530224020 [INFO] ClickRecorder: 激活连点器模式并开始记录
+20250530224024 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224024 [INFO] ClickRecorder: 重置记录
+20250530224024 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224024 [INFO] ClickRecorder: 重置记录
+20250530224025 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224025 [INFO] ClickRecorder: 重置记录
+20250530224025 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224025 [INFO] ClickRecorder: 重置记录
+20250530224026 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224026 [INFO] ClickRecorder: 重置记录
+20250530224028 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224028 [INFO] ClickRecorder: 重置记录
+20250530224029 [INFO] ShowOSD: 显示提示: 记录位置 1: (2123, 584)
+20250530224029 [INFO] ClickRecorder: 记录位置1: (2123, 584)
+20250530224029 [INFO] ShowOSD: 显示提示: 记录位置 2: (2078, 425)
+20250530224029 [INFO] ClickRecorder: 记录位置2: (2078, 425)
+20250530224030 [INFO] ShowOSD: 显示提示: 记录位置 3: (2119, 674)
+20250530224030 [INFO] ClickRecorder: 记录位置3: (2119, 674)
+20250530224030 [INFO] ShowOSD: 显示提示: 记录位置 4: (2122, 851)
+20250530224030 [INFO] ClickRecorder: 记录位置4: (2122, 851)
+20250530224033 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224033 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224036 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224036 [INFO] ClickRecorder: 停止播放，完成6次循环
+20250530224037 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224037 [INFO] ClickRecorder: 重置记录
+20250530224038 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224038 [INFO] ClickRecorder: 重置记录
+20250530224041 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224041 [INFO] ClickRecorder: 重置记录
+20250530224041 [INFO] ShowOSD: 显示提示: 记录位置 1: (2108, 544)
+20250530224041 [INFO] ClickRecorder: 记录位置1: (2108, 544)
+20250530224041 [INFO] ShowOSD: 显示提示: 记录位置 2: (2153, 879)
+20250530224041 [INFO] ClickRecorder: 记录位置2: (2153, 879)
+20250530224042 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224042 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224044 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224044 [INFO] ClickRecorder: 停止播放，完成7次循环
+20250530224044 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224044 [INFO] ClickRecorder: 退出连点器模式
+20250530224050 [INFO] ShowOSD: 显示提示: 进入连点器模式，开始记录点击位置
+20250530224050 [INFO] ClickRecorder: 激活连点器模式并开始记录
+20250530224052 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224052 [INFO] ClickRecorder: 重置记录
+20250530224054 [INFO] ShowOSD: 显示提示: 记录位置 1: (2091, 359)
+20250530224054 [INFO] ClickRecorder: 记录位置1: (2091, 359)
+20250530224054 [INFO] ShowOSD: 显示提示: 记录位置 2: (2133, 546)
+20250530224054 [INFO] ClickRecorder: 记录位置2: (2133, 546)
+20250530224054 [INFO] ShowOSD: 显示提示: 记录位置 3: (2122, 791)
+20250530224054 [INFO] ClickRecorder: 记录位置3: (2122, 791)
+20250530224055 [INFO] ShowOSD: 显示提示: 记录位置 4: (2115, 1070)
+20250530224055 [INFO] ClickRecorder: 记录位置4: (2115, 1070)
+20250530224059 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224059 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224100 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224100 [INFO] ClickRecorder: 停止播放，完成3次循环
+20250530224100 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224100 [INFO] ClickRecorder: 退出连点器模式
+20250530224102 [INFO] ShowOSD: 显示提示: 进入连点器模式，开始记录点击位置
+20250530224102 [INFO] ClickRecorder: 激活连点器模式并开始记录
+20250530224106 [INFO] ShowOSD: 显示提示: 进入连点器模式，开始记录点击位置
+20250530224106 [INFO] ClickRecorder: 激活连点器模式并开始记录
+20250530224112 [INFO] ShowOSD: 显示提示: 记录位置 1: (2168, 479)
+20250530224112 [INFO] ClickRecorder: 记录位置1: (2168, 479)
+20250530224113 [INFO] ShowOSD: 显示提示: 记录位置 2: (2131, 729)
+20250530224113 [INFO] ClickRecorder: 记录位置2: (2131, 729)
+20250530224114 [INFO] ShowOSD: 显示提示: 记录位置 3: (2130, 536)
+20250530224114 [INFO] ClickRecorder: 记录位置3: (2130, 536)
+20250530224114 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224114 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224116 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224116 [INFO] ClickRecorder: 停止播放，完成4次循环
+20250530224116 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224116 [INFO] ClickRecorder: 退出连点器模式
+20250530224119 [INFO] ShowOSD: 显示提示: 进入连点器模式，开始记录点击位置
+20250530224119 [INFO] ClickRecorder: 激活连点器模式并开始记录
+20250530224130 [INFO] ShowOSD: 显示提示: 记录位置 1: (1534, 682)
+20250530224130 [INFO] ClickRecorder: 记录位置1: (1534, 682)
+20250530224130 [INFO] ShowOSD: 显示提示: 记录位置 2: (1957, 608)
+20250530224130 [INFO] ClickRecorder: 记录位置2: (1957, 608)
+20250530224132 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224132 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224133 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224133 [INFO] ClickRecorder: 停止播放，完成7次循环
+20250530224133 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224133 [INFO] ClickRecorder: 退出连点器模式
+20250530224623 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224623 [INFO] ClickRecorder: 激活连点器模式
+20250530224626 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224626 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224630 [INFO] ShowOSD: 显示提示: 记录位置 1: (2110, 254)
+20250530224630 [INFO] ClickRecorder: 记录位置1: (2110, 254)
+20250530224630 [INFO] ShowOSD: 显示提示: 记录位置 2: (2194, 443)
+20250530224630 [INFO] ClickRecorder: 记录位置2: (2194, 443)
+20250530224630 [INFO] ShowOSD: 显示提示: 记录位置 3: (2194, 680)
+20250530224630 [INFO] ClickRecorder: 记录位置3: (2194, 680)
+20250530224631 [INFO] ShowOSD: 显示提示: 记录位置 4: (2201, 916)
+20250530224631 [INFO] ClickRecorder: 记录位置4: (2201, 916)
+20250530224633 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224633 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224636 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224636 [INFO] ClickRecorder: 停止播放，完成8次循环
+20250530224639 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224639 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224640 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224640 [INFO] ClickRecorder: 停止播放，完成3次循环
+20250530224640 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224640 [INFO] ClickRecorder: 退出连点器模式
+20250530224642 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224642 [INFO] ClickRecorder: 激活连点器模式
+20250530224642 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224642 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224644 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224644 [INFO] ClickRecorder: 停止播放，完成3次循环
+20250530224645 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224645 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224645 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224645 [INFO] ClickRecorder: 停止播放，完成1次循环
+20250530224646 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224646 [INFO] ClickRecorder: 退出连点器模式
+20250530224647 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224647 [INFO] ClickRecorder: 激活连点器模式
+20250530224647 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224647 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224648 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224648 [INFO] ClickRecorder: 停止播放，完成2次循环
+20250530224649 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224649 [INFO] ClickRecorder: 退出连点器模式
+20250530224655 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224655 [INFO] ClickRecorder: 激活连点器模式
+20250530224657 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224657 [INFO] ClickRecorder: 激活连点器模式
+20250530224659 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224659 [INFO] ClickRecorder: 激活连点器模式
+20250530224700 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224700 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224701 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224701 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224701 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224701 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224701 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224701 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224703 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224703 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224704 [INFO] ShowOSD: 显示提示: 记录位置 1: (301, 584)
+20250530224704 [INFO] ClickRecorder: 记录位置1: (301, 584)
+20250530224705 [INFO] ShowOSD: 显示提示: 记录位置 2: (676, 595)
+20250530224705 [INFO] ClickRecorder: 记录位置2: (676, 595)
+20250530224705 [INFO] ShowOSD: 显示提示: 记录位置 3: (1050, 600)
+20250530224705 [INFO] ClickRecorder: 记录位置3: (1050, 600)
+20250530224706 [INFO] ShowOSD: 显示提示: 记录位置 4: (1404, 602)
+20250530224706 [INFO] ClickRecorder: 记录位置4: (1404, 602)
+20250530224706 [INFO] ShowOSD: 显示提示: 记录位置 5: (1852, 595)
+20250530224706 [INFO] ClickRecorder: 记录位置5: (1852, 595)
+20250530224707 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224707 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224715 [INFO] ShowOSD: 显示提示: 播放间隔: 80ms
+20250530224716 [INFO] ShowOSD: 显示提示: 播放间隔: 60ms
+20250530224717 [INFO] ShowOSD: 显示提示: 播放间隔: 40ms
+20250530224721 [INFO] ShowOSD: 显示提示: 播放间隔: 20ms
+20250530224721 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224721 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224722 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224725 [INFO] ShowOSD: 显示提示: 播放间隔: 30ms
+20250530224725 [INFO] ShowOSD: 显示提示: 播放间隔: 50ms
+20250530224725 [INFO] ShowOSD: 显示提示: 播放间隔: 70ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 90ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 110ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 130ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 150ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 170ms
+20250530224726 [INFO] ShowOSD: 显示提示: 播放间隔: 190ms
+20250530224727 [INFO] ShowOSD: 显示提示: 播放间隔: 210ms
+20250530224727 [INFO] ShowOSD: 显示提示: 播放间隔: 230ms
+20250530224727 [INFO] ShowOSD: 显示提示: 播放间隔: 250ms
+20250530224730 [INFO] ShowOSD: 显示提示: 播放间隔: 270ms
+20250530224730 [INFO] ShowOSD: 显示提示: 播放间隔: 290ms
+20250530224731 [INFO] ShowOSD: 显示提示: 播放间隔: 310ms
+20250530224731 [INFO] ShowOSD: 显示提示: 播放间隔: 330ms
+20250530224731 [INFO] ShowOSD: 显示提示: 播放间隔: 350ms
+20250530224731 [INFO] ShowOSD: 显示提示: 播放间隔: 370ms
+20250530224732 [INFO] ShowOSD: 显示提示: 播放间隔: 390ms
+20250530224732 [INFO] ShowOSD: 显示提示: 播放间隔: 410ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 430ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 450ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 470ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 490ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 510ms
+20250530224734 [INFO] ShowOSD: 显示提示: 播放间隔: 530ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 550ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 570ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 590ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 610ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 630ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 650ms
+20250530224735 [INFO] ShowOSD: 显示提示: 播放间隔: 670ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 690ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 710ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 730ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 750ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 770ms
+20250530224736 [INFO] ShowOSD: 显示提示: 播放间隔: 790ms
+20250530224737 [INFO] ShowOSD: 显示提示: 播放间隔: 810ms
+20250530224737 [INFO] ShowOSD: 显示提示: 播放间隔: 830ms
+20250530224737 [INFO] ShowOSD: 显示提示: 播放间隔: 850ms
+20250530224737 [INFO] ShowOSD: 显示提示: 播放间隔: 870ms
+20250530224737 [INFO] ShowOSD: 显示提示: 播放间隔: 890ms
+20250530224738 [INFO] ShowOSD: 显示提示: 播放间隔: 910ms
+20250530224738 [INFO] ShowOSD: 显示提示: 播放间隔: 930ms
+20250530224738 [INFO] ShowOSD: 显示提示: 播放间隔: 950ms
+20250530224738 [INFO] ShowOSD: 显示提示: 播放间隔: 970ms
+20250530224738 [INFO] ShowOSD: 显示提示: 播放间隔: 990ms
+20250530224739 [INFO] ShowOSD: 显示提示: 播放间隔: 1010ms
+20250530224743 [INFO] ShowOSD: 显示提示: 播放间隔: 990ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 970ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 950ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 930ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 910ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 890ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 870ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 850ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 830ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 810ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 790ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 770ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 750ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 730ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 710ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 690ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 670ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 650ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 630ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 610ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 590ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 570ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 550ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 530ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 510ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 490ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 470ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 450ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 430ms
+20250530224744 [INFO] ShowOSD: 显示提示: 播放间隔: 410ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 390ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 370ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 350ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 330ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 310ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 290ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 270ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 250ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 230ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 210ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 190ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 170ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 150ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 130ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 110ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 90ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 70ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 50ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 30ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224745 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224746 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224746 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224746 [INFO] ShowOSD: 显示提示: 播放间隔: 10ms
+20250530224750 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224750 [INFO] ClickRecorder: 停止播放，完成145次循环
+20250530224750 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224750 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224806 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224806 [INFO] ClickRecorder: 停止播放，完成205次循环
+20250530224807 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224807 [INFO] ClickRecorder: 退出连点器模式
+20250530224808 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224808 [INFO] ClickRecorder: 激活连点器模式
+20250530224808 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224808 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224812 [INFO] ShowOSD: 显示提示: 播放间隔: 30ms
+20250530224812 [INFO] ShowOSD: 显示提示: 播放间隔: 50ms
+20250530224812 [INFO] ShowOSD: 显示提示: 播放间隔: 70ms
+20250530224813 [INFO] ShowOSD: 显示提示: 播放间隔: 90ms
+20250530224814 [INFO] ShowOSD: 显示提示: 播放间隔: 70ms
+20250530224818 [INFO] ShowOSD: 显示提示: 播放间隔: 50ms
+20250530224820 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224820 [INFO] ClickRecorder: 停止播放，完成67次循环
+20250530224820 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224820 [INFO] ClickRecorder: 退出连点器模式
+20250530224822 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224822 [INFO] ClickRecorder: 激活连点器模式
+20250530224824 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224824 [INFO] ClickRecorder: 退出连点器模式
+20250530224826 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224826 [INFO] ClickRecorder: 激活连点器模式
+20250530224827 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224827 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224828 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224828 [INFO] ClickRecorder: 停止播放，完成3次循环
+20250530224828 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224828 [INFO] ClickRecorder: 退出连点器模式
+20250530224830 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224830 [INFO] ClickRecorder: 激活连点器模式
+20250530224831 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224831 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224833 [INFO] ShowOSD: 显示提示: 记录位置 1: (1063, 549)
+20250530224833 [INFO] ClickRecorder: 记录位置1: (1063, 549)
+20250530224835 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224835 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224847 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224847 [INFO] ClickRecorder: 停止播放，完成192次循环
+20250530224847 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224847 [INFO] ClickRecorder: 退出连点器模式
+20250530224849 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250530224849 [INFO] ClickRecorder: 激活连点器模式
+20250530224850 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224850 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224850 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224850 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224851 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置
+20250530224851 [INFO] ClickRecorder: 重置记录并开始记录
+20250530224854 [INFO] ShowOSD: 显示提示: 记录位置 1: (773, 821)
+20250530224854 [INFO] ClickRecorder: 记录位置1: (773, 821)
+20250530224854 [INFO] ShowOSD: 显示提示: 记录位置 2: (1088, 830)
+20250530224854 [INFO] ClickRecorder: 记录位置2: (1088, 830)
+20250530224855 [INFO] ShowOSD: 显示提示: 记录位置 3: (1569, 840)
+20250530224855 [INFO] ClickRecorder: 记录位置3: (1569, 840)
+20250530224856 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环)
+20250530224856 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250530224858 [INFO] ShowOSD: 显示提示: 停止播放
+20250530224858 [INFO] ClickRecorder: 停止播放，完成12次循环
+20250530224858 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250530224858 [INFO] ClickRecorder: 退出连点器模式
