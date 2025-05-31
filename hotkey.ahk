@@ -9,6 +9,10 @@ if !A_IsAdmin {           ; 如果不是管理员权限
     ExitApp
 }
 
+; ========== 脚本初始化 ==========
+; 启动时初始化自动主题切换功能
+SetTimer(() => SunriseSunset.EnableAutoTheme(), -2000)  ; 延迟2秒启动，确保所有类都已加载
+
 ; ========== 配置管理类 ==========
 class Config {
     static TRANSPARENCY_STEP := 15         ; 透明度调整步长
@@ -155,6 +159,238 @@ class ThemeControl {
         ShowOSD("主题: " (newTheme ? "亮色" : "暗色"))
     }
 }
+
+; ========== 日出日落控制类 ==========
+class SunriseSunset {
+    static DEFAULT_LAT := 36.52    ; 北京纬度
+    static DEFAULT_LNG := 118.46   ; 北京经度
+    static API_URL := "https://api.sunrise-sunset.org/json"
+    static CHECK_INTERVAL := 300000  ; 5分钟检查一次 (毫秒)
+    static AUTO_THEME_ENABLED := true
+    static lastSunriseTime := ""
+    static lastSunsetTime := ""
+    static themeCheckTimer := ""
+    
+    ; 获取指定坐标的日出日落时间
+    static GetSunTimes(lat := "", lng := "") {
+        try {
+            ; 使用默认坐标如果未提供
+            if (lat = "" || lng = "") {
+                lat := SunriseSunset.DEFAULT_LAT
+                lng := SunriseSunset.DEFAULT_LNG
+            }
+            
+            ; 构建API URL
+            url := SunriseSunset.API_URL . "?lat=" . lat . "&lng=" . lng . "&formatted=0"
+            
+            ; 创建HTTP请求
+            http := ComObject("WinHttp.WinHttpRequest.5.1")
+            http.Open("GET", url, false)
+            http.SetRequestHeader("User-Agent", "AutoHotkey/2.0")
+            http.Send()
+            
+            ; 检查响应状态
+            if (http.Status != 200) {
+                throw Error("HTTP请求失败: " . http.Status)
+            }
+            
+            ; 解析JSON响应
+            response := http.ResponseText
+            sunData := SunriseSunset.ParseSunData(response)
+            
+            if (sunData.status = "OK") {
+                ; 转换为本地时间
+                sunriseLocal := SunriseSunset.ConvertToLocalTime(sunData.sunrise)
+                sunsetLocal := SunriseSunset.ConvertToLocalTime(sunData.sunset)
+                
+                ; 更新缓存
+                SunriseSunset.lastSunriseTime := sunriseLocal
+                SunriseSunset.lastSunsetTime := sunsetLocal
+                
+                Logger.LogInfo("SunriseSunset.GetSunTimes", "获取成功 - 日出: " . sunriseLocal . ", 日落: " . sunsetLocal)
+                
+                return {
+                    sunrise: sunriseLocal,
+                    sunset: sunsetLocal,
+                    status: "success"
+                }
+            } else {
+                throw Error("API返回错误: " . sunData.status)
+            }
+            
+        } catch Error as e {
+            Logger.LogError("SunriseSunset.GetSunTimes", "获取日出日落时间失败: " . e.message)
+            return {
+                sunrise: "",
+                sunset: "",
+                status: "error",
+                error: e.message
+            }
+        }
+    }
+    
+    ; 简单的JSON解析（仅解析需要的字段）
+    static ParseSunData(jsonStr) {
+        try {
+            ; 提取status
+            statusMatch := RegExMatch(jsonStr, '"status"\s*:\s*"([^"]+)"', &statusResult)
+            status := statusMatch ? statusResult[1] : "UNKNOWN"
+            
+            if (status != "OK") {
+                return {status: status}
+            }
+            
+            ; 提取sunrise
+            sunriseMatch := RegExMatch(jsonStr, '"sunrise"\s*:\s*"([^"]+)"', &sunriseResult)
+            sunrise := sunriseMatch ? sunriseResult[1] : ""
+            
+            ; 提取sunset
+            sunsetMatch := RegExMatch(jsonStr, '"sunset"\s*:\s*"([^"]+)"', &sunsetResult)
+            sunset := sunsetMatch ? sunsetResult[1] : ""
+            
+            return {
+                status: status,
+                sunrise: sunrise,
+                sunset: sunset
+            }
+        } catch Error as e {
+            Logger.LogError("SunriseSunset.ParseSunData", "JSON解析失败: " . e.message)
+            return {status: "PARSE_ERROR"}
+        }
+    }
+    
+    ; 将UTC时间转换为本地时间
+    static ConvertToLocalTime(utcTimeStr) {
+        try {
+            ; 解析UTC时间字符串 (格式: 2024-05-30T10:30:45+00:00)
+            if (RegExMatch(utcTimeStr, "(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})", &timeMatch)) {
+                year := timeMatch[1]
+                month := timeMatch[2]
+                day := timeMatch[3]
+                hour := timeMatch[4]
+                minute := timeMatch[5]
+                second := timeMatch[6]
+                
+                ; 构建本地时间字符串并转换
+                utcTime := year . month . day . hour . minute . second
+                localTime := DateAdd(utcTime, 8, "Hours")  ; 转换为北京时间 (UTC+8)
+                
+                ; 格式化为可读时间
+                return FormatTime(localTime, "HH:mm:ss")
+            }
+            return utcTimeStr
+        } catch Error as e {
+            Logger.LogError("SunriseSunset.ConvertToLocalTime", "时间转换失败: " . e.message)
+            return utcTimeStr
+        }
+    }
+    
+    ; 显示日出日落信息
+    static ShowSunInfo(lat := "", lng := "") {
+        sunData := SunriseSunset.GetSunTimes(lat, lng)
+        
+        if (sunData.status = "success") {
+            infoText := "日出: " . sunData.sunrise . "`n日落: " . sunData.sunset
+            ShowOSD(infoText)
+        } else {
+            ShowOSD("获取日出日落时间失败")
+        }
+    }
+    
+    ; 启用自动主题切换
+    static EnableAutoTheme() {
+        SunriseSunset.AUTO_THEME_ENABLED := true
+        
+        ; 立即检查一次
+        SunriseSunset.CheckAndSwitchTheme()
+        
+        ; 设置定时器定期检查
+        SunriseSunset.themeCheckTimer := SetTimer(() => SunriseSunset.CheckAndSwitchTheme(), SunriseSunset.CHECK_INTERVAL)
+        
+        ShowOSD("自动主题切换已启用")
+        Logger.LogInfo("SunriseSunset.EnableAutoTheme", "自动主题切换已启用")
+    }
+    
+    ; 禁用自动主题切换
+    static DisableAutoTheme() {
+        SunriseSunset.AUTO_THEME_ENABLED := false
+        
+        ; 停止定时器
+        if (SunriseSunset.themeCheckTimer) {
+            SetTimer(SunriseSunset.themeCheckTimer, 0)
+            SunriseSunset.themeCheckTimer := ""
+        }
+        
+        ShowOSD("自动主题切换已禁用")
+        Logger.LogInfo("SunriseSunset.DisableAutoTheme", "自动主题切换已禁用")
+    }
+    
+    ; 检查并切换主题
+    static CheckAndSwitchTheme() {
+        if (!SunriseSunset.AUTO_THEME_ENABLED) {
+            return
+        }
+        
+        try {
+            ; 获取最新的日出日落时间
+            sunData := SunriseSunset.GetSunTimes()
+            
+            if (sunData.status != "success") {
+                Logger.LogError("SunriseSunset.CheckAndSwitchTheme", "无法获取日出日落时间")
+                return
+            }
+            
+            ; 获取当前时间
+            currentTime := FormatTime(, "HH:mm:ss")
+            
+            ; 判断当前应该使用什么主题
+            shouldUseLightTheme := SunriseSunset.ShouldUseLightTheme(currentTime, sunData.sunrise, sunData.sunset)
+            currentTheme := ThemeControl.GetCurrentTheme()
+            
+            ; 如果需要切换主题
+            if (shouldUseLightTheme != currentTheme) {
+                ThemeControl.SetTheme(shouldUseLightTheme)
+                themeText := shouldUseLightTheme ? "亮色" : "暗色"
+                reasonText := shouldUseLightTheme ? "日出后" : "日落后"
+                ShowOSD("自动切换: " . themeText . "主题 (" . reasonText . ")")
+                Logger.LogInfo("SunriseSunset.CheckAndSwitchTheme", "自动切换到" . themeText . "主题")
+            }
+            
+        } catch Error as e {
+            Logger.LogError("SunriseSunset.CheckAndSwitchTheme", "主题检查失败: " . e.message)
+        }
+    }
+    
+    ; 判断当前时间是否应该使用亮色主题
+    static ShouldUseLightTheme(currentTime, sunriseTime, sunsetTime) {
+        ; 将时间转换为分钟数便于比较
+        current := SunriseSunset.TimeToMinutes(currentTime)
+        sunrise := SunriseSunset.TimeToMinutes(sunriseTime)
+        sunset := SunriseSunset.TimeToMinutes(sunsetTime)
+        
+        ; 如果当前时间在日出和日落之间，使用亮色主题
+        return (current >= sunrise && current < sunset)
+    }
+    
+    ; 将时间字符串转换为分钟数
+    static TimeToMinutes(timeStr) {
+        if (RegExMatch(timeStr, "(\d{1,2}):(\d{2}):(\d{2})", &timeMatch)) {
+            hours := Integer(timeMatch[1])
+            minutes := Integer(timeMatch[2])
+            return hours * 60 + minutes
+        }
+        return 0
+    }
+    
+    ; 切换自动主题功能
+    static ToggleAutoTheme() {
+        if (SunriseSunset.AUTO_THEME_ENABLED) {
+            SunriseSunset.DisableAutoTheme()
+        } else {
+            SunriseSunset.EnableAutoTheme()
+        }
+    }
+}
 ; ========== 全局快捷键 ==========
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
@@ -180,7 +416,16 @@ class ThemeControl {
 +f::Send "^n"    ; Shift+F -> Ctrl+N：新建文件
 
 ; 主题切换
-#+t::ThemeControl.ToggleTheme()  ; Win+Shift+T：切换亮色/暗色主题
+#+t:: {  ; Win+Shift+T：手动切换主题并关闭自动切换
+    ; 先关闭自动主题切换
+    SunriseSunset.DisableAutoTheme()
+    ; 然后手动切换主题
+    ThemeControl.ToggleTheme()
+}
+
+; 日出日落相关热键
+#+o::SunriseSunset.ShowSunInfo()  ; Win+Shift+O：显示日出日落时间
+#+a::SunriseSunset.ToggleAutoTheme()  ; Win+Shift+A：切换自动主题功能
 
 ; 虚拟桌面快捷键、
 !1::Send "^#{Left}"       ; Alt+1 -> Win+Ctrl+Left (切换到左侧桌面)

@@ -943,3 +943,453 @@
 20250531113547 [INFO] ShowOSD: 显示提示: 主题: 亮色
 20250531113549 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
 20250531113549 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531114012 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250531115218 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:46:43, 日落: 19:37:24
+20250531115219 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115219 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250531115219 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250531115219 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250531115219 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250531115219 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115219 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115219 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115219 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115221 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115221 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115222 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115222 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115224 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115224 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115224 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115224 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115225 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115225 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115226 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115226 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115227 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115227 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115228 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115228 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115228 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115228 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115229 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115229 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115235 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115235 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115235 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115235 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115236 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115236 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115236 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115237 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115237 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115237 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115238 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115238 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115239 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115239 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115240 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115240 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115240 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115240 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115241 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115241 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115244 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115244 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115245 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115245 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115245 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115245 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115246 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115246 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115252 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:46:43, 日落: 19:37:24
+20250531115253 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115253 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250531115253 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250531115253 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250531115253 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250531115255 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:46:43, 日落: 19:37:24
+20250531115255 [INFO] ShowOSD: 显示提示: 日出: 04:46:43
+日落: 19:37:24
+20250531115257 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:46:43, 日落: 19:37:24
+20250531115257 [INFO] ShowOSD: 显示提示: 日出: 04:46:43
+日落: 19:37:24
+20250531115258 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:46:43, 日落: 19:37:24
+20250531115258 [INFO] ShowOSD: 显示提示: 日出: 04:46:43
+日落: 19:37:24
+20250531115309 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250531115312 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115312 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115313 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115313 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115315 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115315 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115315 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115315 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531115316 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531115316 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531115317 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531115317 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531115445 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115446 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531115446 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250531115446 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250531115446 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250531115446 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250531115452 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115452 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115453 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115453 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115454 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115454 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115454 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115454 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115454 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115454 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115455 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115455 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115456 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115456 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115456 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115456 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115457 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115457 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115457 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115457 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115457 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115457 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115457 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115457 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115458 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115458 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115458 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115458 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115458 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115458 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115458 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115458 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115459 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115459 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115459 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115459 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115459 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115459 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115459 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115459 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115459 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115459 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115500 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115500 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115500 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115500 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115500 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115500 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115500 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115500 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115501 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115501 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115501 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115501 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115501 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115501 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115501 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115501 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115502 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115502 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115502 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115502 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115502 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115502 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115502 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115502 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115503 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115503 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115503 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115503 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115503 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115503 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115503 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115503 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115504 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115504 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115504 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115504 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115504 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115504 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115504 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115504 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115505 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115505 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115505 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115505 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115505 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115505 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115505 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115505 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115506 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115506 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115506 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115506 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115506 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115506 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115506 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115506 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115507 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115507 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115507 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115507 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115507 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115507 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115507 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115507 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115508 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115508 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115508 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115508 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115508 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115508 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115508 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115508 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115509 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115509 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115509 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115509 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115509 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115509 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115509 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115509 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115510 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115510 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115510 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115510 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115510 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115510 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115510 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115510 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115511 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115511 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115511 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115511 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115511 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115511 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115511 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115511 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115512 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115512 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115513 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115513 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115513 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115513 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115513 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115513 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115514 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115514 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115514 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115514 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115514 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115514 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115514 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115514 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115515 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115515 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115515 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115515 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115516 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115516 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115516 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115516 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115516 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115516 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115516 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115516 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115517 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115517 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115517 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115517 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115517 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115517 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115517 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115517 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115518 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115518 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115535 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115535 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115536 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115536 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115536 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115536 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115536 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115536 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115536 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115536 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115537 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115537 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115537 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115537 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115537 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115537 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115538 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115538 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115539 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115539 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115539 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115539 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115540 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115540 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115540 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115540 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115540 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115540 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115541 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115541 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115541 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115542 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115542 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115542 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115542 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115542 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115542 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115542 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115542 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115543 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115543 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115543 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115543 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115543 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115543 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531115543 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531115543 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
