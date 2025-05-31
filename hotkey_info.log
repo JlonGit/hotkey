@@ -871,3 +871,61 @@
 20250531001254 [INFO] ShowOSD: 显示提示: 主题: 暗色
 20250531001255 [INFO] ShowOSD: 显示提示: 主题: 亮色
 20250531001255 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531001331 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531001333 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531001336 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531001339 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531094100 [INFO] ShowOSD: 显示提示: 取消
+20250531094100 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094101 [INFO] ShowOSD: 显示提示: 取消
+20250531094101 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094101 [INFO] ShowOSD: 显示提示: 取消
+20250531094101 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094102 [INFO] ShowOSD: 显示提示: 取消
+20250531094102 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094103 [INFO] ShowOSD: 显示提示: 取消
+20250531094103 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094103 [INFO] ShowOSD: 显示提示: 取消
+20250531094103 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094103 [INFO] ShowOSD: 显示提示: 取消
+20250531094103 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094103 [INFO] ShowOSD: 显示提示: 取消
+20250531094103 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094104 [INFO] ShowOSD: 显示提示: 取消
+20250531094104 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094104 [INFO] ShowOSD: 显示提示: 取消
+20250531094104 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094108 [INFO] ShowOSD: 显示提示: 取消
+20250531094108 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094108 [INFO] ShowOSD: 显示提示: 取消
+20250531094108 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094108 [INFO] ShowOSD: 显示提示: 取消
+20250531094108 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094108 [INFO] ShowOSD: 显示提示: 取消
+20250531094108 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094109 [INFO] ShowOSD: 显示提示: 取消
+20250531094109 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094109 [INFO] ShowOSD: 显示提示: 取消
+20250531094109 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250531094122 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531094124 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250531094125 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250531094125 [INFO] ToggleApp: 激活应用: chrome.exe
+20250531094125 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250531094126 [INFO] ToggleApp: 激活应用: chrome.exe
+20250531094126 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250531094126 [INFO] ToggleApp: 激活应用: chrome.exe
+20250531094128 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250531094140 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531094224 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531094227 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531094345 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531094346 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531094857 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531094857 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531094900 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531094900 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531094927 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531094927 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531094931 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531094931 [INFO] ShowOSD: 显示提示: 主题: 亮色

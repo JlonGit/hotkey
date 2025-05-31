@@ -21,47 +21,49 @@ class Config {
 }
 
 ; ========== 媒体控制类 ==========
+
 class MediaControl {
+    ; 播放/暂停
     static PlayPause() {
         try {
             Send "{Media_Play_Pause}"
         } catch Error as e {
             Logger.LogError("MediaControl.PlayPause", e.message)
         }
-    }   ; 播放/暂停
-    
+    }   
+    ; 下一首
     static Next() {
         try {
             Send "{Media_Next}"
         } catch Error as e {
             Logger.LogError("MediaControl.Next", e.message)
         }
-    }        ; 下一首
-    
+    }        
+    ; 上一首
     static Previous() {
         try {
             Send "{Media_Prev}"
         } catch Error as e {
             Logger.LogError("MediaControl.Previous", e.message)
         }
-    }    ; 上一首
-    
+    }    
+    ; 音量增加
     static VolumeUp() {
         try {
             Send "{Volume_Up}"
         } catch Error as e {
             Logger.LogError("MediaControl.VolumeUp", e.message)
         }
-    }    ; 音量增加
-    
+    }    
+    ; 音量减小
     static VolumeDown() {
         try {
             Send "{Volume_Down}"
         } catch Error as e {
             Logger.LogError("MediaControl.VolumeDown", e.message)
         }
-    }  ; 音量减小
-    
+    }  
+    ; 静音切换
     static Mute() {
         try {
             Send "{Volume_Mute}"
@@ -69,7 +71,7 @@ class MediaControl {
             Logger.LogError("MediaControl.Mute", e.message)
         }
     }
-}        ; 静音切换
+}        
 
 ; ========== 日志管理类 ==========
 class Logger {
@@ -120,8 +122,29 @@ class ThemeControl {
             RegWrite(themeValue, "REG_DWORD", "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent", "StartColorMenu")
         }
         
+        ; 设置光标颜色以匹配主题
+        ThemeControl.SetCursorColor(isLight)
+        
         DllCall("user32.dll\PostMessage", "Ptr", 0xFFFF, "UInt", 0x001A, "Ptr", 0, "AStr", "ImmersiveColorSet")
         DllCall("user32.dll\PostMessage", "Ptr", 0xFFFF, "UInt", 0x031A, "Ptr", 0, "Ptr", 0)
+    }
+    
+    static SetCursorColor(isLight) {
+        try {
+            ; 根据主题设置光标颜色
+            ; 亮色主题使用黑色光标，暗色主题使用白色光标
+            cursorScheme := isLight ? "Windows Default (system scheme)" : "Windows Black (system scheme)"
+            
+            ; 设置光标方案
+            RegWrite(cursorScheme, "REG_SZ", "HKEY_CURRENT_USER\Control Panel\Cursors", "")
+            
+            ; 刷新光标设置
+            DllCall("user32.dll\SystemParametersInfo", "UInt", 0x0057, "UInt", 0, "Ptr", 0, "UInt", 0x0002)
+            
+            Logger.LogInfo("ThemeControl.SetCursorColor", "光标颜色已设置: " (isLight ? "黑色" : "白色"))
+        } catch Error as e {
+            Logger.LogError("ThemeControl.SetCursorColor", "设置光标颜色失败: " e.message)
+        }
     }
     
     static ToggleTheme() {
@@ -135,9 +158,6 @@ class ThemeControl {
 ; ========== 全局快捷键 ==========
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
-
-; ; 全局 Ctrl+W 映射为 Ctrl+Shift+W
-; ^w::Send "^+w"  ; Ctrl+W -> Ctrl+Shift+W
 
 ; 全局 Alt+W 关闭窗口（仅排除Zen和Chrome浏览器）
 #HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")
@@ -193,7 +213,7 @@ ToggleApp(exeName, appPath := "") {
         ShowOSD("操作失败: " exeName)
     }
 }
-; ========== 应用程序切换（使用通用函数） ==========
+; ========== 应用程序切换快捷键 ==========
 +g::ToggleApp("chrome.exe", "chrome.exe")  ; Shift+G：Chrome 窗口切换
 +t::ToggleApp("Telegram.exe", "D:\Telegram Desktop\Telegram.exe")  ; Shift+T：Telegram 窗口切换
 +n::ToggleApp("Notion.exe", "notion:")  ; Shift+N：Notion 窗口切换
