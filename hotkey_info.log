@@ -1393,3 +1393,930 @@
 20250531115543 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
 20250531115543 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
 日落: 19:19:28
+20250531115947 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531120020 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531120020 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531120021 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531120021 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250531120024 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531120024 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531120025 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250531120025 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250531120029 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531120029 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250531120029 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250531120530 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531121030 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531121530 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531122030 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531122530 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531123030 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531123530 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531124030 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531141356 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531141854 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531142354 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531142854 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531143354 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531143600 [INFO] ToggleApp: 激活应用: chrome.exe
+20250531143854 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531144354 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531144854 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531145355 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531145855 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531150354 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531150854 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531151354 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531152245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531152746 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531153245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531153745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531160541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531161041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531161541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531162041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531162541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531163041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531163326 [INFO] ToggleApp: 激活应用: Telegram.exe
+20250531163541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531163746 [INFO] ToggleApp: 激活应用: Telegram.exe
+20250531164041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531164541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531165041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531165541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531170041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531170252 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250531170254 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250531170257 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250531170541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531171041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531171541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531171848 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250531172041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531172101 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250531172135 [INFO] ShowOSD: 显示提示: 透明度: 165
+20250531172136 [INFO] ShowOSD: 显示提示: 透明度: 150
+20250531172137 [INFO] ShowOSD: 显示提示: 透明度: 135
+20250531172138 [INFO] ShowOSD: 显示提示: 透明度: 120
+20250531172138 [INFO] ShowOSD: 显示提示: 透明度: 105
+20250531172138 [INFO] ShowOSD: 显示提示: 透明度: 90
+20250531172139 [INFO] ShowOSD: 显示提示: 透明度: 75
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 60
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172140 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 50
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 65
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 80
+20250531172141 [INFO] ShowOSD: 显示提示: 透明度: 95
+20250531172142 [INFO] ShowOSD: 显示提示: 透明度: 110
+20250531172142 [INFO] ShowOSD: 显示提示: 透明度: 125
+20250531172142 [INFO] ShowOSD: 显示提示: 透明度: 140
+20250531172142 [INFO] ShowOSD: 显示提示: 透明度: 155
+20250531172142 [INFO] ShowOSD: 显示提示: 透明度: 170
+20250531172143 [INFO] ShowOSD: 显示提示: 透明度: 185
+20250531172143 [INFO] ShowOSD: 显示提示: 透明度: 200
+20250531172143 [INFO] ShowOSD: 显示提示: 透明度: 215
+20250531172143 [INFO] ShowOSD: 显示提示: 透明度: 230
+20250531172143 [INFO] ShowOSD: 显示提示: 透明度: 245
+20250531172144 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172144 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172144 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172144 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172145 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172145 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172146 [INFO] ShowOSD: 显示提示: 透明度: 255
+20250531172147 [INFO] ShowOSD: 显示提示: 透明度: 240
+20250531172147 [INFO] ShowOSD: 显示提示: 透明度: 225
+20250531172147 [INFO] ShowOSD: 显示提示: 透明度: 210
+20250531172148 [INFO] ShowOSD: 显示提示: 透明度: 195
+20250531172148 [INFO] ShowOSD: 显示提示: 透明度: 180
+20250531172148 [INFO] ShowOSD: 显示提示: 透明度: 165
+20250531172149 [INFO] ShowOSD: 显示提示: 透明度: 150
+20250531172149 [INFO] ShowOSD: 显示提示: 透明度: 135
+20250531172457 [INFO] ShowOSD: 显示提示: 恢复正常
+20250531172541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531173041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531173541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531174041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531174542 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531175041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531175541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180041 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180241 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180241 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180243 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180243 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180244 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180244 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180244 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180244 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180246 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180246 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180247 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180247 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180248 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180248 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180248 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180248 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180248 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180248 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180249 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180249 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180249 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180249 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180249 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180249 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180249 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180249 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180251 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531180251 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531180541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531190154 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531190653 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531191153 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531191652 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531192027 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531192027 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531192028 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531192028 [INFO] ShowOSD: 显示提示: 日出: 04:48:14
+日落: 19:19:28
+20250531192034 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250531192034 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250531192036 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531192037 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250531192037 [INFO] ShowOSD: 显示提示: 自动切换: 暗色主题 (日落后)
+20250531192037 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到暗色主题
+20250531192037 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250531192037 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250531192539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531193013 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250531193025 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250531193038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531193539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531194038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531194539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531195038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531195538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531200031 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250531200038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531200055 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250531200055 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531200056 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531200056 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531200538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531201039 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531201539 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531202038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531202538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531203038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531203538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531203543 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250531203544 [INFO] ShowOSD: 显示提示: 恢复正常
+20250531203545 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250531204038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531204538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531205039 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531205538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531210038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531210538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531211038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531211538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531212039 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531212538 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531213038 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531215600 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250531215601 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531215603 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250531215731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531220231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531220731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531221231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531221731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531222117 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250531222232 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531222731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531223231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531223731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531224231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531224731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531225231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531225301 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250531225731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531230231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531230356 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250531230359 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250531230731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531231231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531231731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531232231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531232731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531233233 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531233732 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531234231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531234731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531235231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250531235628 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250531235734 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601000231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601000540 [INFO] ToggleApp: 激活应用: Telegram.exe
+20250601000731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601001231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601001731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601002231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601002731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601003231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601003731 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:48:14, 日落: 19:19:28
+20250601101653 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601101654 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601101654 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250601101654 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250601101654 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250601101654 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250601102155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601102655 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601103032 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250601103155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601103655 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601104155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601104655 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601105155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601105655 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601110155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601110655 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601111155 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601111656 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601121445 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250601121838 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601122338 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601122838 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601123338 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601123838 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601124134 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601124134 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601124135 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250601124135 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250601124159 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601124200 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601124200 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250601124200 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250601124200 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250601124200 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250601124207 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601124207 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601124208 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250601124208 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250601124210 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601124210 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601124212 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601124212 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250601124214 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601124214 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601124215 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250601124215 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250601125117 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601125117 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601125118 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601125118 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250601125123 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601125123 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601125124 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250601125124 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250601125837 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601125837 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601125838 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601125838 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250601131215 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250601132431 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601132431 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601132431 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250601132431 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250601132431 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601132432 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601132432 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250601132432 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250601144158 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250601151250 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250601151254 [INFO] ToggleApp: 激活应用: chrome.exe
+20250601183036 [INFO] ToggleApp: 激活应用: chrome.exe
+20250601220413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601220413 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250601220413 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250601220416 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601220416 [INFO] ShowOSD: 显示提示: 日出: 04:47:52
+日落: 19:20:08
+20250601220417 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601220418 [INFO] ShowOSD: 显示提示: 日出: 04:47:52
+日落: 19:20:08
+20250601220420 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250601220420 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250601220421 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601220421 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250601220421 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250601220922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601221422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601221922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601222422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601222922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601223423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601223923 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601224423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601224731 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250601224735 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250601224737 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250601224923 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601225008 [INFO] ToggleApp: 激活应用: chrome.exe
+20250601225423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601225923 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601230423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601230922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601231422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601231922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601232423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601232924 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601233423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601233925 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601234422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601234922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601235422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250601235922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602000423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602000922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602001423 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602001922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602002422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602002922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602003422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602003922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602004422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602004922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602005422 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602005922 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:52, 日落: 19:20:08
+20250602093308 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602093309 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250602093309 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250602093309 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250602093806 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602094306 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602094806 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602095306 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602101345 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602101730 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602101733 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250602101734 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250602101734 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250602101735 [INFO] ToggleApp: 最小化应用: chrome.exe
+20250602101736 [INFO] ToggleApp: 激活应用: chrome.exe
+20250602101737 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602101748 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602101751 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602101753 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602101845 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602102057 [INFO] ShowOSD: 显示提示: 置顶
+20250602102057 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250602102345 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602102402 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250602102403 [INFO] ToggleApp: 最小化应用: Telegram.exe
+20250602102411 [INFO] ToggleApp: 最小化应用: Telegram.exe
+20250602102412 [INFO] ToggleApp: 激活应用: Telegram.exe
+20250602102800 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602102809 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250602102809 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250602102811 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602102811 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250602102811 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250602102811 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250602102811 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250602102811 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250602103312 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602103812 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602104312 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602104812 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602105312 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602105337 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602105342 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602105812 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602110312 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602110812 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602122416 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602122916 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602124046 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602124046 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250602124046 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250602124153 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602124547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602125048 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602125547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602130047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602130547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602130731 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602131047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602131124 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250602131134 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250602131138 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250602131547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602132047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602132547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602133047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602133547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602134047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602134547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602135047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602135210 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602135319 [INFO] ToggleApp: 启动应用: Telegram.exe 路径: D:\Telegram Desktop\Telegram.exe
+20250602135547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602140047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602140428 [INFO] ToggleApp: 激活应用: chrome.exe
+20250602140547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602141047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602141547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602142047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602142547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602143047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602143153 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602143547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602144047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602144547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602145047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602145548 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602150047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602150547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602151047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602151547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602152047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602152547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602153048 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602153548 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602154047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602154547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602155047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602155548 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602160047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602160547 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602161047 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602163956 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602164456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602164955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602165433 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250602165436 [INFO] ShowOSD: 显示提示: 透明度: 165
+20250602165437 [INFO] ShowOSD: 显示提示: 透明度: 150
+20250602165437 [INFO] ShowOSD: 显示提示: 透明度: 135
+20250602165437 [INFO] ShowOSD: 显示提示: 透明度: 120
+20250602165438 [INFO] ShowOSD: 显示提示: 透明度: 105
+20250602165438 [INFO] ShowOSD: 显示提示: 透明度: 90
+20250602165438 [INFO] ShowOSD: 显示提示: 透明度: 75
+20250602165438 [INFO] ShowOSD: 显示提示: 透明度: 60
+20250602165439 [INFO] ShowOSD: 显示提示: 透明度: 75
+20250602165456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602165535 [INFO] ShowOSD: 显示提示: 恢复正常
+20250602165956 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602170455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602170955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602171455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602171955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602172310 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250602172455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602172955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602173350 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250602173455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602173955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602174455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602174955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602175456 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602175955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602180455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602180955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602181455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602181955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602182455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602182955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602183455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602183955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602184455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602184955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602185455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602185955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602190455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602190955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602191157 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602191157 [INFO] ShowOSD: 显示提示: 日出: 04:47:33
+日落: 19:20:46
+20250602191159 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602191159 [INFO] ShowOSD: 显示提示: 日出: 04:47:33
+日落: 19:20:46
+20250602191202 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250602191202 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250602191203 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602191203 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250602191203 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250602191328 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602191328 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250602191328 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250602191829 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602192329 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602192330 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250602192330 [INFO] ShowOSD: 显示提示: 自动切换: 暗色主题 (日落后)
+20250602192330 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到暗色主题
+20250602192829 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602193329 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602193348 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602193348 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250602193348 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250602193849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602194349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602194849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602195349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602195849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602200349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602200850 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602201349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602201849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602202349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602202849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602203349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602203849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602204349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602204849 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602205104 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250602205258 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250602205349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602221455 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602221955 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602232049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602232549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602233049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602233549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602234049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602234549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602235049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250602235549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603000049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603000549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603001049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603001549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603002049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603002549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603003049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603003549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603004049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603004549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603005049 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603005549 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:33, 日落: 19:20:46
+20250603091341 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603091342 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250603091342 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250603091342 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250603105402 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603105902 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603110402 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603112227 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603112727 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603113227 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603113727 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603114227 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603114727 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603115227 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603115727 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603135757 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250603135913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603140413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603140913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603141413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603141913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603142413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603142913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603143413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603143913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603144413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603144913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603145413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603145913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603150413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603150913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603151413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603151913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603152413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603152913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603153413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603153913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603154414 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603154913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603155413 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603165411 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603165435 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250603165909 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603170409 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603170910 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603171409 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603171909 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603172409 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603172748 [INFO] ShowOSD: 显示提示: 置顶
+20250603172748 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250603172909 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603173409 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603173549 [INFO] ShowOSD: 显示提示: 置顶
+20250603173549 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250603173910 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603174112 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250603174409 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603174909 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603182610 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603183107 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603183607 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603184107 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603184516 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250603184519 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603184520 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250603184520 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603184608 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250603184608 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603184609 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603185108 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603185607 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603190107 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603191548 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250603191608 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603191822 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250603191916 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250603191919 [INFO] ShowOSD: 显示提示: 键盘已锁定
+20250603192108 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603192108 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250603192108 [INFO] ShowOSD: 显示提示: 自动切换: 暗色主题 (日落后)
+20250603192108 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到暗色主题
+20250603194528 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194557 [INFO] ShowOSD: 显示提示: 键盘已解锁
+20250603194721 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250603194721 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250603194721 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250603194721 [INFO] ShowOSD: 显示提示: 主题: 亮色
+20250603194742 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250603194742 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250603194742 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250603194743 [INFO] ShowOSD: 显示提示: 主题: 暗色
+20250603194746 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194746 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603194746 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603194748 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194748 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194750 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194750 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194750 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194750 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194750 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194750 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194751 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194751 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194751 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194751 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194751 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194751 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194752 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194752 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194752 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194752 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194752 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194752 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194752 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194752 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603194753 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603194753 [INFO] ShowOSD: 显示提示: 日出: 04:47:15
+日落: 19:21:24
+20250603195248 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603195747 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603195805 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250603195807 [INFO] ShowOSD: 显示提示: 恢复正常
+20250603195808 [INFO] ShowOSD: 显示提示: 半透明穿透
+20250603195813 [INFO] ShowOSD: 显示提示: 恢复正常
+20250603200247 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603200747 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201149 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201149 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201151 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201151 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201151 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603201151 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603201152 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201153 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201154 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201155 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201158 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用
+20250603201158 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250603201159 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201159 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603201159 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603201201 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201202 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201413 [INFO] ShowOSD: 显示提示: 操作失败: WeChat.exe
+20250603201418 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201420 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201420 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603201420 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603201421 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201423 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201428 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201446 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201448 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201449 [INFO] ShowOSD: 显示提示: 操作失败: Wexin.exe
+20250603201609 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201609 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201610 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201610 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201610 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201610 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603201610 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603201611 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201611 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201612 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201612 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201613 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201613 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201614 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201614 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201617 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201617 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201618 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201618 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201619 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201619 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201620 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201620 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201621 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201621 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201626 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201626 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201628 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201628 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201629 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201629 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201631 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201631 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201631 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201631 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201632 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201632 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201633 [INFO] ToggleWeChatApp: 激活微信: Weixin.exe
+20250603201633 [INFO] ShowOSD: 显示提示: 切换到微信
+20250603201634 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201634 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201642 [INFO] ShowOSD: 显示提示: 微信切换失败
+20250603201643 [INFO] ShowOSD: 显示提示: 微信切换失败
+20250603201644 [INFO] ShowOSD: 显示提示: 微信切换失败
+20250603201752 [INFO] ToggleWeChatApp: 最小化微信: Weixin.exe
+20250603201752 [INFO] ShowOSD: 显示提示: 微信已最小化
+20250603201820 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603201820 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603201820 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603202134 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603202134 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603202134 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603202138 [INFO] ToggleWeChatApp: 隐藏微信主面板: Weixin.exe
+20250603202138 [INFO] ShowOSD: 显示提示: 微信已隐藏
+20250603202139 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603202140 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603202141 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603202143 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603202147 [INFO] ToggleWeChatApp: 显示微信主面板: Weixin.exe
+20250603202147 [INFO] ShowOSD: 显示提示: 显示微信
+20250603202147 [INFO] ToggleWeChatApp: 隐藏微信主面板: Weixin.exe
+20250603202147 [INFO] ShowOSD: 显示提示: 微信已隐藏
+20250603202147 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603202148 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603203016 [INFO] ShowOSD: 显示提示: 无法启动微信
+20250603203021 [INFO] ShowOSD: 显示提示: 操作失败: Weixin.exe
+20250603203021 [INFO] ShowOSD: 显示提示: 操作失败: Weixin.exe
+20250603203023 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603203023 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603203023 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603203029 [INFO] ShowOSD: 显示提示: 操作失败: Weixin.exe
+20250603203151 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203153 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603203153 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603203153 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603203156 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203158 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203159 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203200 [INFO] ToggleApp: 激活应用: Weixin.exe
+20250603203200 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203201 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203202 [INFO] ToggleApp: 激活应用: Weixin.exe
+20250603203202 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203206 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203208 [INFO] ToggleApp: 最小化应用: Weixin.exe
+20250603203211 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203215 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203216 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203222 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203225 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203436 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203437 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603203437 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603203437 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603203438 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203438 [INFO] ToggleApp: 关闭微信主窗口: Weixin.exe
+20250603203441 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250603203442 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603203443 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603203444 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250603203445 [INFO] ToggleApp: 最小化应用: Spotify.exe
+20250603203556 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:47:15, 日落: 19:21:24
+20250603203556 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250603203556 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250603203556 [INFO] ToggleApp: 激活应用: Spotify.exe
+20250603203557 [INFO] ToggleApp: 关闭主窗口: Spotify.exe
+20250603203558 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250603203559 [INFO] ToggleApp: 关闭主窗口: Spotify.exe
+20250603203559 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250603203600 [INFO] ToggleApp: 关闭主窗口: Spotify.exe
+20250603203600 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203600 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203601 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203601 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203601 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203602 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203602 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203603 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203604 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203605 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203605 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203606 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203606 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203606 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203607 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203607 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203607 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203607 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203608 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203608 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203611 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203612 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203612 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203613 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203613 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203614 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203624 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203624 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203625 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203626 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203626 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203630 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203630 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203631 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250603203636 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250603203637 [INFO] ToggleApp: 关闭主窗口: Weixin.exe

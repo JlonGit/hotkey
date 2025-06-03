@@ -305,6 +305,9 @@ class SunriseSunset {
         SunriseSunset.CheckAndSwitchTheme()
         
         ; 设置定时器定期检查
+        if (SunriseSunset.themeCheckTimer) {
+            SetTimer(SunriseSunset.themeCheckTimer, 0)  ; 先停止现有定时器
+        }
         SunriseSunset.themeCheckTimer := SetTimer(() => SunriseSunset.CheckAndSwitchTheme(), SunriseSunset.CHECK_INTERVAL)
         
         ShowOSD("自动主题切换已启用")
@@ -392,11 +395,17 @@ class SunriseSunset {
     }
 }
 ; ========== 全局快捷键 ==========
+; F1映射到Ctrl+C（复制）
+F1::Send "^c"
+
+; F2映射到Ctrl+V（粘贴）
+F2::Send "^v"
+
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
 
 ; 全局 Alt+W 关闭窗口（仅排除Zen和Chrome浏览器）
-#HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")
+#HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")and !WinActive("ahk_exe Typora.exe")
 !w::Send "!{F4}"  ; Alt+W -> Alt+F4：关闭窗口
 #HotIf
 
@@ -439,10 +448,16 @@ ToggleApp(exeName, appPath := "") {
     try {
         if WinExist("ahk_exe " exeName) {
             if WinActive("ahk_exe " exeName) {
-                WinMinimize  ; 如果当前窗口是目标应用，则最小化
-                Logger.LogInfo("ToggleApp", "最小化应用: " exeName)
+                ; 微信和Spotify特殊处理：关闭窗口而不是最小化（会在托盘继续运行）
+                if (exeName = "Weixin.exe" || exeName = "Spotify.exe") {
+                    WinClose  ; 关闭主窗口，程序继续在托盘运行
+                    Logger.LogInfo("ToggleApp", "关闭主窗口: " exeName)
+                } else {
+                    WinMinimize  ; 其他应用最小化
+                    Logger.LogInfo("ToggleApp", "最小化应用: " exeName)
+                }
             } else {
-                WinActivate  ; 如果目标应用已运行但不是当前窗口，则激活
+                WinActivate  ; 激活目标应用
                 Logger.LogInfo("ToggleApp", "激活应用: " exeName)
             }
         }
@@ -458,12 +473,14 @@ ToggleApp(exeName, appPath := "") {
         ShowOSD("操作失败: " exeName)
     }
 }
+
 ; ========== 应用程序切换快捷键 ==========
 +g::ToggleApp("chrome.exe", "chrome.exe")  ; Shift+G：Chrome 窗口切换
 +t::ToggleApp("Telegram.exe", "D:\Telegram Desktop\Telegram.exe")  ; Shift+T：Telegram 窗口切换
 +n::ToggleApp("Notion.exe", "notion:")  ; Shift+N：Notion 窗口切换
 +z::ToggleApp("zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk")  ; Shift+Z：Zen 浏览器窗口切换
 +s::ToggleApp("Spotify.exe", "spotify:")  ; Shift+S：Spotify 窗口切换
++w::ToggleApp("Weixin.exe", "D:\Weixin\Weixin.exe")  ; Shift+W：微信窗口切换
 
 ; ========== API声明 ==========
 ; 用于创建圆角窗口的API

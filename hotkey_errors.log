@@ -64,3 +64,174 @@ A global declaration inside the function may be required.
 A global declaration inside the function may be required.
 20250530212646 [ERROR] OSDManager: 显示OSD失败: This local variable has not been assigned a value.
 A global declaration inside the function may be required.
+20250531181056 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFD) 
+无法与服务器建立连接
+
+Source:	WinHttp.WinHttpRequest
+20250531181056 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250531215231 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250531215231 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250601121337 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250601121337 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250602121915 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250602121915 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250602220954 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250602220954 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603093919 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603093919 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603094440 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603094440 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603095726 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603095726 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603102345 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603102345 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603102917 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603102917 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603103417 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603103417 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603103917 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603103917 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603104417 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603104417 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603104901 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603104901 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603111726 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603111726 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603135412 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250603135412 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603190638 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603190638 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603191138 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603191138 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603201149 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201149 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201151 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201152 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201153 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201154 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201155 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201201 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201202 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201413 [ERROR] ToggleApp: 操作失败 - 应用: WeChat.exe 错误: Failed attempt to launch program or document:
+Action: <WeChat.exe>
+Params: <>
+20250603201418 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201421 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201423 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201428 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201445 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201448 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201449 [ERROR] ToggleApp: 操作失败 - 应用: Wexin.exe 错误: Failed attempt to launch program or document:
+Action: <Wexin.exe>
+Params: <>
+20250603201642 [ERROR] ToggleWeChatApp: 微信切换失败: Failed attempt to launch program or document:
+Action: <shell:AppsFolder\TencentWeChatLimited.forWindows10_sdtnhv12zgd7a!App>
+Params: <>
+20250603201643 [ERROR] ToggleWeChatApp: 微信切换失败: Failed attempt to launch program or document:
+Action: <shell:AppsFolder\TencentWeChatLimited.forWindows10_sdtnhv12zgd7a!App>
+Params: <>
+20250603201644 [ERROR] ToggleWeChatApp: 微信切换失败: Failed attempt to launch program or document:
+Action: <shell:AppsFolder\TencentWeChatLimited.forWindows10_sdtnhv12zgd7a!App>
+Params: <>
+20250603202139 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202140 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202141 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202143 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202147 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202148 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603202706 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250603202706 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250603203016 [ERROR] ToggleWeChatApp: 无法启动微信，请检查微信是否已安装
+20250603203021 [ERROR] ToggleApp: 操作失败 - 应用: Weixin.exe 错误: Failed attempt to launch program or document:
+Action: <Weixin.exe>
+Params: <>
+20250603203021 [ERROR] ToggleApp: 操作失败 - 应用: Weixin.exe 错误: Failed attempt to launch program or document:
+Action: <Weixin.exe>
+Params: <>
+20250603203029 [ERROR] ToggleApp: 操作失败 - 应用: Weixin.exe 错误: Failed attempt to launch program or document:
+Action: <Weixin.exe>
+Params: <>
