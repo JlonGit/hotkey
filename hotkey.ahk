@@ -401,6 +401,18 @@ F1::Send "^c"
 ; F2映射到Ctrl+V（粘贴）
 F2::Send "^v"
 
+; Alt+Alt映射到Ctrl+Alt+`
+~LAlt Up::{
+    static lastAltTime := 0
+    currentTime := A_TickCount
+    if (currentTime - lastAltTime < 300) {
+        Send "^!``"
+        lastAltTime := 0
+    } else {
+        lastAltTime := currentTime
+    }
+}
+
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
 
