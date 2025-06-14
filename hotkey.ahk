@@ -13,6 +13,35 @@ if !A_IsAdmin {           ; 如果不是管理员权限
 ; 启动时初始化自动主题切换功能
 SetTimer(() => SunriseSunset.EnableAutoTheme(), -2000)  ; 延迟2秒启动，确保所有类都已加载
 
+; 启动时初始化桌面时钟
+SetTimer(() => DesktopClock.Initialize(), -3000)  ; 延迟3秒启动桌面时钟
+
+; ========== 桌面时钟配置 ==========
+class ClockConfig {
+    static WINDOW_WIDTH := 75       ; 更小的窗口宽度
+    static WINDOW_HEIGHT := 22      ; 更小的窗口高度
+    static CORNER_RADIUS := 11      ; 圆角半径
+    static UPDATE_INTERVAL := 1000  ; 更新间隔（毫秒）
+    static FONT_SIZE_TIME := 9      ; 更小的字体
+    static TRANSPARENCY := 220      ; 更高透明度，减少干扰
+    static MARGIN_X := 4            ; 更小的边距
+    static MARGIN_Y := 3            ; 更小的边距
+    static ANIMATION_DURATION := 200 ; 更快的动画
+
+    ; 简洁美观的主题颜色配置
+    static LIGHT_THEME := {
+        bg: 0xFAFAFA,           ; 极浅背景，几乎透明
+        time: 0x333333,         ; 深灰色时间，清晰可读
+        border: 0xE0E0E0       ; 极淡边框
+    }
+
+    static DARK_THEME := {
+        bg: 0x1C1C1C,           ; 深色背景
+        time: 0xE0E0E0,         ; 浅色时间
+        border: 0x404040       ; 深色边框
+    }
+}
+
 ; ========== 配置管理类 ==========
 class Config {
     static TRANSPARENCY_STEP := 15         ; 透明度调整步长
@@ -75,25 +104,280 @@ class MediaControl {
             Logger.LogError("MediaControl.Mute", e.message)
         }
     }
-}        
+}
+
+; ========== 桌面时钟类 ==========
+class DesktopClock {
+    static gui := ""
+    static timeText := ""
+    static updateTimer := ""
+    static isDarkTheme := false
+    static isVisible := true
+    static currentTheme := ""
+
+    ; 初始化时钟
+    static Initialize() {
+        try {
+            ; 检测系统主题
+            this.DetectSystemTheme()
+
+            ; 创建GUI
+            this.CreateGUI()
+
+            ; 开始更新时间
+            this.StartTimer()
+
+            ; 显示时钟
+            this.Show()
+
+            Logger.LogInfo("DesktopClock.Initialize", "桌面时钟初始化成功")
+        } catch Error as e {
+            Logger.LogError("DesktopClock.Initialize", "桌面时钟初始化失败: " e.message)
+        }
+    }
+
+    ; 检测并设置系统主题
+    static DetectSystemTheme() {
+        try {
+            this.isDarkTheme := (RegRead("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme") = 0)
+        } catch {
+            this.isDarkTheme := false
+        }
+        this.currentTheme := this.isDarkTheme ? ClockConfig.DARK_THEME : ClockConfig.LIGHT_THEME
+    }
+
+    ; 创建GUI界面
+    static CreateGUI() {
+        this.gui := Gui("-Caption +ToolWindow -Border +LastFound", "Desktop Clock")
+        this.gui.MarginX := 0
+        this.gui.MarginY := 0
+        this.gui.BackColor := Format("{:06X}", this.currentTheme.bg)
+
+        ; 创建时间显示
+        this.timeText := this.gui.AddText("Center x" ClockConfig.MARGIN_X " y" ClockConfig.MARGIN_Y
+                                        " w" (ClockConfig.WINDOW_WIDTH - ClockConfig.MARGIN_X * 2)
+                                        " h" (ClockConfig.WINDOW_HEIGHT - ClockConfig.MARGIN_Y * 2)
+                                        " c" Format("{:06X}", this.currentTheme.time) " +0x200", "00:00:00")
+        this.timeText.SetFont("s" ClockConfig.FONT_SIZE_TIME, "Consolas")
+        this.gui.OnEvent("Close", (*) => this.Hide())
+        this.ApplyWindowStyle()
+    }
+
+    ; 应用窗口样式
+    static ApplyWindowStyle() {
+        this.gui.Show("w" ClockConfig.WINDOW_WIDTH " h" ClockConfig.WINDOW_HEIGHT " Hide")
+        WinSetTransparent(ClockConfig.TRANSPARENCY, this.gui)
+    }
+
+    ; 应用圆角效果
+    static ApplyRoundedCorners() {
+        try {
+            Sleep(50)
+            hRgn := CreateRoundRectRgn(0, 0, ClockConfig.WINDOW_WIDTH, ClockConfig.WINDOW_HEIGHT, ClockConfig.CORNER_RADIUS, ClockConfig.CORNER_RADIUS)
+            if (hRgn) {
+                SetWindowRgn(this.gui.Hwnd, hRgn)
+            }
+        } catch {
+            ; 圆角失败时静默处理
+        }
+    }
+
+    ; 开始定时器
+    static StartTimer() {
+        this.UpdateTime()
+        this.updateTimer := () => this.UpdateTime()
+        SetTimer(this.updateTimer, ClockConfig.UPDATE_INTERVAL)
+    }
+
+    ; 更新时间显示
+    static UpdateTime() {
+        try {
+            this.timeText.Text := FormatTime(, "HH:mm:ss")
+            this.CheckThemeChange()
+        } catch {
+            ; 更新失败时静默处理
+        }
+    }
+
+    ; 检查主题变化
+    static CheckThemeChange() {
+        try {
+            newIsDarkTheme := (RegRead("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme") = 0)
+            if (newIsDarkTheme != this.isDarkTheme) {
+                this.isDarkTheme := newIsDarkTheme
+                this.UpdateTheme()
+            }
+        } catch {
+            ; 忽略主题检测错误
+        }
+    }
+
+    ; 更新主题
+    static UpdateTheme() {
+        try {
+            this.currentTheme := this.isDarkTheme ? ClockConfig.DARK_THEME : ClockConfig.LIGHT_THEME
+            this.gui.BackColor := Format("{:06X}", this.currentTheme.bg)
+            this.timeText.Opt("c" Format("{:06X}", this.currentTheme.time))
+            DllCall("RedrawWindow", "Ptr", this.gui.Hwnd, "Ptr", 0, "Ptr", 0, "UInt", 0x0001|0x0004)
+        } catch {
+            ; 主题更新失败时静默处理
+        }
+    }
+
+    ; 显示时钟
+    static Show() {
+        if (!this.isVisible) {
+            this.gui.Show("NoActivate x1069 y0")
+            WinSetAlwaysOnTop(true, this.gui)
+            this.ApplyRoundedCorners()
+            this.Fade(true)
+            this.isVisible := true
+        }
+    }
+
+    ; 淡化动画
+    static Fade(fadeIn := true) {
+        try {
+            steps := fadeIn ? 10 : 8
+            stepDelay := ClockConfig.ANIMATION_DURATION // steps
+            Loop steps {
+                alpha := fadeIn ? Round(ClockConfig.TRANSPARENCY * A_Index / steps) : Round(ClockConfig.TRANSPARENCY * (steps - A_Index) / steps)
+                WinSetTransparent(alpha, this.gui)
+                Sleep(stepDelay)
+            }
+        } catch {
+            ; 动画失败时静默处理
+        }
+    }
+
+    ; 隐藏时钟
+    static Hide() {
+        if (this.isVisible) {
+            this.Fade(false)
+            this.gui.Hide()
+            this.isVisible := false
+        }
+    }
+
+    ; 切换显示状态
+    static Toggle() {
+        this.isVisible ? this.Hide() : this.Show()
+    }
+
+    ; 销毁时钟
+    static Destroy() {
+        try {
+            if (this.updateTimer) {
+                SetTimer(this.updateTimer, 0)
+                this.updateTimer := ""
+            }
+            if (this.gui) {
+                this.gui.Destroy()
+                this.gui := ""
+            }
+            this.timeText := ""
+            this.isVisible := false
+        } catch {
+            ; 销毁失败时静默处理
+        }
+    }
+}
 
 ; ========== 日志管理类 ==========
 class Logger {
+    static KEEP_DAYS := 3  ; 保留最近3天的日志
+    static lastCleanupDate := ""
+
     static LogError(funcName, errorMsg) {
         try {
+            Logger.CleanupOldLogs()
             logFile := A_ScriptDir "\hotkey_errors.log"
             FileAppend(A_Now " [ERROR] " funcName ": " errorMsg "`n", logFile)
         } catch {
             ; 如果日志写入失败，静默处理
         }
     }
-    
+
     static LogInfo(funcName, infoMsg) {
         try {
+            Logger.CleanupOldLogs()
             logFile := A_ScriptDir "\hotkey_info.log"
             FileAppend(A_Now " [INFO] " funcName ": " infoMsg "`n", logFile)
         } catch {
             ; 如果日志写入失败，静默处理
+        }
+    }
+
+    ; 清理旧日志（每天只执行一次）
+    static CleanupOldLogs() {
+        try {
+            currentDate := FormatTime(, "yyyyMMdd")
+
+            ; 如果今天已经清理过，则跳过
+            if (Logger.lastCleanupDate = currentDate) {
+                return
+            }
+
+            Logger.lastCleanupDate := currentDate
+
+            ; 计算3天前的日期
+            threeDaysAgo := DateAdd(A_Now, -Logger.KEEP_DAYS, "Days")
+            cutoffDate := FormatTime(threeDaysAgo, "yyyyMMdd")
+
+            ; 清理错误日志
+            Logger.CleanupLogFile(A_ScriptDir "\hotkey_errors.log", cutoffDate)
+
+            ; 清理信息日志
+            Logger.CleanupLogFile(A_ScriptDir "\hotkey_info.log", cutoffDate)
+
+        } catch {
+            ; 清理失败时静默处理
+        }
+    }
+
+    ; 清理指定日志文件中的旧记录
+    static CleanupLogFile(logFile, cutoffDate) {
+        try {
+            if (!FileExist(logFile)) {
+                return
+            }
+
+            ; 读取现有日志内容
+            logContent := FileRead(logFile)
+            lines := StrSplit(logContent, "`n")
+
+            ; 过滤保留最近3天的日志
+            newLines := []
+            for line in lines {
+                if (line = "") {
+                    continue
+                }
+
+                ; 提取日志行的日期部分（前8位：yyyyMMdd）
+                if (StrLen(line) >= 8) {
+                    logDate := SubStr(line, 1, 8)
+                    if (logDate >= cutoffDate) {
+                        newLines.Push(line)
+                    }
+                }
+            }
+
+            ; 如果有变化，重写文件
+            if (newLines.Length < lines.Length) {
+                newContent := ""
+                for line in newLines {
+                    newContent .= line . "`n"
+                }
+
+                ; 重写日志文件
+                FileDelete(logFile)
+                if (newContent != "") {
+                    FileAppend(newContent, logFile)
+                }
+            }
+
+        } catch {
+            ; 清理单个文件失败时静默处理
         }
     }
 }
@@ -308,7 +592,8 @@ class SunriseSunset {
         if (SunriseSunset.themeCheckTimer) {
             SetTimer(SunriseSunset.themeCheckTimer, 0)  ; 先停止现有定时器
         }
-        SunriseSunset.themeCheckTimer := SetTimer(() => SunriseSunset.CheckAndSwitchTheme(), SunriseSunset.CHECK_INTERVAL)
+        SunriseSunset.themeCheckTimer := () => SunriseSunset.CheckAndSwitchTheme()
+        SetTimer(SunriseSunset.themeCheckTimer, SunriseSunset.CHECK_INTERVAL)
         
         ShowOSD("自动主题切换已启用")
         Logger.LogInfo("SunriseSunset.EnableAutoTheme", "自动主题切换已启用")
@@ -447,6 +732,9 @@ F2::Send "^v"
 ; 日出日落相关热键
 #+o::SunriseSunset.ShowSunInfo()  ; Win+Shift+O：显示日出日落时间
 #+a::SunriseSunset.ToggleAutoTheme()  ; Win+Shift+A：切换自动主题功能
+
+; 桌面时钟相关热键
+^!c::DesktopClock.Toggle()  ; Ctrl+Alt+C：切换时钟显示/隐藏
 
 ; 虚拟桌面快捷键、
 !1::Send "^#{Left}"       ; Alt+1 -> Win+Ctrl+Left (切换到左侧桌面)
@@ -1216,3 +1504,16 @@ LButton:: {
 *LControl::Return
 *RControl::Return
 #HotIf
+
+; ========== 脚本退出处理 ==========
+; 脚本退出时清理桌面时钟
+OnExit(CleanupOnExit)
+
+CleanupOnExit(*) {
+    try {
+        DesktopClock.Destroy()
+        Logger.LogInfo("OnExit", "脚本退出，桌面时钟已清理")
+    } catch Error as e {
+        Logger.LogError("OnExit", "清理桌面时钟失败: " e.message)
+    }
+}
