@@ -1002,3 +1002,296 @@
 20250615094124 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
 20250615094125 [INFO] ShowOSD: 显示提示: 取消
 20250615094125 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615134005 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615134008 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615134008 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615134008 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615134008 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615134156 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615134201 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615134240 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615134240 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615134244 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615134245 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615134256 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615134414 [INFO] ToggleApp: 激活应用: chrome.exe
+20250615134509 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615134551 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615134554 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615134554 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615134554 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615134554 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615134557 [INFO] KeyboardInput: 智能模式输入完成，字符数: 118
+20250615134603 [INFO] KeyboardInput: 简单模式输入完成，字符数: 118
+20250615134613 [INFO] KeyboardInput: SendText模式输入完成，字符数: 118
+20250615134714 [INFO] KeyboardInput: 智能模式输入完成，字符数: 118
+20250615134721 [INFO] KeyboardInput: SendText模式输入完成，字符数: 118
+20250615134748 [INFO] KeyboardInput: 智能模式输入完成，字符数: 357
+20250615134804 [INFO] KeyboardInput: 智能模式输入完成，字符数: 357
+20250615134817 [INFO] KeyboardInput: 智能模式输入完成，字符数: 357
+20250615135055 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615135253 [INFO] KeyboardInput: Raw模式输入完成，字符数: 357
+20250615135301 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615135305 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615135305 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615135305 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615135305 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615135313 [INFO] KeyboardInput: 简单模式输入完成，字符数: 357
+20250615135321 [INFO] KeyboardInput: 智能模式输入完成，字符数: 357
+20250615135342 [INFO] KeyboardInput: 简单模式输入完成，字符数: 357
+20250615135351 [INFO] KeyboardInput: 智能模式输入完成，字符数: 357
+20250615135413 [INFO] KeyboardInput: 慢速智能模式输入完成，字符数: 357
+20250615135806 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615135942 [INFO] ShowOSD: 显示提示: 进入连点器模式
+20250615135942 [INFO] ClickRecorder: 激活连点器模式
+20250615135943 [INFO] ShowOSD: 显示提示: 退出连点器模式
+20250615135943 [INFO] ClickRecorder: 退出连点器模式
+20250615140306 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615140359 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615140400 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615140403 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615140407 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615140426 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615140427 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615140431 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615140551 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615140626 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615140626 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615140626 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615140626 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615140824 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615140824 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615140825 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615140825 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615140948 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615140948 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615140948 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615140948 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141027 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141027 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141027 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141027 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141220 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141220 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141220 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141221 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141329 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141329 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141329 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141329 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141451 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141451 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141451 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141451 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141456 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615141501 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141501 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141501 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141501 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141514 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141514 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141515 [INFO] KeyboardInput: 暂停输入
+20250615141516 [INFO] KeyboardInput: 继续输入
+20250615141517 [INFO] KeyboardInput: 暂停输入
+20250615141519 [INFO] KeyboardInput: 继续输入
+20250615141520 [INFO] KeyboardInput: 暂停输入
+20250615141521 [INFO] KeyboardInput: 继续输入
+20250615141521 [INFO] KeyboardInput: 暂停输入
+20250615141522 [INFO] KeyboardInput: 继续输入
+20250615141523 [INFO] KeyboardInput: 暂停输入
+20250615141524 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141524 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141529 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141529 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141529 [INFO] KeyboardInput: 暂停输入
+20250615141530 [INFO] KeyboardInput: 继续输入
+20250615141530 [INFO] KeyboardInput: 暂停输入
+20250615141533 [INFO] ShowOSD: 显示提示: 无法进入模拟输入模式
+20250615141534 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141534 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141537 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141537 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141538 [INFO] KeyboardInput: 暂停输入
+20250615141538 [INFO] KeyboardInput: 继续输入
+20250615141539 [INFO] KeyboardInput: 暂停输入
+20250615141539 [INFO] KeyboardInput: 继续输入
+20250615141541 [INFO] KeyboardInput: 暂停输入
+20250615141544 [INFO] KeyboardInput: 继续输入
+20250615141545 [INFO] KeyboardInput: 暂停输入
+20250615141545 [INFO] KeyboardInput: 继续输入
+20250615141547 [INFO] KeyboardInput: 暂停输入
+20250615141553 [INFO] KeyboardInput: 继续输入
+20250615141555 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141555 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141555 [INFO] ShowOSD: 显示提示: 输入完成
+20250615141601 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141601 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141602 [INFO] KeyboardInput: 暂停输入
+20250615141603 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141603 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141830 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615141834 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141834 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141834 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141834 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141852 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615141856 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615141856 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615141856 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615141856 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615141858 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615141858 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141858 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141859 [INFO] KeyboardInput: 暂停输入
+20250615141900 [INFO] KeyboardInput: 继续输入
+20250615141903 [INFO] KeyboardInput: 暂停输入
+20250615141904 [INFO] KeyboardInput: 继续输入
+20250615141904 [INFO] KeyboardInput: 暂停输入
+20250615141905 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141905 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141910 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615141910 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141910 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615141913 [INFO] KeyboardInput: 暂停输入
+20250615141914 [INFO] KeyboardInput: 继续输入
+20250615141915 [INFO] KeyboardInput: 暂停输入
+20250615141915 [INFO] KeyboardInput: 继续输入
+20250615141916 [INFO] KeyboardInput: 暂停输入
+20250615141917 [INFO] KeyboardInput: 继续输入
+20250615141918 [INFO] KeyboardInput: 暂停输入
+20250615141922 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141922 [INFO] KeyboardInput: 退出模拟输入模式
+20250615141926 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615141926 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615141926 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 357
+20250615141933 [INFO] KeyboardInput: 暂停输入
+20250615141934 [INFO] KeyboardInput: 继续输入
+20250615141935 [INFO] KeyboardInput: 暂停输入
+20250615141936 [INFO] KeyboardInput: 继续输入
+20250615141940 [INFO] KeyboardInput: 暂停输入
+20250615141941 [INFO] KeyboardInput: 继续输入
+20250615141941 [INFO] KeyboardInput: 暂停输入
+20250615141942 [INFO] KeyboardInput: 继续输入
+20250615141942 [INFO] KeyboardInput: 暂停输入
+20250615141944 [INFO] KeyboardInput: 继续输入
+20250615141945 [INFO] KeyboardInput: 暂停输入
+20250615141945 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615141945 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142228 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615142231 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615142231 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615142231 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615142231 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615142240 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615142244 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615142244 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615142244 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615142244 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615142258 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142258 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 4
+20250615142258 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 4
+20250615142258 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142258 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142258 [INFO] ShowOSD: 显示提示: 输入完成
+20250615142305 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142305 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142305 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 357
+20250615142316 [INFO] KeyboardInput: 暂停输入
+20250615142319 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142319 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142328 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142328 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142328 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 357
+20250615142346 [INFO] KeyboardInput: 暂停输入
+20250615142347 [INFO] KeyboardInput: 继续输入
+20250615142347 [INFO] KeyboardInput: 暂停输入
+20250615142349 [INFO] KeyboardInput: 继续输入
+20250615142350 [INFO] KeyboardInput: 暂停输入
+20250615142351 [INFO] KeyboardInput: 继续输入
+20250615142351 [INFO] KeyboardInput: 暂停输入
+20250615142352 [INFO] KeyboardInput: 继续输入
+20250615142353 [INFO] KeyboardInput: 暂停输入
+20250615142354 [INFO] KeyboardInput: 继续输入
+20250615142354 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142354 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142402 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142402 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142402 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142407 [INFO] KeyboardInput: 暂停输入
+20250615142408 [INFO] KeyboardInput: 继续输入
+20250615142408 [INFO] KeyboardInput: 暂停输入
+20250615142409 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142409 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142429 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142429 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142429 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 357
+20250615142433 [INFO] KeyboardInput: 暂停输入
+20250615142434 [INFO] KeyboardInput: 继续输入
+20250615142440 [INFO] KeyboardInput: 暂停输入
+20250615142441 [INFO] KeyboardInput: 继续输入
+20250615142442 [INFO] KeyboardInput: 暂停输入
+20250615142443 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142443 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142447 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142447 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142447 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 357
+20250615142456 [INFO] KeyboardInput: 暂停输入
+20250615142456 [INFO] KeyboardInput: 继续输入
+20250615142457 [INFO] KeyboardInput: 暂停输入
+20250615142459 [INFO] KeyboardInput: 继续输入
+20250615142505 [INFO] KeyboardInput: 暂停输入
+20250615142506 [INFO] KeyboardInput: 继续输入
+20250615142507 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142507 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142513 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142513 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142513 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142517 [INFO] KeyboardInput: 暂停输入
+20250615142517 [INFO] KeyboardInput: 继续输入
+20250615142519 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142519 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142519 [INFO] ShowOSD: 显示提示: 输入完成
+20250615142539 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142539 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142539 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142539 [INFO] KeyboardInput: 暂停输入
+20250615142540 [INFO] KeyboardInput: 继续输入
+20250615142540 [INFO] KeyboardInput: 暂停输入
+20250615142541 [INFO] KeyboardInput: 继续输入
+20250615142542 [INFO] KeyboardInput: 暂停输入
+20250615142553 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142553 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142557 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615142559 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142559 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142559 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142605 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142605 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142605 [INFO] ShowOSD: 显示提示: 输入完成
+20250615142618 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142618 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142618 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142619 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142619 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142621 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615142623 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142623 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142623 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142629 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142629 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142629 [INFO] ShowOSD: 显示提示: 输入完成
+20250615142646 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142646 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142646 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142649 [INFO] KeyboardInput: 暂停输入
+20250615142652 [INFO] KeyboardInput: 继续输入
+20250615142654 [INFO] KeyboardInput: 暂停输入
+20250615142656 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142656 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142701 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615142701 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 357
+20250615142701 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 357
+20250615142707 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615142707 [INFO] KeyboardInput: 退出模拟输入模式
+20250615142707 [INFO] ShowOSD: 显示提示: 输入完成
+20250615142745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24

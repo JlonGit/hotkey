@@ -835,6 +835,23 @@ WS_EX_TRANSPARENT := 0x00000020  ; 鼠标点击穿透
 global transparentWinHwnd := 0  ; 当前半透明穿透窗口的句柄
 global transparentWinTransValue := Config.DEFAULT_TRANSPARENCY  ; 半透明窗口的透明度值
 
+; 全局变量用于跟踪键盘锁定状态
+global isKeyboardLocked := false
+global lastClickTime := 0  ; 用于记录上次点击时间
+
+; 连点器全局变量
+global g_clickRecorder := {
+    isActive: false,    ; 连点器模式是否激活
+    isRecording: false,
+    isPlaying: false,
+    positions: [],
+    currentIndex: 0,
+    playTimer: 0,
+    playInterval: 100,  ; 播放间隔（毫秒）
+    loopCount: 0,       ; 当前循环次数
+    maxLoops: -1        ; 最大循环次数，-1表示无限循环
+}
+
 !t:: {  ; Alt+T：切换当前窗口半透明穿透状态
     global transparentWinHwnd, transparentWinTransValue
     static isTransparentMode := false
@@ -1067,43 +1084,495 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 !d::Send "^!d"   ; Alt+D -> Ctrl+Alt+D
 #HotIf
 
-; ========== 模拟键盘输入剪贴板内容 ==========
-; 使用 Alt+v 触发模拟键盘输入剪贴板内容
+; ========== 键盘输入类 - 处理复杂文本输入 ==========
+class KeyboardInput {
+    ; 静态属性定义 - 使用属性访问器避免初始化问题
+    static _isInputMode := false
+    static _isPaused := false
+    static _inputTimer := 0
+    static _currentText := ""
+    static _currentLines := []
+    static _currentLineIndex := 0
+    static _currentCharIndex := 0
+    static _inputDelay := 10
+    static _statusOSD := ""
+    static _statusText := ""  ; 添加状态文本控件引用
+
+    ; 属性访问器
+    static isInputMode {
+        get => this._isInputMode
+        set => this._isInputMode := value
+    }
+
+    static isPaused {
+        get => this._isPaused
+        set => this._isPaused := value
+    }
+
+    static inputTimer {
+        get => this._inputTimer
+        set => this._inputTimer := value
+    }
+
+    static currentText {
+        get => this._currentText
+        set => this._currentText := value
+    }
+
+    static currentLines {
+        get => this._currentLines
+        set => this._currentLines := value
+    }
+
+    static currentLineIndex {
+        get => this._currentLineIndex
+        set => this._currentLineIndex := value
+    }
+
+    static currentCharIndex {
+        get => this._currentCharIndex
+        set => this._currentCharIndex := value
+    }
+
+    static inputDelay {
+        get => this._inputDelay
+        set => this._inputDelay := value
+    }
+
+    static statusOSD {
+        get => this._statusOSD
+        set => this._statusOSD := value
+    }
+
+    static statusText {
+        get => this._statusText
+        set => this._statusText := value
+    }
+
+    ; 进入模拟输入模式
+    static EnterInputMode(text, delay := 10) {
+        if (text = "" || this.isInputMode) {
+            return false
+        }
+
+        ; 显示进入模式的提示（使用ShowOSD跟随鼠标）
+        ShowOSD("进入模拟输入模式")
+
+        ; 初始化模拟输入模式状态
+        this.isInputMode := true
+        this.isPaused := false
+        this.currentText := text
+        this.inputDelay := delay
+        this.currentLineIndex := 0
+        this.currentCharIndex := 0
+
+        ; 预处理文本：统一换行符格式
+        processedText := StrReplace(text, "`r`n", "`n")
+        processedText := StrReplace(processedText, "`r", "`n")
+        this.currentLines := StrSplit(processedText, "`n")
+
+        ; 显示状态提示（跟随鼠标位置）
+        this.ShowInputStatus("准备开始输入...")
+
+        ; 开始输入处理
+        this.StartInputProcess()
+
+        Logger.LogInfo("KeyboardInput", "进入模拟输入模式，文本长度: " StrLen(text))
+        return true
+    }
+
+    ; 退出模拟输入模式
+    static ExitInputMode() {
+        if (!this.isInputMode) {
+            return
+        }
+
+        ; 停止定时器
+        if (this.inputTimer) {
+            SetTimer(this.inputTimer, 0)
+            this.inputTimer := 0
+        }
+
+        ; 重置状态
+        this.isInputMode := false
+        this.isPaused := false
+        this.currentText := ""
+        this.currentLines := []
+        this.currentLineIndex := 0
+        this.currentCharIndex := 0
+
+        ; 隐藏状态OSD
+        this.HideInputStatus()
+
+        ; 显示退出提示
+        ShowOSD("退出模拟输入模式")
+        Logger.LogInfo("KeyboardInput", "退出模拟输入模式")
+    }
+
+    ; 切换暂停状态
+    static TogglePause() {
+        if (!this.isInputMode) {
+            return
+        }
+
+        this.isPaused := !this.isPaused
+        statusText := this.isPaused ? "暂停输入" : "继续输入"
+        this.ShowInputStatus(statusText)
+        Logger.LogInfo("KeyboardInput", statusText)
+    }
+
+    ; 开始输入处理
+    static StartInputProcess() {
+        if (!this.isInputMode) {
+            return
+        }
+
+        ; 创建输入定时器
+        this.inputTimer := () => this.ProcessNextChar()
+        SetTimer(this.inputTimer, this.inputDelay)
+    }
+
+    ; 处理下一个字符
+    static ProcessNextChar() {
+        if (!this.isInputMode || this.isPaused) {
+            return
+        }
+
+        ; 检查是否完成所有输入
+        if (this.currentLineIndex >= this.currentLines.Length) {
+            this.ExitInputMode()
+            ShowOSD("输入完成")
+            return
+        }
+
+        currentLine := this.currentLines[this.currentLineIndex + 1]
+
+        ; 如果当前行已处理完成
+        if (this.currentCharIndex >= StrLen(currentLine)) {
+            ; 如果不是最后一行，发送换行符
+            if (this.currentLineIndex < this.currentLines.Length - 1) {
+                Send "{Enter}"
+                Sleep this.inputDelay * 2
+            }
+
+            ; 移动到下一行
+            this.currentLineIndex++
+            this.currentCharIndex := 0
+
+            ; 更新状态显示
+            this.UpdateInputProgress()
+            return
+        }
+
+        ; 处理当前字符
+        if (currentLine != "") {
+            char := SubStr(currentLine, this.currentCharIndex + 1, 1)
+
+            ; 发送字符
+            if (this.IsSpecialChar(char)) {
+                this.SendSpecialChar(char)
+            } else {
+                Send "{Text}" char
+            }
+        }
+
+        ; 移动到下一个字符
+        this.currentCharIndex++
+
+        ; 更新状态显示
+        this.UpdateInputProgress()
+    }
+
+    ; 智能文本输入方法 - 正确处理多行文本（保持原有功能用于非模式调用）
+    static SmartTypeText(text, delay := 10) {
+        if (text = "") {
+            return
+        }
+
+        ; 预处理文本：统一换行符格式
+        text := StrReplace(text, "`r`n", "`n")  ; 将Windows换行符转换为单一换行符
+        text := StrReplace(text, "`r", "`n")    ; 将Mac换行符转换为单一换行符
+
+        ; 按行分割文本处理
+        lines := StrSplit(text, "`n")
+
+        Loop lines.Length {
+            currentLine := lines[A_Index]
+
+            ; 处理当前行的文本（包括空行）
+            if (currentLine != "") {
+                KeyboardInput.TypeLineText(currentLine, delay)
+            }
+
+            ; 如果不是最后一行，添加换行符（无论是否为空行）
+            if (A_Index < lines.Length) {
+                Send "{Enter}"
+                Sleep delay * 2  ; 换行后稍长延迟
+            }
+        }
+    }
+
+    ; 输入单行文本（处理特殊字符）
+    static TypeLineText(lineText, delay := 10) {
+        if (lineText = "") {
+            return
+        }
+
+        ; 使用混合模式：优先使用Text模式，特殊字符使用Raw模式
+        i := 1
+        while (i <= StrLen(lineText)) {
+            char := SubStr(lineText, i, 1)
+
+            ; 检查是否为特殊字符需要特殊处理
+            if (KeyboardInput.IsSpecialChar(char)) {
+                KeyboardInput.SendSpecialChar(char)
+            } else {
+                ; 使用Text模式发送普通字符
+                Send "{Text}" char
+            }
+
+            Sleep delay
+            i++
+        }
+    }
+
+    ; 检查是否为需要特殊处理的字符
+    static IsSpecialChar(char) {
+        ; 使用Unicode码点范围判断中文标点符号
+        charCode := Ord(char)
+
+        ; 中文标点符号的主要Unicode范围：
+        ; 0xFF00-0xFFEF: 全角ASCII、全角标点
+        ; 0x3000-0x303F: CJK符号和标点
+        ; 0x2010-0x2027: 通用标点符号
+        ; 特别处理常见的中文标点符号
+        if ((charCode >= 0xFF00 && charCode <= 0xFFEF) ||
+            (charCode >= 0x3000 && charCode <= 0x303F) ||
+            (charCode >= 0x2010 && charCode <= 0x2027)) {
+            return true
+        }
+
+        ; 特别处理一些常见的中文标点符号
+        specialChars := ["，", "。", "；", "：", "？", "！", "`"", "`"", "'", "'", "（", "）", "【", "】", "《", "》", "、", "…", "—", "·"]
+        for specialChar in specialChars {
+            if (char = specialChar) {
+                return true
+            }
+        }
+
+        return false
+    }
+
+    ; 发送特殊字符
+    static SendSpecialChar(char) {
+        ; 对于中文标点符号，使用多种方式尝试发送
+        ; 方法1：直接使用SendText（推荐）
+        try {
+            SendText char
+            return
+        }
+
+        ; 方法2：如果SendText失败，使用Unicode格式发送
+        try {
+            charCode := Ord(char)
+            Send "{U+" Format("{:04X}", charCode) "}"
+            return
+        }
+
+        ; 方法3：最后使用Raw模式
+        Send "{Raw}" char
+    }
+
+
+
+    ; Raw模式输入方法：结合智能处理和Raw模式（适用于复杂文本）
+    static RawTypeText(text, delay := 15) {
+        if (text = "") {
+            return
+        }
+
+        ; 使用混合模式：对所有字符都使用Raw模式发送
+        ; 这样可以确保最大兼容性，包括特殊字符和中文标点
+        Loop Parse, text {
+            char := A_LoopField
+
+            ; 对所有字符统一使用Raw模式，确保最大兼容性
+            Send "{Raw}" char
+            Sleep delay
+        }
+    }
+
+    ; 显示输入状态OSD（跟随鼠标位置，避免闪烁）
+    static ShowInputStatus(statusTextContent) {
+        try {
+            ; 如果状态OSD不存在或已被销毁，创建新的
+            if (!this.statusOSD || !WinExist("ahk_id " this.statusOSD.Hwnd)) {
+                ; 获取当前鼠标位置
+                MouseGetPos(&mouseX, &mouseY)
+
+                ; 创建新的状态OSD
+                this.statusOSD := Gui("-Caption +ToolWindow +AlwaysOnTop -Border", "Input Status")
+                this.statusOSD.MarginX := 8
+                this.statusOSD.MarginY := 5
+                this.statusOSD.BackColor := "0x2D2D30"  ; 深色背景
+
+                ; 添加状态文本控件并保存引用
+                this.statusText := this.statusOSD.AddText("cWhite w200 Center", statusTextContent)
+
+                ; 显示在鼠标位置附近（右下方偏移）
+                offsetX := 20  ; 向右偏移
+                offsetY := 20  ; 向下偏移
+
+                ; 确保不超出屏幕边界
+                displayX := Min(mouseX + offsetX, A_ScreenWidth - 220)
+                displayY := Min(mouseY + offsetY, A_ScreenHeight - 50)
+
+                this.statusOSD.Show("NoActivate x" displayX " y" displayY " AutoSize")
+
+                ; 设置透明度和圆角
+                WinSetTransparent(200, this.statusOSD)
+
+                ; 应用圆角效果
+                hwnd := this.statusOSD.Hwnd
+                WinGetPos(,, &width, &height, "ahk_id " hwnd)
+                hRgn := CreateRoundRectRgn(0, 0, width, height, 8, 8)
+                SetWindowRgn(hwnd, hRgn)
+            } else {
+                ; 如果窗口已存在，只更新文本内容，避免闪烁
+                if (this.statusText) {
+                    this.statusText.Text := statusTextContent
+                }
+            }
+
+        } catch Error as e {
+            Logger.LogError("KeyboardInput.ShowInputStatus", "显示状态失败: " e.message)
+        }
+    }
+
+    ; 隐藏输入状态OSD
+    static HideInputStatus() {
+        try {
+            if (this.statusOSD && WinExist("ahk_id " this.statusOSD.Hwnd)) {
+                this.statusOSD.Destroy()
+                this.statusOSD := ""
+                this.statusText := ""  ; 清理文本控件引用
+            }
+        } catch Error as e {
+            Logger.LogError("KeyboardInput.HideInputStatus", "隐藏状态失败: " e.message)
+        }
+    }
+
+    ; 更新输入进度
+    static UpdateInputProgress() {
+        if (!this.isInputMode) {
+            return
+        }
+
+        try {
+            ; 计算总字符数和已输入字符数
+            totalChars := StrLen(this.currentText)
+            processedChars := 0
+
+            ; 计算已处理的字符数
+            Loop this.currentLineIndex {
+                if (A_Index <= this.currentLines.Length) {
+                    processedChars += StrLen(this.currentLines[A_Index])
+                    if (A_Index < this.currentLineIndex) {
+                        processedChars += 1  ; 换行符
+                    }
+                }
+            }
+            processedChars += this.currentCharIndex
+
+            ; 计算进度百分比
+            progress := totalChars > 0 ? Round((processedChars / totalChars) * 100) : 0
+
+            ; 构建状态文本
+            statusText := "输入中 " progress "% (" processedChars "/" totalChars ")"
+            if (this.isPaused) {
+                statusText := "已暂停 " progress "% (" processedChars "/" totalChars ")"
+            }
+
+            ; 更新状态显示
+            this.ShowInputStatus(statusText)
+
+        } catch Error as e {
+            Logger.LogError("KeyboardInput.UpdateInputProgress", "更新进度失败: " e.message)
+        }
+    }
+
+    ; 检查是否处于模拟输入模式
+    static IsInputMode() {
+        return this.isInputMode
+    }
+
+    ; 检查是否暂停状态
+    static IsPaused() {
+        return this.isPaused
+    }
+}
+
+; 使用 Alt+v 触发模拟输入模式（推荐）
+; 进入专门的模拟输入模式，支持暂停/继续和手动退出
 !v:: {
     ; 获取剪贴板内容
     clipText := A_Clipboard
-    
+
     if (clipText != "") {
         ; 短暂延迟，以便用户可以准备好
         Sleep 500
-        
-        ; 逐字符输入剪贴板内容
-        Loop Parse, clipText {
-            Send "{Text}" A_LoopField
-            ; 添加少量延迟使输入更自然，避免过快触发防护措施
-            Sleep Config.TYPING_DELAY_FAST
+
+        ; 进入模拟输入模式
+        if (KeyboardInput.EnterInputMode(clipText, Config.TYPING_DELAY_FAST)) {
+            Logger.LogInfo("KeyboardInput", "进入模拟输入模式，字符数: " StrLen(clipText))
+        } else {
+            ShowOSD("无法进入模拟输入模式")
         }
+    } else {
+        ShowOSD("剪贴板为空")
     }
 }
 
-; 使用 Ctrl+Alt+v 触发慢速模拟键盘输入剪贴板内容（更加安全但速度较慢）
+; 使用 Ctrl+Alt+v 触发慢速模拟输入模式
+; 适用于对输入速度敏感的应用程序
 ^!v:: {
     ; 获取剪贴板内容
     clipText := A_Clipboard
-    
+
     if (clipText != "") {
         ; 短暂延迟，以便用户可以准备好
         Sleep 500
-        
-        ; 逐字符输入剪贴板内容（较慢模式）
-        Loop Parse, clipText {
-            Send "{Text}" A_LoopField
-            ; 使用较长延迟，更好地模拟人工输入
-            Sleep Config.TYPING_DELAY_SLOW
+
+        ; 进入慢速模拟输入模式
+        if (KeyboardInput.EnterInputMode(clipText, Config.TYPING_DELAY_SLOW)) {
+            Logger.LogInfo("KeyboardInput", "进入慢速模拟输入模式，字符数: " StrLen(clipText))
+        } else {
+            ShowOSD("无法进入模拟输入模式")
         }
+    } else {
+        ShowOSD("剪贴板为空")
     }
 }
 
+; 辅助函数用于#HotIf条件检查
+IsKeyboardInputMode() {
+    return KeyboardInput.IsInputMode()
+}
+
+; 模拟输入模式下的交互控制快捷键
+#HotIf IsKeyboardInputMode()
+
+; 空格键：暂停/继续输入
+Space:: {
+    KeyboardInput.TogglePause()
+}
+
+; ESC键：退出模拟输入模式
+Escape:: {
+    KeyboardInput.ExitInputMode()
+}
+
+#HotIf
 
 ; ========== 媒体控制快捷键（使用MediaControl类） ==========
 
@@ -1126,19 +1595,6 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 ^!M::MediaControl.Mute()  ; Ctrl + Alt + M
 
 ; ========== 连点器功能 ==========
-
-; 连点器全局变量
-global g_clickRecorder := {
-    isActive: false,    ; 连点器模式是否激活
-    isRecording: false,
-    isPlaying: false,
-    positions: [],
-    currentIndex: 0,
-    playTimer: 0,
-    playInterval: 100,  ; 播放间隔（毫秒）
-    loopCount: 0,       ; 当前循环次数
-    maxLoops: -1        ; 最大循环次数，-1表示无限循环
-}
 
 ; 连点器类
 class ClickRecorder {
@@ -1371,9 +1827,11 @@ LButton:: {
 
 ; ========== 键盘锁定功能 ==========
 
-; 全局变量用于跟踪键盘锁定状态
-global isKeyboardLocked := false
-global lastClickTime := 0  ; 用于记录上次点击时间
+; 辅助函数用于#HotIf条件检查
+CheckKeyboardLocked() {
+    global isKeyboardLocked
+    return isKeyboardLocked
+}
 
 ; Ctrl+Alt+L：锁定键盘
 ^!l:: {
@@ -1383,7 +1841,7 @@ global lastClickTime := 0  ; 用于记录上次点击时间
 }
 
 ; 添加鼠标双击解锁功能
-#HotIf isKeyboardLocked
+#HotIf CheckKeyboardLocked()
 LButton:: {
     global lastClickTime, isKeyboardLocked
     currentTime := A_TickCount
@@ -1400,7 +1858,7 @@ LButton:: {
 #HotIf
 
 ; 当键盘锁定时，拦截所有按键（除了解锁组合键）
-#HotIf isKeyboardLocked
+#HotIf CheckKeyboardLocked()
 *a::Return
 *b::Return
 *c::Return
