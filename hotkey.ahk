@@ -18,7 +18,7 @@ SetTimer(() => DesktopClock.Initialize(), -3000)  ; 延迟3秒启动桌面时钟
 
 ; ========== 桌面时钟配置 ==========
 class ClockConfig {
-    static WINDOW_WIDTH := 75       ; 更小的窗口宽度
+    static WINDOW_WIDTH := 95       ; 增加窗口宽度以完全显示时间
     static WINDOW_HEIGHT := 22      ; 更小的窗口高度
     static CORNER_RADIUS := 11      ; 圆角半径
     static UPDATE_INTERVAL := 1000  ; 更新间隔（毫秒）
@@ -112,7 +112,7 @@ class DesktopClock {
     static timeText := ""
     static updateTimer := ""
     static isDarkTheme := false
-    static isVisible := true
+    static isVisible := false  ; 初始化为false，这样Show()方法才能正常工作
     static currentTheme := ""
 
     ; 初始化时钟
@@ -153,11 +153,9 @@ class DesktopClock {
         this.gui.MarginY := 0
         this.gui.BackColor := Format("{:06X}", this.currentTheme.bg)
 
-        ; 创建时间显示
-        this.timeText := this.gui.AddText("Center x" ClockConfig.MARGIN_X " y" ClockConfig.MARGIN_Y
-                                        " w" (ClockConfig.WINDOW_WIDTH - ClockConfig.MARGIN_X * 2)
-                                        " h" (ClockConfig.WINDOW_HEIGHT - ClockConfig.MARGIN_Y * 2)
-                                        " c" Format("{:06X}", this.currentTheme.time) " +0x200", "00:00:00")
+        ; 创建时间显示 - VCenter上下居中，减少左边距让右边完全显示
+        this.timeText := this.gui.AddText("VCenter x5 y0 w" (ClockConfig.WINDOW_WIDTH - 0) " h" ClockConfig.WINDOW_HEIGHT
+                                        " c" Format("{:06X}", this.currentTheme.time), "00:00:00")
         this.timeText.SetFont("s" ClockConfig.FONT_SIZE_TIME, "Consolas")
         this.gui.OnEvent("Close", (*) => this.Hide())
         this.ApplyWindowStyle()
@@ -261,7 +259,11 @@ class DesktopClock {
 
     ; 切换显示状态
     static Toggle() {
-        this.isVisible ? this.Hide() : this.Show()
+        if (this.isVisible) {
+            this.Hide()
+        } else {
+            this.Show()
+        }
     }
 
     ; 销毁时钟

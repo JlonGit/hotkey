@@ -758,3 +758,247 @@
 20250615010337 [INFO] DesktopClock.Hide: 时钟已隐藏
 20250615010337 [INFO] DesktopClock.ApplyRoundedCorners: 圆角效果已应用，半径: 11 尺寸: 113x33
 20250615010338 [INFO] DesktopClock.Show: 简洁时钟已显示在位置: (1069, 0) 尺寸: 75x22 置顶: 是
+20250615010421 [INFO] DesktopClock.Hide: 时钟已隐藏
+20250615010423 [INFO] ToggleApp: 启动应用: Spotify.exe 路径: spotify:
+20250615010427 [INFO] DesktopClock.ApplyRoundedCorners: 圆角效果已应用，半径: 11 尺寸: 113x33
+20250615010427 [INFO] DesktopClock.Show: 简洁时钟已显示在位置: (1069, 0) 尺寸: 75x22 置顶: 是
+20250615010428 [INFO] DesktopClock.Hide: 时钟已隐藏
+20250615010706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615011206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615011706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615012206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615012706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615013207 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615013706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615014206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615014706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615015206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615015706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615020206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615020706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615021206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615021706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615022206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615022706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615023206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615023706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615024206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615024706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615025206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615025706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615030206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615030706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615031206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615031706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615032206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615032706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615033206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615033706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615034206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615034706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615035206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615035706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615040206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615040706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615041206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615041706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615042206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615042706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615043206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615043706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615044206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615044706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615044706 [INFO] DesktopClock.UpdateTheme: 简洁时钟主题已更新: 亮色
+20250615044706 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250615044706 [INFO] ShowOSD: 显示提示: 自动切换: 亮色主题 (日出后)
+20250615044706 [INFO] SunriseSunset.CheckAndSwitchTheme: 自动切换到亮色主题
+20250615045206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615045706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615050206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615050706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615051206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615051706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615052206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615052706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615053206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615053706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615054206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615054706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615055206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615055706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615060206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615060706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615061206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615061706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615062206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615062706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615063206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615063706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615064206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615064706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615065206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615065706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615070206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615070706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615071206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615071706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615072206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615072706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615073206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615073706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615074206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615074706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615075206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615075706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:52, 日落: 19:27:01
+20250615080206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615080706 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615080904 [INFO] ToggleApp: 启动应用: chrome.exe 路径: chrome.exe
+20250615080907 [INFO] DesktopClock.ApplyRoundedCorners: 圆角效果已应用，半径: 11 尺寸: 113x33
+20250615080907 [INFO] DesktopClock.Show: 简洁时钟已显示在位置: (1069, 0) 尺寸: 75x22 置顶: 是
+20250615081206 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615081250 [INFO] DesktopClock.Destroy: 时钟已销毁
+20250615081250 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615081917 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615081917 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615081917 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615081917 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615090105 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615090108 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615090108 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615090111 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615090111 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615090538 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615090541 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615090541 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615090541 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615090541 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615090915 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615091046 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615091046 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615091046 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615091046 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615091404 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615091407 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615091407 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615091407 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615091407 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615091635 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615091638 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615091638 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615091638 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615091639 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615091909 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615091912 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615091912 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615091912 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615091912 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092014 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092017 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092017 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092017 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092018 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092254 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092257 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092257 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092257 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092257 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092305 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092308 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092308 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092308 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092308 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092416 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092420 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092420 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092420 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092420 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092501 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092504 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092504 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092504 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092504 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092558 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092601 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092601 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092601 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092601 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615092950 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615092954 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615092954 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615092954 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615092954 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093136 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093139 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093139 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093139 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093140 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093233 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093236 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093236 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093236 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093236 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093322 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093326 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093326 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093326 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093326 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093353 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093356 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093356 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093356 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093356 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093403 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093406 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093406 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093406 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093406 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093426 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093429 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093429 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093429 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093430 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093528 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093531 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093531 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093531 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093531 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093910 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093913 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093913 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093913 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093913 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093925 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093929 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093929 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615093929 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093929 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093954 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615093957 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615093957 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615093957 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615093957 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615094104 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615094108 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615094108 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615094108 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615094108 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615094118 [INFO] ShowOSD: 显示提示: 置顶
+20250615094118 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615094119 [INFO] ShowOSD: 显示提示: 取消
+20250615094119 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615094120 [INFO] ShowOSD: 显示提示: 置顶
+20250615094120 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615094120 [INFO] ShowOSD: 显示提示: 取消
+20250615094120 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615094121 [INFO] ShowOSD: 显示提示: 置顶
+20250615094121 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615094122 [INFO] ShowOSD: 显示提示: 取消
+20250615094122 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615094123 [INFO] ShowOSD: 显示提示: 置顶
+20250615094123 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615094124 [INFO] ShowOSD: 显示提示: 取消
+20250615094124 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615094124 [INFO] ShowOSD: 显示提示: 置顶
+20250615094124 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615094125 [INFO] ShowOSD: 显示提示: 取消
+20250615094125 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
