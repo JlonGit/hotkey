@@ -23,7 +23,7 @@ class ClockConfig {
     static CORNER_RADIUS := 11      ; 圆角半径
     static UPDATE_INTERVAL := 1000  ; 更新间隔（毫秒）
     static FONT_SIZE_TIME := 9      ; 更小的字体
-    static TRANSPARENCY := 220      ; 更高透明度，减少干扰
+    static TRANSPARENCY := 150      ; 窗口背景透明度，时间文本保持不透明
     static MARGIN_X := 4            ; 更小的边距
     static MARGIN_Y := 3            ; 更小的边距
     static ANIMATION_DURATION := 200 ; 更快的动画
@@ -930,42 +930,79 @@ global g_clickRecorder := {
     }
 }
 
-; 显示操作提示OSD（使用Config配置，带淡出效果）
+; 显示操作提示OSD（使用Config配置，带淡出效果，支持自动宽度和主题适配）
 ShowOSD(text) {
     try {
         ; 获取当前鼠标位置
         MouseGetPos(&mouseX, &mouseY)
-        
+
+        ; 检测系统主题
+        isDarkTheme := false
+        try {
+            isDarkTheme := (RegRead("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme") = 0)
+        } catch {
+            isDarkTheme := false  ; 默认为浅色主题
+        }
+
+        ; 根据系统主题设置颜色方案
+        if (isDarkTheme) {
+            bgColor := "0x2D2D30"      ; 深色背景
+            textColor := "cWhite"      ; 白色文字
+        } else {
+            bgColor := "0xF0F0F0"      ; 浅色背景
+            textColor := "c000000"     ; 黑色文字
+        }
+
         ; 创建提示窗口（无标题栏和无边框）
         osd := Gui("-Caption +ToolWindow +AlwaysOnTop -Border")
-        osd.MarginX := 1  ; 增加水平边距
-        osd.MarginY := 3   ; 增加垂直边距
-        osd.BackColor := "Silver"  ; 浅灰色背景
-        
-        ; 设置提示文本和样式
-        osd.AddText("c000000 w80 Center", text)  ; 使用黑色文字
-        
+        osd.MarginX := 8   ; 增加水平边距以适应自动宽度
+        osd.MarginY := 5   ; 增加垂直边距
+        osd.BackColor := bgColor
+
+        ; 计算文本宽度（基于字符数量和字体大小的估算）
+        textLength := StrLen(text)
+        ; 基础宽度计算：中文字符约12像素，英文字符约7像素，加上边距
+        estimatedWidth := 0
+        Loop Parse, text {
+            char := A_LoopField
+            charCode := Ord(char)
+            ; 判断是否为中文字符（简单判断）
+            if (charCode > 127) {
+                estimatedWidth += 12  ; 中文字符宽度
+            } else {
+                estimatedWidth += 7   ; 英文字符宽度
+            }
+        }
+
+        ; 设置最小宽度和最大宽度限制
+        minWidth := 60
+        maxWidth := 400  ; 根据用户偏好设置为400像素
+        textWidth := Max(minWidth, Min(maxWidth, estimatedWidth + 20))  ; 加20像素边距
+
+        ; 设置提示文本和样式（使用计算出的宽度）
+        osd.AddText(textColor " w" textWidth " Center", text)
+
         ; 显示在鼠标位置旁边
         osd.Show("NoActivate x" (mouseX + 15) " y" (mouseY + 15) " AutoSize")
-        
+
         ; 设置圆角
         hwnd := osd.Hwnd
         WinGetPos(,, &width, &height, "ahk_id " hwnd)
         hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 14,14为圆角半径
         SetWindowRgn(hwnd, hRgn)
-        
+
         ; 设置初始透明度 (0-255, 255为完全不透明)
         WinSetTransparent(225, osd)
-        
+
         ; 为每个OSD实例创建独立的淡出状态
         fadeSteps := 10
         stepDelay := Config.OSD_FADE_TIME // fadeSteps
         fadeState := {step: 0, maxSteps: fadeSteps, osdRef: osd, delay: stepDelay}
-        
+
         ; 设置显示时间后开始淡出，使用闭包避免全局变量冲突
         SetTimer(() => StartFadeOut(fadeState), -(Config.OSD_DISPLAY_TIME - Config.OSD_FADE_TIME))
-        
-        Logger.LogInfo("ShowOSD", "显示提示: " text)
+
+        Logger.LogInfo("ShowOSD", "显示提示: " text " (主题: " (isDarkTheme ? "深色" : "浅色") ", 宽度: " textWidth ")")
     } catch Error as e {
         Logger.LogError("ShowOSD", "显示OSD失败: " e.message)
     }
@@ -1402,7 +1439,7 @@ class KeyboardInput {
         }
     }
 
-    ; 显示输入状态OSD（跟随鼠标位置，避免闪烁）
+    ; 显示输入状态OSD（跟随鼠标位置，避免闪烁，使用通用弹窗样式）
     static ShowInputStatus(statusTextContent) {
         try {
             ; 如果状态OSD不存在或已被销毁，创建新的
@@ -1410,14 +1447,31 @@ class KeyboardInput {
                 ; 获取当前鼠标位置
                 MouseGetPos(&mouseX, &mouseY)
 
-                ; 创建新的状态OSD
-                this.statusOSD := Gui("-Caption +ToolWindow +AlwaysOnTop -Border", "Input Status")
-                this.statusOSD.MarginX := 8
-                this.statusOSD.MarginY := 5
-                this.statusOSD.BackColor := "0x2D2D30"  ; 深色背景
+                ; 检测系统主题（与ShowOSD保持一致）
+                isDarkTheme := false
+                try {
+                    isDarkTheme := (RegRead("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize", "AppsUseLightTheme") = 0)
+                } catch {
+                    isDarkTheme := false  ; 默认为浅色主题
+                }
 
-                ; 添加状态文本控件并保存引用
-                this.statusText := this.statusOSD.AddText("cWhite w200 Center", statusTextContent)
+                ; 根据系统主题设置颜色方案（与ShowOSD保持一致）
+                if (isDarkTheme) {
+                    bgColor := "0x2D2D30"      ; 深色背景
+                    textColor := "cWhite"      ; 白色文字
+                } else {
+                    bgColor := "0xF0F0F0"      ; 浅色背景
+                    textColor := "c000000"     ; 黑色文字
+                }
+
+                ; 创建新的状态OSD（使用通用弹窗样式）
+                this.statusOSD := Gui("-Caption +ToolWindow +AlwaysOnTop -Border", "Input Status")
+                this.statusOSD.MarginX := 8   ; 与ShowOSD保持一致
+                this.statusOSD.MarginY := 5   ; 与ShowOSD保持一致
+                this.statusOSD.BackColor := bgColor
+
+                ; 添加状态文本控件并保存引用（保持原有宽度200像素）
+                this.statusText := this.statusOSD.AddText(textColor " w125 Center", statusTextContent)
 
                 ; 显示在鼠标位置附近（右下方偏移）
                 offsetX := 20  ; 向右偏移
@@ -1429,13 +1483,13 @@ class KeyboardInput {
 
                 this.statusOSD.Show("NoActivate x" displayX " y" displayY " AutoSize")
 
-                ; 设置透明度和圆角
-                WinSetTransparent(200, this.statusOSD)
+                ; 设置透明度（与ShowOSD保持一致：225）
+                WinSetTransparent(225, this.statusOSD)
 
-                ; 应用圆角效果
+                ; 应用圆角效果（与ShowOSD保持一致：14像素圆角）
                 hwnd := this.statusOSD.Hwnd
                 WinGetPos(,, &width, &height, "ahk_id " hwnd)
-                hRgn := CreateRoundRectRgn(0, 0, width, height, 8, 8)
+                hRgn := CreateRoundRectRgn(0, 0, width, height, 14, 14)  ; 使用14像素圆角
                 SetWindowRgn(hwnd, hRgn)
             } else {
                 ; 如果窗口已存在，只更新文本内容，避免闪烁

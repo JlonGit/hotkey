@@ -1295,3 +1295,355 @@
 20250615142707 [INFO] KeyboardInput: 退出模拟输入模式
 20250615142707 [INFO] ShowOSD: 显示提示: 输入完成
 20250615142745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615143245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615143745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615144245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615144745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615145245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615145745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615150132 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615150150 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615150150 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 2
+20250615150150 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 2
+20250615150150 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615150150 [INFO] KeyboardInput: 退出模拟输入模式
+20250615150150 [INFO] ShowOSD: 显示提示: 输入完成
+20250615150156 [INFO] ShowOSD: 显示提示: 进入模拟输入模式
+20250615150156 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 2
+20250615150156 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 2
+20250615150157 [INFO] ShowOSD: 显示提示: 退出模拟输入模式
+20250615150157 [INFO] KeyboardInput: 退出模拟输入模式
+20250615150157 [INFO] ShowOSD: 显示提示: 输入完成
+20250615150245 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615150333 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615150645 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615150657 [INFO] ToggleApp: 关闭主窗口: Weixin.exe
+20250615150745 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615150821 [INFO] ShowOSD: 显示提示: 置顶
+20250615150821 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615150851 [INFO] ShowOSD: 显示提示: 置顶
+20250615150851 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615151226 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615151229 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615151229 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615151229 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615151229 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615151625 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615151628 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615151628 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615151628 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615151628 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615164120 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615164135 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 浅色)
+20250615164135 [INFO] ClickRecorder: 退出连点器模式
+20250615164149 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615164152 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615164152 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615164152 [INFO] ShowOSD: 显示提示: 自动主题切换已启用
+20250615164152 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615164654 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615164734 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615165154 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615165258 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615165301 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615165301 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 浅色, 宽度: 128)
+20250615165301 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615165301 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615165318 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165318 [INFO] ClickRecorder: 激活连点器模式
+20250615165319 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165319 [INFO] ClickRecorder: 激活连点器模式
+20250615165320 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165320 [INFO] ClickRecorder: 激活连点器模式
+20250615165321 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165321 [INFO] ClickRecorder: 激活连点器模式
+20250615165323 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 浅色, 宽度: 104)
+20250615165323 [INFO] ClickRecorder: 退出连点器模式
+20250615165325 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 浅色, 宽度: 128)
+20250615165325 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615165326 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250615165326 [INFO] ShowOSD: 显示提示: 主题: 暗色 (主题: 深色, 宽度: 82)
+20250615165326 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 深色, 宽度: 128)
+20250615165326 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615165327 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250615165327 [INFO] ShowOSD: 显示提示: 主题: 亮色 (主题: 浅色, 宽度: 82)
+20250615165327 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 浅色, 宽度: 128)
+20250615165327 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615165328 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250615165328 [INFO] ShowOSD: 显示提示: 主题: 暗色 (主题: 深色, 宽度: 82)
+20250615165329 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 深色, 宽度: 128)
+20250615165329 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615165330 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250615165330 [INFO] ShowOSD: 显示提示: 主题: 亮色 (主题: 浅色, 宽度: 82)
+20250615165344 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165344 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 2
+20250615165344 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 2
+20250615165344 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165344 [INFO] KeyboardInput: 退出模拟输入模式
+20250615165344 [INFO] ShowOSD: 显示提示: 输入完成 (主题: 浅色, 宽度: 68)
+20250615165351 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165351 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 341
+20250615165351 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 341
+20250615165354 [INFO] KeyboardInput: 暂停输入
+20250615165355 [INFO] KeyboardInput: 继续输入
+20250615165355 [INFO] KeyboardInput: 暂停输入
+20250615165356 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165356 [INFO] KeyboardInput: 退出模拟输入模式
+20250615165401 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165401 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 341
+20250615165401 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 341
+20250615165402 [INFO] KeyboardInput: 暂停输入
+20250615165402 [INFO] KeyboardInput: 继续输入
+20250615165403 [INFO] KeyboardInput: 暂停输入
+20250615165404 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165404 [INFO] KeyboardInput: 退出模拟输入模式
+20250615165408 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165408 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165408 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165408 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165409 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165409 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165410 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165410 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165411 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165411 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165413 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165413 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165414 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165414 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165414 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165414 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165415 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165415 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165418 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165418 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165419 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165419 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165420 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165420 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165421 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165421 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165422 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165422 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165422 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165422 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165423 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165423 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165424 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165424 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165424 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165424 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165425 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165425 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165425 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165425 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165427 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165427 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165427 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165427 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165428 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165428 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165429 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165429 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165430 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165430 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165430 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165430 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165431 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165431 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165432 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165432 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165434 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165434 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165435 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165435 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615165444 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165444 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 341
+20250615165444 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 341
+20250615165445 [INFO] KeyboardInput: 暂停输入
+20250615165446 [INFO] KeyboardInput: 继续输入
+20250615165446 [INFO] KeyboardInput: 暂停输入
+20250615165447 [INFO] KeyboardInput: 继续输入
+20250615165447 [INFO] KeyboardInput: 暂停输入
+20250615165448 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615165448 [INFO] KeyboardInput: 退出模拟输入模式
+20250615165455 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165455 [INFO] ClickRecorder: 激活连点器模式
+20250615165456 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 浅色, 宽度: 104)
+20250615165456 [INFO] ClickRecorder: 退出连点器模式
+20250615165457 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 浅色, 宽度: 104)
+20250615165457 [INFO] ClickRecorder: 激活连点器模式
+20250615165458 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置 (主题: 浅色, 宽度: 176)
+20250615165458 [INFO] ClickRecorder: 重置记录并开始记录
+20250615165459 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置 (主题: 浅色, 宽度: 176)
+20250615165459 [INFO] ClickRecorder: 重置记录并开始记录
+20250615165459 [INFO] ShowOSD: 显示提示: 记录位置 1: (835, 405) (主题: 浅色, 宽度: 166)
+20250615165459 [INFO] ClickRecorder: 记录位置1: (835, 405)
+20250615165500 [INFO] ShowOSD: 显示提示: 记录位置 2: (1244, 427) (主题: 浅色, 宽度: 173)
+20250615165500 [INFO] ClickRecorder: 记录位置2: (1244, 427)
+20250615165500 [INFO] ShowOSD: 显示提示: 记录位置 3: (824, 492) (主题: 浅色, 宽度: 166)
+20250615165500 [INFO] ClickRecorder: 记录位置3: (824, 492)
+20250615165501 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 浅色, 宽度: 104)
+20250615165501 [INFO] ClickRecorder: 退出连点器模式
+20250615165503 [INFO] ShowOSD: 显示提示: 置顶 (主题: 浅色, 宽度: 60)
+20250615165503 [INFO] WindowTopmost: 窗口置顶状态切换: 已置顶
+20250615165503 [INFO] ShowOSD: 显示提示: 取消 (主题: 浅色, 宽度: 60)
+20250615165503 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615170046 [INFO] ToggleApp: 启动应用: Weixin.exe 路径: D:\Weixin\Weixin.exe
+20250615223345 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615223349 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615223349 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615223349 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 深色, 宽度: 128)
+20250615223349 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615223354 [INFO] ShowOSD: 显示提示: 取消 (主题: 深色, 宽度: 60)
+20250615223354 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615223354 [INFO] ShowOSD: 显示提示: 取消 (主题: 深色, 宽度: 60)
+20250615223354 [INFO] WindowTopmost: 窗口置顶状态切换: 已取消
+20250615223401 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223401 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615223401 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615223404 [INFO] KeyboardInput: 暂停输入
+20250615223404 [INFO] KeyboardInput: 继续输入
+20250615223405 [INFO] KeyboardInput: 暂停输入
+20250615223406 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223406 [INFO] KeyboardInput: 退出模拟输入模式
+20250615223413 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 深色, 宽度: 104)
+20250615223413 [INFO] ClickRecorder: 激活连点器模式
+20250615223415 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 深色, 宽度: 104)
+20250615223415 [INFO] ClickRecorder: 激活连点器模式
+20250615223417 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 深色, 宽度: 104)
+20250615223417 [INFO] ClickRecorder: 激活连点器模式
+20250615223419 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置 (主题: 深色, 宽度: 176)
+20250615223419 [INFO] ClickRecorder: 重置记录并开始记录
+20250615223420 [INFO] ShowOSD: 显示提示: 重置记录，开始重新录入位置 (主题: 深色, 宽度: 176)
+20250615223420 [INFO] ClickRecorder: 重置记录并开始记录
+20250615223421 [INFO] ShowOSD: 显示提示: 记录位置 1: (981, 352) (主题: 深色, 宽度: 166)
+20250615223421 [INFO] ClickRecorder: 记录位置1: (981, 352)
+20250615223422 [INFO] ShowOSD: 显示提示: 记录位置 2: (1004, 545) (主题: 深色, 宽度: 173)
+20250615223422 [INFO] ClickRecorder: 记录位置2: (1004, 545)
+20250615223422 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环) (主题: 深色, 宽度: 144)
+20250615223422 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250615223423 [INFO] ShowOSD: 显示提示: 停止播放 (主题: 深色, 宽度: 68)
+20250615223423 [INFO] ClickRecorder: 停止播放，完成4次循环
+20250615223424 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 深色, 宽度: 104)
+20250615223424 [INFO] ClickRecorder: 退出连点器模式
+20250615223425 [INFO] ShowOSD: 显示提示: 进入连点器模式 (主题: 深色, 宽度: 104)
+20250615223425 [INFO] ClickRecorder: 激活连点器模式
+20250615223427 [INFO] ShowOSD: 显示提示: 开始播放 (无限 循环) (主题: 深色, 宽度: 144)
+20250615223427 [INFO] ClickRecorder: 开始播放，循环次数: 无限
+20250615223429 [INFO] ShowOSD: 显示提示: 停止播放 (主题: 深色, 宽度: 68)
+20250615223429 [INFO] ClickRecorder: 停止播放，完成5次循环
+20250615223429 [INFO] ShowOSD: 显示提示: 退出连点器模式 (主题: 深色, 宽度: 104)
+20250615223429 [INFO] ClickRecorder: 退出连点器模式
+20250615223435 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 深色, 宽度: 128)
+20250615223435 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615223436 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 黑色
+20250615223436 [INFO] ShowOSD: 显示提示: 主题: 亮色 (主题: 浅色, 宽度: 82)
+20250615223448 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615223448 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615223448 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615223455 [INFO] KeyboardInput: 暂停输入
+20250615223455 [INFO] KeyboardInput: 继续输入
+20250615223456 [INFO] KeyboardInput: 暂停输入
+20250615223456 [INFO] KeyboardInput: 继续输入
+20250615223457 [INFO] KeyboardInput: 暂停输入
+20250615223458 [INFO] KeyboardInput: 继续输入
+20250615223458 [INFO] KeyboardInput: 暂停输入
+20250615223458 [INFO] KeyboardInput: 继续输入
+20250615223459 [INFO] KeyboardInput: 暂停输入
+20250615223504 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 浅色, 宽度: 116)
+20250615223504 [INFO] KeyboardInput: 退出模拟输入模式
+20250615223516 [INFO] ShowOSD: 显示提示: 自动主题切换已禁用 (主题: 浅色, 宽度: 128)
+20250615223516 [INFO] SunriseSunset.DisableAutoTheme: 自动主题切换已禁用
+20250615223517 [INFO] ThemeControl.SetCursorColor: 光标颜色已设置: 白色
+20250615223517 [INFO] ShowOSD: 显示提示: 主题: 暗色 (主题: 深色, 宽度: 82)
+20250615223522 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615223522 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 深色, 宽度: 128)
+20250615223522 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615223934 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615223938 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615223938 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615223938 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 深色, 宽度: 128)
+20250615223938 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615223942 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223942 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 4
+20250615223942 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 4
+20250615223942 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223942 [INFO] KeyboardInput: 退出模拟输入模式
+20250615223942 [INFO] ShowOSD: 显示提示: 输入完成 (主题: 深色, 宽度: 68)
+20250615223948 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223948 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615223948 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615223952 [INFO] KeyboardInput: 暂停输入
+20250615223953 [INFO] KeyboardInput: 继续输入
+20250615223953 [INFO] KeyboardInput: 暂停输入
+20250615223954 [INFO] KeyboardInput: 继续输入
+20250615223954 [INFO] KeyboardInput: 暂停输入
+20250615223955 [INFO] KeyboardInput: 继续输入
+20250615223957 [INFO] KeyboardInput: 暂停输入
+20250615223958 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615223958 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224004 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224004 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615224004 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615224006 [INFO] KeyboardInput: 暂停输入
+20250615224007 [INFO] KeyboardInput: 继续输入
+20250615224007 [INFO] KeyboardInput: 暂停输入
+20250615224008 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224008 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224200 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615224203 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615224203 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615224203 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 深色, 宽度: 128)
+20250615224203 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615224212 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224212 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615224212 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615224215 [INFO] KeyboardInput: 暂停输入
+20250615224215 [INFO] KeyboardInput: 继续输入
+20250615224218 [INFO] KeyboardInput: 暂停输入
+20250615224219 [INFO] KeyboardInput: 继续输入
+20250615224223 [INFO] KeyboardInput: 暂停输入
+20250615224224 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224224 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224236 [INFO] OnExit: 脚本退出，桌面时钟已清理
+20250615224241 [INFO] DesktopClock.Initialize: 桌面时钟初始化成功
+20250615224241 [INFO] SunriseSunset.GetSunTimes: 获取成功 - 日出: 04:45:55, 日落: 19:27:24
+20250615224241 [INFO] ShowOSD: 显示提示: 自动主题切换已启用 (主题: 深色, 宽度: 128)
+20250615224241 [INFO] SunriseSunset.EnableAutoTheme: 自动主题切换已启用
+20250615224244 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224244 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615224244 [INFO] KeyboardInput: 进入慢速模拟输入模式，字符数: 796
+20250615224246 [INFO] KeyboardInput: 暂停输入
+20250615224246 [INFO] KeyboardInput: 继续输入
+20250615224303 [INFO] KeyboardInput: 暂停输入
+20250615224312 [INFO] KeyboardInput: 继续输入
+20250615224344 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224344 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224344 [INFO] ShowOSD: 显示提示: 输入完成 (主题: 深色, 宽度: 68)
+20250615224349 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224349 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615224349 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 796
+20250615224402 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224402 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224402 [INFO] ShowOSD: 显示提示: 输入完成 (主题: 深色, 宽度: 68)
+20250615224408 [INFO] ShowOSD: 显示提示: 进入模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224408 [INFO] KeyboardInput: 进入模拟输入模式，文本长度: 796
+20250615224408 [INFO] KeyboardInput: 进入模拟输入模式，字符数: 796
+20250615224413 [INFO] KeyboardInput: 暂停输入
+20250615224413 [INFO] KeyboardInput: 继续输入
+20250615224414 [INFO] KeyboardInput: 暂停输入
+20250615224414 [INFO] KeyboardInput: 继续输入
+20250615224414 [INFO] KeyboardInput: 暂停输入
+20250615224415 [INFO] KeyboardInput: 继续输入
+20250615224416 [INFO] KeyboardInput: 暂停输入
+20250615224416 [INFO] KeyboardInput: 继续输入
+20250615224416 [INFO] KeyboardInput: 暂停输入
+20250615224416 [INFO] KeyboardInput: 继续输入
+20250615224417 [INFO] KeyboardInput: 暂停输入
+20250615224417 [INFO] KeyboardInput: 继续输入
+20250615224417 [INFO] KeyboardInput: 暂停输入
+20250615224417 [INFO] KeyboardInput: 继续输入
+20250615224423 [INFO] ShowOSD: 显示提示: 退出模拟输入模式 (主题: 深色, 宽度: 116)
+20250615224423 [INFO] KeyboardInput: 退出模拟输入模式
+20250615224423 [INFO] ShowOSD: 显示提示: 输入完成 (主题: 深色, 宽度: 68)
