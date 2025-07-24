@@ -688,6 +688,18 @@ F1::Send "^c"
 ; F2映射到Ctrl+V（粘贴）
 F2::Send "^v"
 
+; Shift+L：在默认浏览器中打开 linux.do
++l:: {
+    try {
+        Run "https://linux.do"
+        ShowOSD("打开 linux.do")
+        Logger.LogInfo("OpenLinuxDo", "成功打开 linux.do 网站")
+    } catch Error as e {
+        ShowOSD("打开失败")
+        Logger.LogError("OpenLinuxDo", "打开 linux.do 失败: " e.message)
+    }
+}
+
 ; Alt+Alt映射到Ctrl+Alt+`
 ~LAlt Up::{
     static lastAltTime := 0

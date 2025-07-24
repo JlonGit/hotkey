@@ -17,3 +17,733 @@
 
 Source:	WinHttp.WinHttpRequest
 20250615090047 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250616073538 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250616073538 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250616092142 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250616092142 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250616134306 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250616134306 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250616224128 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250616224128 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250617071059 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250617071059 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250617084726 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250617084726 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250617183527 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250617183527 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250617215111 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250617215111 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250618081924 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250618081924 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250618215743 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250618215743 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250619064211 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250619064211 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250619081939 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250619081939 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250619094419 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094423 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Notion.exe - Target control not found.
+20250619094433 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Notion.exe - Target control not found.
+20250619094436 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094440 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094443 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094446 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094449 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619094455 [ERROR] AppToggler.ActivateFromTray: 托盘激活失败: Spotify.exe - Target control not found.
+20250619101933 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101934 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101935 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101936 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101936 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101939 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101940 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101941 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101942 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101942 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101950 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101951 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619101952 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102223 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102225 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102225 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102226 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102227 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102227 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102228 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102228 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102229 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102246 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102247 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102247 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102248 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102248 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102248 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102248 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102357 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102508 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102509 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102510 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102511 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102511 [ERROR] TrayIconManager.GetTrayWindow: 未找到SysPager窗口
+20250619102641 [ERROR] TrayIconManager.FindToolbarWindow: 所有方法都未找到ToolbarWindow32
+20250619102641 [ERROR] TrayIconManager.GetTrayWindow: 未找到ToolbarWindow32窗口
+20250619102642 [ERROR] TrayIconManager.FindToolbarWindow: 所有方法都未找到ToolbarWindow32
+20250619102642 [ERROR] TrayIconManager.GetTrayWindow: 未找到ToolbarWindow32窗口
+20250619102852 [ERROR] TrayIconManager.FindToolbarWindow: 所有方法都未找到ToolbarWindow32
+20250619102852 [ERROR] TrayIconManager.GetTrayWindow: 未找到ToolbarWindow32窗口
+20250619111638 [ERROR] TrayIconManager.ProcessTraySelection: 处理选择失败: This value of type "Gui" has no method named "Close".
+20250619111639 [ERROR] TrayIconManager.ProcessTraySelection: 处理选择失败: This value of type "Gui" has no method named "Close".
+20250619111640 [ERROR] TrayIconManager.ProcessTraySelection: 处理选择失败: This value of type "Gui" has no method named "Close".
+20250619181842 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250619181842 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250620074701 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250620074701 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250620082740 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250620082740 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250620103251 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFD) 
+无法与服务器建立连接
+
+Source:	WinHttp.WinHttpRequest
+20250620103251 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250620212103 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250620212103 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250621113813 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250621113813 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250622171518 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250622171518 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250622181624 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250622181624 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250622205245 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250622205245 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250623103901 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250623103901 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250623205324 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250623205324 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250624123920 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250624123920 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250624210230 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250624210230 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250626090446 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072F78) 
+服务器返回的信息无效或不可识别
+
+Source:	WinHttp.WinHttpRequest
+20250626090446 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250626113446 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072F78) 
+服务器返回的信息无效或不可识别
+
+Source:	WinHttp.WinHttpRequest
+20250626113446 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250627161946 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072F78) 
+服务器返回的信息无效或不可识别
+
+Source:	WinHttp.WinHttpRequest
+20250627161946 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250627210946 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072F06) 
+证书中的主名称无效或不相符
+
+Source:	WinHttp.WinHttpRequest
+20250627210946 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250629190856 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250629190856 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250706181500 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFD) 
+无法与服务器建立连接
+
+Source:	WinHttp.WinHttpRequest
+20250706181500 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250709185516 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250709185516 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250709200043 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250709200043 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250709200543 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250709200543 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250709201043 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250709201043 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710100733 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250710100733 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710122901 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250710122901 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710134017 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250710134017 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710135203 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250710135203 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710141215 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250710141215 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710165113 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250710165113 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710181839 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250710181839 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710182339 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250710182339 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250710182839 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250710182839 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711003857 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711003857 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711061436 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711061436 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711071535 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250711071535 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711074128 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250711074128 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711143545 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711143545 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711144044 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711144044 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711144544 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711144544 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711150044 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711150044 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711152544 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711152544 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711164554 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711164554 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711165045 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711165045 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711165554 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711165554 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711170045 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711170045 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711170544 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250711170544 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250711222654 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250711222654 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250712000154 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250712000154 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250712072822 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250712072822 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250712221116 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250712221116 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250713070514 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250713070514 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716105717 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250716105717 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716131917 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250716131917 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716133001 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250716133001 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716162511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716162511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716163011 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716163011 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716171511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716171511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716172011 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716172011 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716172511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716172511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716173011 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716173011 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716173511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716173511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716174011 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716174011 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716174511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716174511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716175011 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716175011 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716193511 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250716193511 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250716223255 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250716223255 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717080135 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250717080135 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717100259 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717100259 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717115300 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717115300 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717115759 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717115759 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717120259 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717120259 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717120759 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717120759 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717121259 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717121259 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717121759 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717121759 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717122259 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717122259 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717122759 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717122759 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717123259 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250717123259 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250717123810 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250717123810 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718074348 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250718074348 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718121858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718121858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718122358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718122358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718122858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718122858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718123358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718123358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718123858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718123858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718124409 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250718124409 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718124858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718124858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718125358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718125358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718125858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718125858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718130358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718130358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718130858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718130858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718131358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718131358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718131858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718131858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718132358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718132358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718132858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718132858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718133358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718133358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718133858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718133858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718134358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718134358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718134858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718134858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718135358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718135358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718135858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718135858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718140358 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718140358 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718140858 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250718140858 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250718225031 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250718225031 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250719073448 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250719073448 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250719223519 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250719223519 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250720073411 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250720073411 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250720143756 [ERROR] WindowTopmost: 置顶操作失败: Target window not found.
+20250720143757 [ERROR] WindowTopmost: 置顶操作失败: Target window not found.
+20250720212443 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE2) 
+操作超时
+
+Source:	WinHttp.WinHttpRequest
+20250720212443 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250720221401 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250720221401 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250721090911 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250721090911 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250721162541 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250721162541 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250721210654 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFD) 
+无法与服务器建立连接
+
+Source:	WinHttp.WinHttpRequest
+20250721210654 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250722050309 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250722050309 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250722135528 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250722135528 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250722170034 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250722170034 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250722212534 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250722212534 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250722215606 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250722215606 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723011127 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFD) 
+无法与服务器建立连接
+
+Source:	WinHttp.WinHttpRequest
+20250723011127 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723072601 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250723072601 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723085754 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072F78) 
+服务器返回的信息无效或不可识别
+
+Source:	WinHttp.WinHttpRequest
+20250723085754 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723160837 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250723160837 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723215759 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EFE) 
+与服务器的连接意外终止
+
+Source:	WinHttp.WinHttpRequest
+20250723215759 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250723221345 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250723221345 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
+20250724072908 [ERROR] SunriseSunset.GetSunTimes: 获取日出日落时间失败: (0x80072EE7) 
+无法解析服务器的名称或地址
+
+Source:	WinHttp.WinHttpRequest
+20250724072908 [ERROR] SunriseSunset.CheckAndSwitchTheme: 无法获取日出日落时间
