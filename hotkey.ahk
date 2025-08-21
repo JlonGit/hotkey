@@ -58,51 +58,27 @@ class Config {
 class MediaControl {
     ; 播放/暂停
     static PlayPause() {
-        try {
-            Send "{Media_Play_Pause}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.PlayPause", e.message)
-        }
-    }   
+        Send "{Media_Play_Pause}"
+    }
     ; 下一首
     static Next() {
-        try {
-            Send "{Media_Next}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.Next", e.message)
-        }
-    }        
+        Send "{Media_Next}"
+    }
     ; 上一首
     static Previous() {
-        try {
-            Send "{Media_Prev}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.Previous", e.message)
-        }
-    }    
+        Send "{Media_Prev}"
+    }
     ; 音量增加
     static VolumeUp() {
-        try {
-            Send "{Volume_Up}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.VolumeUp", e.message)
-        }
-    }    
+        Send "{Volume_Up}"
+    }
     ; 音量减小
     static VolumeDown() {
-        try {
-            Send "{Volume_Down}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.VolumeDown", e.message)
-        }
-    }  
+        Send "{Volume_Down}"
+    }
     ; 静音切换
     static Mute() {
-        try {
-            Send "{Volume_Mute}"
-        } catch Error as e {
-            Logger.LogError("MediaControl.Mute", e.message)
-        }
+        Send "{Volume_Mute}"
     }
 }
 
@@ -129,10 +105,8 @@ class DesktopClock {
 
             ; 显示时钟
             this.Show()
-
-            Logger.LogInfo("DesktopClock.Initialize", "桌面时钟初始化成功")
-        } catch Error as e {
-            Logger.LogError("DesktopClock.Initialize", "桌面时钟初始化失败: " e.message)
+        } catch {
+            ; 初始化失败时静默处理
         }
     }
 
@@ -285,104 +259,7 @@ class DesktopClock {
     }
 }
 
-; ========== 日志管理类 ==========
-class Logger {
-    static KEEP_DAYS := 3  ; 保留最近3天的日志
-    static lastCleanupDate := ""
 
-    static LogError(funcName, errorMsg) {
-        try {
-            Logger.CleanupOldLogs()
-            logFile := A_ScriptDir "\hotkey_errors.log"
-            FileAppend(A_Now " [ERROR] " funcName ": " errorMsg "`n", logFile)
-        } catch {
-            ; 如果日志写入失败，静默处理
-        }
-    }
-
-    static LogInfo(funcName, infoMsg) {
-        try {
-            Logger.CleanupOldLogs()
-            logFile := A_ScriptDir "\hotkey_info.log"
-            FileAppend(A_Now " [INFO] " funcName ": " infoMsg "`n", logFile)
-        } catch {
-            ; 如果日志写入失败，静默处理
-        }
-    }
-
-    ; 清理旧日志（每天只执行一次）
-    static CleanupOldLogs() {
-        try {
-            currentDate := FormatTime(, "yyyyMMdd")
-
-            ; 如果今天已经清理过，则跳过
-            if (Logger.lastCleanupDate = currentDate) {
-                return
-            }
-
-            Logger.lastCleanupDate := currentDate
-
-            ; 计算3天前的日期
-            threeDaysAgo := DateAdd(A_Now, -Logger.KEEP_DAYS, "Days")
-            cutoffDate := FormatTime(threeDaysAgo, "yyyyMMdd")
-
-            ; 清理错误日志
-            Logger.CleanupLogFile(A_ScriptDir "\hotkey_errors.log", cutoffDate)
-
-            ; 清理信息日志
-            Logger.CleanupLogFile(A_ScriptDir "\hotkey_info.log", cutoffDate)
-
-        } catch {
-            ; 清理失败时静默处理
-        }
-    }
-
-    ; 清理指定日志文件中的旧记录
-    static CleanupLogFile(logFile, cutoffDate) {
-        try {
-            if (!FileExist(logFile)) {
-                return
-            }
-
-            ; 读取现有日志内容
-            logContent := FileRead(logFile)
-            lines := StrSplit(logContent, "`n")
-
-            ; 过滤保留最近3天的日志
-            newLines := []
-            for line in lines {
-                if (line = "") {
-                    continue
-                }
-
-                ; 提取日志行的日期部分（前8位：yyyyMMdd）
-                if (StrLen(line) >= 8) {
-                    logDate := SubStr(line, 1, 8)
-                    if (logDate >= cutoffDate) {
-                        newLines.Push(line)
-                    }
-                }
-            }
-
-            ; 如果有变化，重写文件
-            if (newLines.Length < lines.Length) {
-                newContent := ""
-                for line in newLines {
-                    newContent .= line . "`n"
-                }
-
-                ; 重写日志文件
-                FileDelete(logFile)
-                if (newContent != "") {
-                    FileAppend(newContent, logFile)
-                }
-            }
-
-        } catch {
-            ; 清理单个文件失败时静默处理
-        }
-    }
-}
 
 ; ========== 主题控制类 ==========
 class ThemeControl {
@@ -430,10 +307,8 @@ class ThemeControl {
             
             ; 刷新光标设置
             DllCall("user32.dll\SystemParametersInfo", "UInt", 0x0057, "UInt", 0, "Ptr", 0, "UInt", 0x0002)
-            
-            Logger.LogInfo("ThemeControl.SetCursorColor", "光标颜色已设置: " (isLight ? "黑色" : "白色"))
-        } catch Error as e {
-            Logger.LogError("ThemeControl.SetCursorColor", "设置光标颜色失败: " e.message)
+        } catch {
+            ; 设置光标颜色失败时静默处理
         }
     }
     
@@ -493,7 +368,7 @@ class SunriseSunset {
                 SunriseSunset.lastSunriseTime := sunriseLocal
                 SunriseSunset.lastSunsetTime := sunsetLocal
                 
-                Logger.LogInfo("SunriseSunset.GetSunTimes", "获取成功 - 日出: " . sunriseLocal . ", 日落: " . sunsetLocal)
+
                 
                 return {
                     sunrise: sunriseLocal,
@@ -504,13 +379,11 @@ class SunriseSunset {
                 throw Error("API返回错误: " . sunData.status)
             }
             
-        } catch Error as e {
-            Logger.LogError("SunriseSunset.GetSunTimes", "获取日出日落时间失败: " . e.message)
+        } catch {
             return {
                 sunrise: "",
                 sunset: "",
-                status: "error",
-                error: e.message
+                status: "error"
             }
         }
     }
@@ -539,8 +412,7 @@ class SunriseSunset {
                 sunrise: sunrise,
                 sunset: sunset
             }
-        } catch Error as e {
-            Logger.LogError("SunriseSunset.ParseSunData", "JSON解析失败: " . e.message)
+        } catch {
             return {status: "PARSE_ERROR"}
         }
     }
@@ -565,8 +437,7 @@ class SunriseSunset {
                 return FormatTime(localTime, "HH:mm:ss")
             }
             return utcTimeStr
-        } catch Error as e {
-            Logger.LogError("SunriseSunset.ConvertToLocalTime", "时间转换失败: " . e.message)
+        } catch {
             return utcTimeStr
         }
     }
@@ -598,7 +469,6 @@ class SunriseSunset {
         SetTimer(SunriseSunset.themeCheckTimer, SunriseSunset.CHECK_INTERVAL)
         
         ShowOSD("自动主题切换已启用")
-        Logger.LogInfo("SunriseSunset.EnableAutoTheme", "自动主题切换已启用")
     }
     
     ; 禁用自动主题切换
@@ -612,7 +482,6 @@ class SunriseSunset {
         }
         
         ShowOSD("自动主题切换已禁用")
-        Logger.LogInfo("SunriseSunset.DisableAutoTheme", "自动主题切换已禁用")
     }
     
     ; 检查并切换主题
@@ -626,7 +495,6 @@ class SunriseSunset {
             sunData := SunriseSunset.GetSunTimes()
             
             if (sunData.status != "success") {
-                Logger.LogError("SunriseSunset.CheckAndSwitchTheme", "无法获取日出日落时间")
                 return
             }
             
@@ -643,11 +511,10 @@ class SunriseSunset {
                 themeText := shouldUseLightTheme ? "亮色" : "暗色"
                 reasonText := shouldUseLightTheme ? "日出后" : "日落后"
                 ShowOSD("自动切换: " . themeText . "主题 (" . reasonText . ")")
-                Logger.LogInfo("SunriseSunset.CheckAndSwitchTheme", "自动切换到" . themeText . "主题")
             }
             
-        } catch Error as e {
-            Logger.LogError("SunriseSunset.CheckAndSwitchTheme", "主题检查失败: " . e.message)
+        } catch {
+            ; 主题检查失败时静默处理
         }
     }
     
@@ -680,6 +547,8 @@ class SunriseSunset {
             SunriseSunset.EnableAutoTheme()
         }
     }
+
+
 }
 ; ========== 全局快捷键 ==========
 ; F1映射到Ctrl+C（复制）
@@ -693,35 +562,21 @@ F2::Send "^v"
     try {
         Run "https://linux.do"
         ShowOSD("打开 linux.do")
-        Logger.LogInfo("OpenLinuxDo", "成功打开 linux.do 网站")
-    } catch Error as e {
+    } catch {
         ShowOSD("打开失败")
-        Logger.LogError("OpenLinuxDo", "打开 linux.do 失败: " e.message)
     }
 }
 
-; Alt+Alt映射到Ctrl+Alt+`
-~LAlt Up::{
-    static lastAltTime := 0
-    currentTime := A_TickCount
-    if (currentTime - lastAltTime < 300) {
-        Send "^!``"
-        lastAltTime := 0
-    } else {
-        lastAltTime := currentTime
-    }
-}
 
 ; Windows 剪贴板
 #v::Send "^+#\"  ; Win+V -> Ctrl+Shift+Win+\
+
 
 ; 全局 Alt+W 关闭窗口（仅排除Zen和Chrome浏览器）
 #HotIf !WinActive("ahk_exe chrome.exe") and !WinActive("ahk_exe zen.exe")and !WinActive("ahk_exe Typora.exe")
 !w::Send "!{F4}"  ; Alt+W -> Alt+F4：关闭窗口
 #HotIf
 
-; Alt+D 映射为 Ctrl+K
-!d::Send "^k"    ; Alt+D -> Ctrl+K
 
 ; 显示桌面
 !Escape::Send "#d"    ; Alt+Esc -> Win+D：显示桌面
@@ -765,36 +620,35 @@ ToggleApp(exeName, appPath := "") {
                 ; 微信和Spotify特殊处理：关闭窗口而不是最小化（会在托盘继续运行）
                 if (exeName = "Weixin.exe" || exeName = "Spotify.exe") {
                     WinClose  ; 关闭主窗口，程序继续在托盘运行
-                    Logger.LogInfo("ToggleApp", "关闭主窗口: " exeName)
+
                 } else {
                     WinMinimize  ; 其他应用最小化
-                    Logger.LogInfo("ToggleApp", "最小化应用: " exeName)
+
                 }
             } else {
                 WinActivate  ; 激活目标应用
-                Logger.LogInfo("ToggleApp", "激活应用: " exeName)
+
             }
         }
         else if (appPath != "") {
             Run appPath  ; 如果目标应用未运行且提供了路径，则启动
-            Logger.LogInfo("ToggleApp", "启动应用: " exeName " 路径: " appPath)
+
         } else {
             ShowOSD("未找到应用: " exeName)
-            Logger.LogError("ToggleApp", "应用未找到且无启动路径: " exeName)
+
         }
-    } catch Error as e {
-        Logger.LogError("ToggleApp", "操作失败 - 应用: " exeName " 错误: " e.message)
+    } catch {
         ShowOSD("操作失败: " exeName)
     }
 }
 
 ; ========== 应用程序切换快捷键 ==========
 +g::ToggleApp("chrome.exe", "chrome.exe")  ; Shift+G：Chrome 窗口切换
-+t::ToggleApp("Telegram.exe", "D:\Telegram Desktop\Telegram.exe")  ; Shift+T：Telegram 窗口切换
++t::ToggleApp("Telegram.exe", "C:\APP\Telegram\Telegram.exe")  ; Shift+T：Telegram 窗口切换
 +n::ToggleApp("Notion.exe", "notion:")  ; Shift+N：Notion 窗口切换
 +z::ToggleApp("zen.exe", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Zen.lnk")  ; Shift+Z：Zen 浏览器窗口切换
 +s::ToggleApp("Spotify.exe", "spotify:")  ; Shift+S：Spotify 窗口切换
-+w::ToggleApp("Weixin.exe", "D:\Weixin\Weixin.exe")  ; Shift+W：微信窗口切换
++w::ToggleApp("Weixin.exe", "C:\APP\Weixin\Weixin.exe")  ; Shift+W：微信窗口切换
 
 ; ========== API声明 ==========
 ; 用于创建圆角窗口的API
@@ -835,10 +689,7 @@ WS_EX_TRANSPARENT := 0x00000020  ; 鼠标点击穿透
             ShowOSD("取消")
         }
         
-        Logger.LogInfo("WindowTopmost", "窗口置顶状态切换: " (isTopmost ? "已置顶" : "已取消"))
-        
-    } catch Error as e {
-        Logger.LogError("WindowTopmost", "置顶操作失败: " e.message)
+    } catch {
         ShowOSD("置顶失败")
     }
 }
@@ -1014,9 +865,8 @@ ShowOSD(text) {
         ; 设置显示时间后开始淡出，使用闭包避免全局变量冲突
         SetTimer(() => StartFadeOut(fadeState), -(Config.OSD_DISPLAY_TIME - Config.OSD_FADE_TIME))
 
-        Logger.LogInfo("ShowOSD", "显示提示: " text " (主题: " (isDarkTheme ? "深色" : "浅色") ", 宽度: " textWidth ")")
-    } catch Error as e {
-        Logger.LogError("ShowOSD", "显示OSD失败: " e.message)
+    } catch {
+        ; 显示OSD失败时静默处理
     }
 }
 
@@ -1030,8 +880,7 @@ StartFadeOut(fadeState) {
         ; 开始淡出动画
         SetTimer(() => DoFadeStep(fadeState), -fadeState.delay)
         
-    } catch Error as e {
-        Logger.LogError("StartFadeOut", "开始淡出失败: " e.message)
+    } catch {
         ; 如果淡出失败，直接销毁窗口
         try {
             if (WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
@@ -1068,8 +917,7 @@ DoFadeStep(fadeState) {
                 ; 静默处理销毁失败
             }
         }
-    } catch Error as e {
-        Logger.LogError("DoFadeStep", "淡出步骤失败: " e.message)
+    } catch {
         ; 出错时直接销毁窗口
         try {
             if (IsObject(fadeState) && WinExist("ahk_id " fadeState.osdRef.Hwnd)) {
@@ -1082,10 +930,10 @@ DoFadeStep(fadeState) {
 }
 
 ; 连续退格
-$+d::Send "{Backspace}"  ; Shift+D -> Backspace：连续退格
+!d::Send "{Backspace}"  ; Alt+D -> Backspace：连续退格
 
 ; 连续回车
-$+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
+!e::Send "{Enter}"  ; Alt+E -> Enter：连续回车
 
 ; ========== Chrome 快捷键 ==========
 #HotIf WinActive("ahk_exe chrome.exe")
@@ -1130,7 +978,6 @@ $+e::Send "{Enter}"  ; Shift+E -> Enter：连续回车
 !a::Send "^!a"   ; Alt+A -> Ctrl+Alt+A
 !q::Send "^!q"   ; Alt+Q -> Ctrl+Alt+Q
 !w::Send "^!w"   ; Alt+W -> Ctrl+Alt+W
-!d::Send "^!d"   ; Alt+D -> Ctrl+Alt+D
 #HotIf
 
 ; ========== 键盘输入类 - 处理复杂文本输入 ==========
@@ -1226,7 +1073,7 @@ class KeyboardInput {
         ; 开始输入处理
         this.StartInputProcess()
 
-        Logger.LogInfo("KeyboardInput", "进入模拟输入模式，文本长度: " StrLen(text))
+
         return true
     }
 
@@ -1255,7 +1102,7 @@ class KeyboardInput {
 
         ; 显示退出提示
         ShowOSD("退出模拟输入模式")
-        Logger.LogInfo("KeyboardInput", "退出模拟输入模式")
+
     }
 
     ; 切换暂停状态
@@ -1267,7 +1114,7 @@ class KeyboardInput {
         this.isPaused := !this.isPaused
         statusText := this.isPaused ? "暂停输入" : "继续输入"
         this.ShowInputStatus(statusText)
-        Logger.LogInfo("KeyboardInput", statusText)
+
     }
 
     ; 开始输入处理
@@ -1510,8 +1357,8 @@ class KeyboardInput {
                 }
             }
 
-        } catch Error as e {
-            Logger.LogError("KeyboardInput.ShowInputStatus", "显示状态失败: " e.message)
+        } catch {
+            ; 显示状态失败时静默处理
         }
     }
 
@@ -1523,8 +1370,8 @@ class KeyboardInput {
                 this.statusOSD := ""
                 this.statusText := ""  ; 清理文本控件引用
             }
-        } catch Error as e {
-            Logger.LogError("KeyboardInput.HideInputStatus", "隐藏状态失败: " e.message)
+        } catch {
+            ; 隐藏状态失败时静默处理
         }
     }
 
@@ -1562,8 +1409,8 @@ class KeyboardInput {
             ; 更新状态显示
             this.ShowInputStatus(statusText)
 
-        } catch Error as e {
-            Logger.LogError("KeyboardInput.UpdateInputProgress", "更新进度失败: " e.message)
+        } catch {
+            ; 更新进度失败时静默处理
         }
     }
 
@@ -1590,7 +1437,7 @@ class KeyboardInput {
 
         ; 进入模拟输入模式
         if (KeyboardInput.EnterInputMode(clipText, Config.TYPING_DELAY_FAST)) {
-            Logger.LogInfo("KeyboardInput", "进入模拟输入模式，字符数: " StrLen(clipText))
+
         } else {
             ShowOSD("无法进入模拟输入模式")
         }
@@ -1611,7 +1458,7 @@ class KeyboardInput {
 
         ; 进入慢速模拟输入模式
         if (KeyboardInput.EnterInputMode(clipText, Config.TYPING_DELAY_SLOW)) {
-            Logger.LogInfo("KeyboardInput", "进入慢速模拟输入模式，字符数: " StrLen(clipText))
+
         } else {
             ShowOSD("无法进入模拟输入模式")
         }
@@ -1671,7 +1518,7 @@ class ClickRecorder {
             g_clickRecorder.isActive := true
             g_clickRecorder.isRecording := false  ; 仅进入模式，不自动开始记录
             ShowOSD("进入连点器模式")
-            Logger.LogInfo("ClickRecorder", "激活连点器模式")
+
         }
     }
     
@@ -1682,10 +1529,9 @@ class ClickRecorder {
             g_clickRecorder.isRecording := true
             g_clickRecorder.positions := []  ; 清空之前的记录
             ShowOSD("重置记录，开始重新录入位置")
-            Logger.LogInfo("ClickRecorder", "重置记录并开始记录")
         }
     }
-    
+
     ; 停止记录
     static StopRecording() {
         global g_clickRecorder
@@ -1693,7 +1539,6 @@ class ClickRecorder {
             g_clickRecorder.isRecording := false
             posCount := g_clickRecorder.positions.Length
             ShowOSD("记录完成: " posCount " 个位置")
-            Logger.LogInfo("ClickRecorder", "记录完成，共" posCount "个位置")
         }
     }
     
@@ -1707,7 +1552,7 @@ class ClickRecorder {
                 this.StopPlaying()
             }
             ShowOSD("退出连点器模式")
-            Logger.LogInfo("ClickRecorder", "退出连点器模式")
+
         }
     }
     
@@ -1719,7 +1564,7 @@ class ClickRecorder {
             g_clickRecorder.positions.Push({x: x, y: y})
             posCount := g_clickRecorder.positions.Length
             ShowOSD("记录位置 " posCount ": (" x ", " y ")")
-            Logger.LogInfo("ClickRecorder", "记录位置" posCount ": (" x ", " y ")")
+
         }
     }
     
@@ -1739,7 +1584,7 @@ class ClickRecorder {
             
             loopText := (loops == -1) ? "无限" : String(loops)
             ShowOSD("开始播放 (" loopText " 循环)")
-            Logger.LogInfo("ClickRecorder", "开始播放，循环次数: " loopText)
+
         }
     }
     
@@ -1783,7 +1628,7 @@ class ClickRecorder {
                 g_clickRecorder.playTimer := 0
             }
             ShowOSD("停止播放")
-            Logger.LogInfo("ClickRecorder", "停止播放，完成" g_clickRecorder.loopCount "次循环")
+
         }
     }
     
@@ -1806,7 +1651,7 @@ class ClickRecorder {
         if (!g_clickRecorder.isRecording && !g_clickRecorder.isPlaying) {
             g_clickRecorder.positions := []
             ShowOSD("清空记录")
-            Logger.LogInfo("ClickRecorder", "清空所有记录")
+
         }
     }
     
@@ -2038,8 +1883,7 @@ OnExit(CleanupOnExit)
 CleanupOnExit(*) {
     try {
         DesktopClock.Destroy()
-        Logger.LogInfo("OnExit", "脚本退出，桌面时钟已清理")
-    } catch Error as e {
-        Logger.LogError("OnExit", "清理桌面时钟失败: " e.message)
+    } catch {
+        ; 清理桌面时钟失败时静默处理
     }
 }
